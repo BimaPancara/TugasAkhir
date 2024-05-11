@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: sampul.aux
+A level-1 auxiliary file: pengesahan.aux
+A level-1 auxiliary file: abstrak.aux
+A level-1 auxiliary file: bab1.aux
+A level-1 auxiliary file: bab2.aux
+A level-1 auxiliary file: bab3.aux
+A level-1 auxiliary file: pustaka.aux
+The style file: ieeetr.bst
+Database file #1: dafpus.bib
+Warning--can't use both author and editor fields in Kingsley1999
+Warning--can't use both volume and number fields in Melvin2014
+Warning--can't use both volume and number fields in Scheer2015
+You've used 20 entries,
+            1876 wiz_defined-function locations,
+            622 strings with 8317 characters,
+and the built_in function-call counts, 4323 in all, are:
+= -- 346
+> -- 251
+< -- 0
++ -- 91
+- -- 71
+* -- 353
+:= -- 670
+add.period$ -- 30
+call.type$ -- 20
+change.case$ -- 16
+chr.to.int$ -- 0
+cite$ -- 23
+duplicate$ -- 238
+empty$ -- 453
+format.name$ -- 71
+if$ -- 1010
+int.to.chr$ -- 0
+int.to.str$ -- 20
+missing$ -- 24
+newline$ -- 73
+num.names$ -- 22
+pop$ -- 95
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 73
+stack$ -- 0
+substring$ -- 76
+swap$ -- 45
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 27
+width$ -- 22
+write$ -- 199
+(There were 3 warnings)
