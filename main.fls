@@ -1,8 +1,8 @@
-PWD /run/media/bimapancara/New Volume/TUGAS AKHIR Ver/V5
+PWD /run/media/bimapancara/New Volume/TUGAS AKHIR Ver/PraSempro
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /run/media/bimapancara/New Volume/TUGAS AKHIR Ver/V5/main.tex
+INPUT /run/media/bimapancara/New Volume/TUGAS AKHIR Ver/PraSempro/main.tex
 OUTPUT main.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls
@@ -1336,11 +1336,12 @@ INPUT ./bab2.tex
 INPUT bab2.tex
 INPUT ./bab2.tex
 INPUT bab2.tex
-INPUT ./pics/bab2/skemaradar.png
-INPUT ./pics/bab2/skemaradar.png
-INPUT pics/bab2/skemaradar.png
-INPUT ./pics/bab2/skemaradar.png
-INPUT ./pics/bab2/skemaradar.png
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcmrm.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
@@ -1356,15 +1357,16 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcmr.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT ./pics/bab2/skemaradar.png
+INPUT ./pics/bab2/skemaradar.png
+INPUT pics/bab2/skemaradar.png
+INPUT ./pics/bab2/skemaradar.png
+INPUT ./pics/bab2/skemaradar.png
 INPUT ./pics/bab2/blokDiagram.png
 INPUT ./pics/bab2/blokDiagram.png
 INPUT pics/bab2/blokDiagram.png
 INPUT ./pics/bab2/blokDiagram.png
 INPUT ./pics/bab2/blokDiagram.png
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcmrm.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT ./pics/bab2/rcsBentuk.png
@@ -1381,6 +1383,10 @@ INPUT pics/bab2/rcsPola.png
 INPUT ./pics/bab2/rcsPola.png
 INPUT ./pics/bab2/rcsPola.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcmrm.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT ./pics/bab2/radarwaveform.png
 INPUT ./pics/bab2/radarwaveform.png
 INPUT pics/bab2/radarwaveform.png
@@ -1400,13 +1406,13 @@ INPUT ./pics/bab2/blokDiagramFMCW.png
 INPUT pics/bab2/blokDiagramFMCW.png
 INPUT ./pics/bab2/blokDiagramFMCW.png
 INPUT ./pics/bab2/blokDiagramFMCW.png
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmbi7t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmbi8r.tfm
 INPUT ./pics/bab2/txRxWave.jpg
 INPUT ./pics/bab2/txRxWave.jpg
 INPUT pics/bab2/txRxWave.jpg
 INPUT ./pics/bab2/txRxWave.jpg
 INPUT ./pics/bab2/txRxWave.jpg
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmbi7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmbi8r.tfm
 INPUT ./pics/bab2/lfmTriangular.png
 INPUT ./pics/bab2/lfmTriangular.png
 INPUT pics/bab2/lfmTriangular.png
@@ -1466,12 +1472,6 @@ INPUT ./pics/bab3/flowchart2.png
 INPUT pics/bab3/flowchart2.png
 INPUT ./pics/bab3/flowchart2.png
 INPUT ./pics/bab3/flowchart2.png
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zpzccmry.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi8r.tfm
