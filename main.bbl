@@ -1,73 +1,73 @@
 \begin{thebibliography}{10}
 
 \bibitem{Zhang2015}
-S.~Zhang, C.~Wang, S.-C. Chan, X.~Wei, and C.-H. Ho, ``New object detection, tracking, and recognition approaches for video surveillance over camera network,'' {\em IEEE Sensors Journal}, vol.~15, pp.~2679--2691, May 2015.
+S.~Zhang, C.~Wang, S.-C. Chan, X.~Wei, and C.-H. Ho, ``\textit{New Object Detection, Tracking, and Recognition Approaches for Video Surveillance Over Camera Network},'' {\em IEEE Sensors Journal}, vol.~15, pp.~2679--2691, May 2015.
 
 \bibitem{Biswas2020}
-A.~Biswas, S.~Abedin, and M.~A. Kabir, ``Moving object detection using ultrasonic radar with proper distance, direction, and object shape analysis,'' {\em Journal of Information Systems Engineering and Business Intelligence}, vol.~6, p.~99, Oct. 2020.
+A.~Biswas, S.~Abedin, and M.~A. Kabir, ``\textit{Moving Object Detection Using Ultrasonic Radar with Proper Distance, Direction, and Object Shape Analysis},'' {\em Journal of Information Systems Engineering and Business Intelligence}, vol.~6, p.~99, Oct. 2020.
 
 \bibitem{Jia2020}
-M.~Jia, S.~Li, J.~L. Kernec, S.~Yang, F.~Fioranelli, and O.~Romain, ``Human activity classification with radar signal processing and machine learning,'' in {\em 2020 International Conference on UK-China Emerging Technologies (UCET)}, IEEE, Aug. 2020.
+M.~Jia, S.~Li, J.~L. Kernec, S.~Yang, F.~Fioranelli, and O.~Romain, ``\textit{Human activity classification with radar signal processing and machine learning},'' in {\em 2020 International Conference on UK-China Emerging Technologies (UCET)}, IEEE, Aug. 2020.
 
 \bibitem{Xia2021}
-Y.~Xia, Z.~Ma, and Z.~Huang, ``Over-the-air radar emitter signal classification based on sdr,'' in {\em 2021 6th International Conference on Intelligent Computing and Signal Processing (ICSP)}, IEEE, Apr. 2021.
+Y.~Xia, Z.~Ma, and Z.~Huang, ``\textit{Over-the-Air Radar Emitter Signal Classification Based on SDR},'' in {\em 2021 6th International Conference on Intelligent Computing and Signal Processing (ICSP)}, IEEE, Apr. 2021.
 
 \bibitem{MoraHuaman2020}
-D.~A. Mora-Huaman, F.~Palomino~Quispe, R.~J. Coaquira-Castillo, and M.~Clemente-Arenas, ``Distance to object estimation based on software defined radio usrp using python,'' in {\em 2020 IEEE XXVII International Conference on Electronics, Electrical Engineering and Computing (INTERCON)}, IEEE, Sept. 2020.
+D.~A. Mora-Huaman, F.~Palomino~Quispe, R.~J. Coaquira-Castillo, and M.~Clemente-Arenas, ``\textit{Distance to Object Estimation Based on Software Defined Radio USRP using Python},'' in {\em 2020 IEEE XXVII International Conference on Electronics, Electrical Engineering and Computing (INTERCON)}, IEEE, Sept. 2020.
 
 \bibitem{Sundaresan2015}
-S.~S, A.~C, T.~Zacharia, and G.~R, ``Real time implementation of fmcw radar for target detection using gnu radio and usrp,'' in {\em 2015 International Conference on Communications and Signal Processing (ICCSP)}, IEEE, Apr. 2015.
+S.~S, A.~C, T.~Zacharia, and G.~R, ``\textit{Real time implementation of FMCW radar for target detection using GNU radio and USRP},'' in {\em 2015 International Conference on Communications and Signal Processing (ICCSP)}, IEEE, Apr. 2015.
 
 \bibitem{Stasiak2017}
-K.~Stasiak and P.~Samczynski, ``Fmcw radar implemented in sdr architecture using a usrp device,'' in {\em 2017 Signal Processing Symposium (SPSympo)}, IEEE, Sept. 2017.
+K.~Stasiak and P.~Samczynski, ``\textit{FMCW radar implemented in SDR architecture using a USRP device},'' in {\em 2017 Signal Processing Symposium (SPSympo)}, IEEE, Sept. 2017.
 
 \bibitem{Macasero2018}
-J.~M.~S. Macasero, O.~J.~L. Gerasta, D.~P. Pongcol, V.~J.~V. Ylaya, and A.~B. Caberos, ``Underground target objects detection simulation using fmcw radar with sdr platform,'' in {\em 2018 IEEE 10th International Conference on Humanoid, Nanotechnology, Information Technology,Communication and Control, Environment and Management (HNICEM)}, IEEE, Nov. 2018.
+J.~M.~S. Macasero, O.~J.~L. Gerasta, D.~P. Pongcol, V.~J.~V. Ylaya, and A.~B. Caberos, ``\textit{Underground Target Objects Detection Simulation Using FMCW Radar with SDR Platform},'' in {\em 2018 IEEE 10th International Conference on Humanoid, Nanotechnology, Information Technology,Communication and Control, Environment and Management (HNICEM)}, IEEE, Nov. 2018.
 
 \bibitem{Lestari2017}
-A.~Lestari, D.~D. Patriadi, I.~H. Putri, B.~Harnawan, O.~D. Winarko, W.~Sediono, and M.~A.~K. Titasari, ``Fpga-based sdr implementation for fmcw maritime surveillance radar,'' in {\em 2017 International Conference on Radar, Antenna, Microwave, Electronics, and Telecommunications (ICRAMET)}, IEEE, Oct. 2017.
+A.~Lestari, D.~D. Patriadi, I.~H. Putri, B.~Harnawan, O.~D. Winarko, W.~Sediono, and M.~A.~K. Titasari, ``\textit{FPGA-based SDR implementation for FMCW maritime surveillance radar},'' in {\em 2017 International Conference on Radar, Antenna, Microwave, Electronics, and Telecommunications (ICRAMET)}, IEEE, Oct. 2017.
 
 \bibitem{Deng2017}
-J.-H. Deng, P.-N. Chen, C.-F. Lee, Y.-F. Chan, and Y.-C. Lin, ``Sdr measurement platform design for fmcw radar performance verification,'' in {\em 2017 IEEE Conference on Dependable and Secure Computing}, IEEE, Aug. 2017.
+J.-H. Deng, P.-N. Chen, C.-F. Lee, Y.-F. Chan, and Y.-C. Lin, ``\textit{SDR measurement platform design for FMCW RADAR performance verification},'' in {\em 2017 IEEE Conference on Dependable and Secure Computing}, IEEE, Aug. 2017.
 
 \bibitem{Zeng2019}
-L.~Zeng, C.~Yang, Y.~Zhao, M.~Huang, and C.~Zhi, ``Research on evaluation index system for software defined radar (sdr),'' in {\em 2019 IEEE Radar Conference (RadarConf)}, IEEE, Apr. 2019.
+L.~Zeng, C.~Yang, Y.~Zhao, M.~Huang, and C.~Zhi, ``\textit{Research on Evaluation Index System for Software Defined Radar (SDR)},'' in {\em 2019 IEEE Radar Conference (RadarConf)}, IEEE, Apr. 2019.
 
 \bibitem{Prabaswara2011}
-A.~Prabaswara, A.~Munir, and A.~B. Suksmono, ``Gnu radio based software-defined fmcw radar for weather surveillance application,'' in {\em 2011 6th International Conference on Telecommunication Systems, Services, and Applications (TSSA)}, IEEE, Oct. 2011.
+A.~Prabaswara, A.~Munir, and A.~B. Suksmono, ``\textit{GNU Radio based software-defined FMCW radar for weather surveillance application},'' in {\em 2011 6th International Conference on Telecommunication Systems, Services, and Applications (TSSA)}, IEEE, Oct. 2011.
 
 \bibitem{Skolnik2001}
-M.~I. Skolnik, {\em Introduction to radar systems}.
+M.~I. Skolnik, {\em \textit{Introduction to radar systems}}.
 \newblock McGraw-Hill electrical engineering series, Boston, Mass.: McGraw Hill, third edition~ed., 2001.
 \newblock International edition.
 
 \bibitem{Kingsley1999}
-S.~Kingsley, {\em Understanding radar systems}.
+S.~Kingsley, {\em \textit{Understanding radar systems}}.
 \newblock Mendham, NJ: SciTech Pubishing, 1999.
 \newblock This is a reprinting of the 1992 edition originally published by McGraw-Hill Book company Europe.. - Includes bibliographical references and index.
 
 \bibitem{ONeill2012}
-S.~O'Neill, N.~Dvn, and U.~Command, {\em Electronic Warfare and Radar Systems Engineering Handbook}.
+S.~O'Neill, N.~Dvn, and U.~Command, {\em \textit{Electronic Warfare and Radar Systems Engineering Handbook}}.
 \newblock Military Studies Press, 2012.
 
 \bibitem{Melvin2014}
-W.~L. Melvin, ed., {\em Principles of modern radar}, vol.~3.
+W.~L. Melvin, ed., {\em \textit{Principles of modern radar}}, vol.~3.
 \newblock Edison, NJ: SciTech Publ., 2014.
 
 \bibitem{Scheer2015}
-J.~Scheer, M.~A. Richards, and W.~A. Holm, eds., {\em Principles of modern radar}, vol.~Volume 1.
+J.~Scheer, M.~A. Richards, and W.~A. Holm, eds., {\em \textit{Principles of modern radar}}, vol.~Volume 1.
 \newblock Raleigh, NC: SciTech Pub, reprinted with corrections~ed., 2015.
 \newblock Includes bibliographical references and index.
 
 \bibitem{Jankiraman2018}
-M.~Jankiraman, {\em FMCW radar design}.
+M.~Jankiraman, {\em \textit{FMCW radar design}}.
 \newblock Artech House radar series, Boston: Artech House, 2018.
-\newblock Includes bibliographical references and index.
+\newblock \textit{Includes bibliographical references and index}.
 
 \bibitem{Anisah2018}
 I.~Anisah, H.~Briantoro, A.~Zainudin, and D.~I. Permatasari, ``Implementasi sistem komunikasi nirkabel ofdm berbasis software defined radio (sdr),'' {\em Jurnal Nasional Teknik Elektro dan Teknologi Informasi (JNTETI)}, vol.~7, June 2018.
 
 \bibitem{Gulo2023}
-M.~M. Gulo, I.~G.~P. Astawa, Arifin, Y.~Moegiharto, and H.~Briantoro, ``The joint channel coding and pre-distortion technique on the usrp-based mimo-ofdm system,'' {\em Jurnal RESTI (Rekayasa Sistem dan Teknologi Informasi)}, vol.~7, pp.~930--939, Aug. 2023.
+M.~M. Gulo, I.~G.~P. Astawa, Arifin, Y.~Moegiharto, and H.~Briantoro, ``\textit{The Joint Channel Coding and Pre-Distortion Technique on the USRP-Based MIMO-OFDM System},'' {\em Jurnal RESTI (Rekayasa Sistem dan Teknologi Informasi)}, vol.~7, pp.~930--939, Aug. 2023.
 
 \end{thebibliography}

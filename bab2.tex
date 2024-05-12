@@ -47,15 +47,15 @@ Banyak sekali referensi yang menjadi bagian besar dalam tertulisnya proposal ini
 	
 	7. & \textit{Modified FMCW system for non-contact sensing of human respiration} (2020)
 	& Pramudita, Aloysius Adya;\newline Suratman, Fiky Y.;\newline Arseno, Dharu
-	& - \\ \hline
+	& Dengan melakukan modifikasi pada pendeteksian aktivitas pernafasan lewat pergeseran kecil, khususnya pada pengolahan data fasa setelah filter \textit{Low Pass}. Didapatkan hasil bahwa desain modifikasi mampu mendeteksi waktu dan amplitudo pernafasan, serta lokasi dari target. \\ \hline
 	
 	8. & \textit{FMCW Radar for Noncontact Bridge Structure Displacement Estimation} (2023)
 	& Pramudita, Aloysius Adya;\newline Lin, Ding-Bing;\newline Dhiyani, Azizka Ayu;\newline Ryanu, Harfan Hian;\newline Adiprabowo, Tjahjo;\newline Yudha, Erfansyah Ali
-	& - \\ \hline
+	& Dilakukan implementasi radar FMCW pada frekuensi 24 GHz dengan \textit{bandwidth} 150 MHz untuk mendeteksi pergeseran kecil pada bangunan jembatan. Dengan menggunakan analisis fasa untuk mendapat resolusi yang baik dalam melakukan pendeteksian, didapat hasil bahwa metode berhasil dilakukan dengan kondisi banyak \textit{noise} dan nilai SNR rendah dengan rata rata galat 0.13 mm.\\ \hline
 	
 	9. & \textit{A Novel Scheme of High-Precision Heart Rate Detection With a mm-Wave FMCW Radar} (2023)
-	& Zhou, Min; Liu, Yunxue; Wu, Shie; Wang, Chengyou; Chen, Zekun; Li, Hongfei
-	& - \\ \hline
+	& Zhou, Min;\newline Liu, Yunxue;\newline Wu, Shie;\newline Wang, Chengyou;\newline Chen, Zekun;\newline Li, Hongfei
+	& Penggunaan radar FMCW dengan gelombang milimeter untuk monitor detak jantung telah banyak dilakukan. Sehingga usaha peningkatan akurasi menjadi arah selanjutnya, dengan implementasi algoritma \textit{Variable Mode Extraction} sinyal detak jantung di ambil dan teknik pengukuran frekuensi \textit{Double-CZT} dilakukan. Hasil menunjukkan tingkat akurasi yang meningkat dengan rata rata eror absolut kurang dari 1 bpm, selain itu nilai SNR meningkat sehingga estimasi akurasi detak jantung juga meningkat.\\ \hline
 	\end{longtable}
 \end{center}
 %-----------------------------------------------------------------------------%
@@ -288,9 +288,9 @@ Penggunaan USRP sangat memudahkan proses perancangan prototipe dan pengujian kar
 
 \subsection{\textit{Universal Software Radio Peripheral}}
 
-\textit{Universal Software Radio Peripheral} atau yang sering disingkat dengan USRP merupakan \textit{platform} yang digunakan dalam mengimplementasikan SDR. Di dalam USRP terdapat \textit{Field Programmable Gate Array} atau FPGA yang merupakan suatu \textit{Integrated Circuit} yang dapat diprogram. Pada hal ini, USRP adalah perangkat keras yang dapat menerima dan mentransmisikan gelombang radio.
+\textit{Universal Software Radio Peripheral} sering disingkat USRP merupakan \textit{platform} yang digunakan dalam mengimplementasikan SDR. Di dalam USRP terdapat \textit{Field Programmable Gate Array} atau FPGA yang merupakan suatu \textit{Integrated Circuit} yang dapat diprogram. Pada hal ini, USRP adalah perangkat keras yang dapat menerima dan mentransmisikan gelombang radio.
 
-Kemampuannya untuk berinteraksi dengan gelombang radio inilah, ditambah pula dengan kemudahannya untuk melakukan pemrograman terhadap USRP ini yang membuat alat ini terkenal di kalangan akademisi dan peneliti. Karena pelaksanaan dan pengembangan prototipe menjadi lebih mudah dengan menghapuskan keperluan pengadaan komponen dalam prototipe.
+Kemampuannya untuk berinteraksi dengan gelombang radio inilah, ditambah dengan kemudahannya untuk melakukan pemrograman terhadap USRP yang membuat alat ini terkenal di kalangan akademisi dan peneliti. Karena pengembangan prototipe menjadi lebih mudah tanpa perlu pengadaan komponen.
 
 \begin{center}
 	\begin{figure}[h!]
@@ -299,7 +299,7 @@ Kemampuannya untuk berinteraksi dengan gelombang radio inilah, ditambah pula den
 			\caption{USRP B210 dengan \textit{enclosure}}
 		\end{subfigure}
 		\begin{subfigure}[b]{0.5\linewidth}
-			\includegraphics[width=7.3cm]{pics/bab2/B210Board.jpg}
+			\includegraphics[width=\linewidth]{pics/bab2/B210Board.jpg}
 			\caption{\textit{Board} USRP B210}
 		\end{subfigure}
 		\caption{USRP B210}
@@ -307,7 +307,7 @@ Kemampuannya untuk berinteraksi dengan gelombang radio inilah, ditambah pula den
 	\end{figure}
 \end{center}
 
-Ada beberapa USRP yang ada di pasar, salah satu yang cukup seringkali digunakan adalah USRP buatan dari \textit{Ettus}. Salah satu serinya adalah B210 seperti pada gambar \ref{pic:gambarusrp}. Penggunaan seri ini tidak tanpa alasan, karena seperti yang dapat dilihat pada tabel \ref{tab:spekb210}, spesifikasi USRP ini cukup memenuhi kebutuhan riset pada frekuensi yang sering di gunakan, dengan kapabilitas pengolahan sampel yang baik.
+Ada beberapa USRP di pasaran, salah satunya adalah USRP buatan dari \textit{Ettus} dengan seri B210 seperti pada gambar \ref{pic:gambarusrp}. Penggunaan seri ini dikarenakan seperti yang dapat dilihat pada tabel spesifikasi \ref{tab:spekb210}, USRP ini cukup memenuhi kebutuhan riset dengan kapabilitas pengolahan sampel yang baik.
 
 \begin{longtable}{|c|c|c|c|}
 	\caption{Spesifikasi \textit{USRP} B210}
