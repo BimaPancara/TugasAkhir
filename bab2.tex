@@ -16,11 +16,9 @@ Banyak sekali referensi yang menjadi bagian besar dalam tertulisnya proposal ini
 	\begin{longtable}{|>{\centering\arraybackslash}p{0.6cm}|p{4cm}|p{4cm}|p{4cm}|}
 	\caption{Penelitian Terdahulu}
 	\label{tab:PenelitianDulu}\\
-	
 	\hline
 	\textbf{No.} & \textbf{Judul} & \textbf{Penulis} & \textbf{Hasil}\\
 	\hline
-	
 	1.& \textit{Respiratory and Heart Rate Detection Using Continuous-Wave Radar Testbed Implemented in GNU Radio } (2022)
 	& Lenz, Isabella;\newline Holtom, Jacob;\newline Herschfelt, Andrew;\newline Rong, Yu;\newline Bliss, Daniel 
 	& Penggunaan radar CW untuk memonitor detak jantung dan pernapasan menggunakan GNURadio dan USRP X310. Proses pengolahan data secara langsung dapat dilakukan dengan hasil estimasi di dalam jarak 5 BPM dibanding dengan alat monitor detak jantung. \\ \hline
@@ -187,25 +185,50 @@ Oleh karena itu, salah satu karakteristik dari radar FMCW adalah bahwa jarak pen
 Persamaan \ref{eq:PersFMCW} menunjukkan jarak (R) dengan objek yang terdeteksi. Yang mana $\Delta{t}$ adalah waktu tunda dalam detik, $\Delta{f}$ merupakan pergeseran frekuensi terukur dalam Hertz, dengan d(f)/d(t) sebagai pergeseran frekuensi dalam suatu periode. 
 
 \begin{equation}
-	R_{max} = \frac{F_{s} c}{2 K}
+	R_{max} = \frac{F_{s} c}{2 \mu}
 	\label{eq:MaxRange}
 \end{equation}
 
-Persamaan \ref{eq:MaxRange} menunjukkan jarak maksimum yang dapat di deteksi oleh radar FMCW. $F_{s}$ merupakan frekuensi \textit{sampling}, dan K adalah tingkat kenaikan frekuensi pada suatu periode yang dapat dihitung dengan persamaan \ref{eq:slope} yaitu mengurangi nilai maksimum frekuensi dengan nilai minimumnya, lalu membaginya dengan waktu \textit{sweep} (\textit{chirp}).
+Persamaan \ref{eq:MaxRange} menunjukkan jarak maksimum yang dapat di deteksi oleh radar FMCW. $F_{s}$ merupakan frekuensi \textit{sampling}, dan $\mu$ adalah tingkat kenaikan frekuensi pada suatu periode yang dapat dihitung dengan persamaan \ref{eq:chirpRate} yaitu membagi nilai \textit{bandwidth} dengan waktu \textit{sweep} (\textit{chirp}) bersimbol $T_{c}$.
 
 \begin{equation}
-	K = \frac{f_{atas} - f_{bawah}}{T_{c}}
-	\label{eq:slope}
+	\mu = \frac{\textit{Bandwidth}}{T_{c}}
+	\label{eq:chirpRate}
+\end{equation}
+
+Dengan nilai $T_{c}$ sebagai berikut
+
+\begin{equation}
+	T_{c} = \frac{\lambda}{4 \cdot V_{max}}
+	\label{eq:chirpTime}
 \end{equation}
 
 Selain itu, salah satu faktor penting yang perlu diperhitungkan dalam perancangan radar FMCW adalah resolusi jarak. Resolusi jarak sendiri merupakan kemampuan dari suatu radar dalam membedakan dua buah objek yang berdekatan.
 
 \begin{equation}
-	\Delta{R} = \frac{c}{2 BW}
+	R_{res} = \frac{c}{2 BW}
 	\label{eq:RangeRes}
 \end{equation}
 
-Persamaan \ref{eq:RangeRes} menjelaskan bahwa dengan membagi kecepatan cahaya dengan dua kali lebar pita frekuensi (\textit{Bandwidth}), maka resolusi jarak akan didapatkan.
+Persamaan \ref{eq:RangeRes} menjelaskan bahwa dengan membagi kecepatan cahaya dengan dua kali lebar pita frekuensi (\textit{Bandwidth}), maka resolusi jarak akan didapatkan. Sedangkan nilai kecepatan maksimum dapat dihitung dengan persamaan \ref{eq:maxVelo} yang melakukan pembagian panjang gelombang frekuensi dipilih dengan 4 dikali \textit{sweep time}.
+\begin{equation}
+	v_{max} = \frac{\lambda}{4 \cdot T_{c}}
+	\label{eq:maxVelo}
+\end{equation}
+
+Sehingga nilai resolusi kecepatan dapat dihitung dengan persamaan \ref{eq:resVelo}, yang membagi panjang gelombang dengan 2 kali durasi \textit{frame} ($T_{f}$).
+
+\begin{equation}
+	V_{res} = \frac{\lambda}{2 \cdot T_{f}}
+	\label{eq:resVelo}
+\end{equation}
+
+$T_{f}$ sendiri adalah durasi dari \textit{frame} yang terdiri dari N jumlah dari \textit{chirp} secara terus menerus, nilainya dapat dicari pada persamaan \ref{eq:frameDuration}.
+
+\begin{equation}
+	T_{f} = N \cdot T_{c} = \frac{\lambda}{2 \cdot V_{res}}
+	\label{eq:frameDuration}
+\end{equation}
 
 \subsection{\textit{Linear Frequency Modulated Continuous Wave Radar}}
 \textit{Linear Frequency Modulated}, yang juga sering disingkat sebagai LFM adalah teknik pengolahan sinyal yang dilakukan dengan menyapu frekuensi dari bawah ke atas (\textit{Up-Chirp}) atau dari atas ke bawah (\textit{Down-Chirp}). Dengan $f_{0}$ sebagai frekuensi tengah, dan dilakukan pada \textit{bandwidth} yang telah ditentukan. Teknik ini akan membantu pencapaian radar dengan resolusi yang lebih tinggi karena \textit{bandwidth} yang dicapai akan menjadi lebih tinggi.
@@ -231,7 +254,7 @@ Selain gelombang LFM segitiga, ada pula yang berbentuk seperti gigi gergaji (\te
 	\end{center}
 \end{figure}
 
-Seluruh teknik tersebut memiliki keunggulannya masing masing. Keunggulan tersebut didapat karena proses analisis yang berbeda. Pada LFM berbentuk gigi gergaji, maka hanya objek diam saja yang dapat dideteksi jarak dan kecepatannya seperti pada gambar \ref{pic:lfmDetail}. Namun bila menggunakan LFM berbentuk segitiga, maka objek yang bergerak dapat dideteksi jarak dan kecepatannya dalam waktu yang bersamaan.
+Seluruh teknik tersebut memiliki keunggulannya masing-masing. Keunggulan tersebut didapat karena proses analisis yang berbeda. Pada LFM berbentuk gigi gergaji, maka hanya objek diam saja yang dapat dideteksi jarak dan kecepatannya seperti pada gambar \ref{pic:lfmDetail}. Namun bila menggunakan LFM berbentuk segitiga, maka objek yang bergerak dapat dideteksi jarak dan kecepatannya dalam waktu yang bersamaan.
 
 \begin{figure}
 	\begin{center}
@@ -258,7 +281,7 @@ Pada persamaan tersebut, terdapat c sebagai kecepatan cahaya, $f_{b}$ adalah \te
 \end{equation}
 
 \subsection{Perhitungan \textit{Error}}
-Penghitungan galat dari radar yang telah didesain dapat dilakukan dengan menguji keakurasian dari hasil deteksi. Hasil akurasi deteksi radar dapat diuji dengan menggunakan \textit{Root Mean Square Error} (RMS E) dari \textit{Signal to Noise Ratio}, sesuai persamaan \ref{eq:sigmaRN}.
+Penghitungan galat dari radar yang telah di desain dapat dilakukan dengan menguji keakurasian dari hasil deteksi. Hasil akurasi deteksi radar dapat diuji dengan menggunakan \textit{Root Mean Square Error} (RMS E) dari \textit{Signal to Noise Ratio}, sesuai persamaan \ref{eq:sigmaRN}.
 
 \begin{equation}
 	\sigma_{RN} = \frac{RMS E}{\sqrt{2 SNR_{L}}}
@@ -363,7 +386,7 @@ Gambar \ref{pic:contohBlokGRC} adalah contoh blok diagram sistem (\textit{flowgr
 \begin{figure}
 	\begin{center}
 		\includegraphics[scale=0.4]{pics/bab2/contohRunGRC.png} 
-		\caption[Hasil Desain Sistem GNURadio]{Hasil Desain Sistem GNURadio}
+		\caption[Contoh Hasil Desain Sistem GNURadio]{Contoh Hasil Desain Sistem GNURadio}
 		\label{pic:contohRunGRC}
 	\end{center}
 \end{figure}

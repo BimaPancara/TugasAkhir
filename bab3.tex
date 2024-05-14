@@ -62,54 +62,62 @@ Pada tahap ini, dilakukan perancangan tentang penelitian yang diangkat, dalam ko
 		No. & Spesifikasi 					& Keterangan\\\hline
 		1.  & USRP 							& B210\\
 		2.  & \textit{Center Frequency}  	& 3 GHz \\
-		3.  & \textit{Bandwidth} 			& 5 MHz \\
-		4.  & Jarak Maksimum 				& 4500 m \\
-		5.  & Resolusi Jarak 				& 30 m \\
-		6.  & Kecepatan Maksimum			& 5000 $m/s$ \\
-		7.  & Resolusi Kecepatan 			& 10 $m/s$\\
+		3.  & \textit{Bandwidth} 			& 50 MHz \\
+		4.  & Jarak Maksimum 				& 150 km \\
+		5.  & Resolusi Jarak 				& 3 m \\
+		6.  & Kecepatan Maksimum			& 15 $m/s$ \\
+		7.  & Resolusi Kecepatan 			& 1 $m/s$\\
 		\hline
 	\end{longtable}
 \end{center}
 
 \begin{itemize}
-	\item Menghitung resolusi jarak berdasarkan persamaan \ref{eq:RangeRes} dan dengan menentukan \textit{bandwidth} bernilai 5 MHz, maka.
-		\begin{align*}
-		\Delta{R} &= \frac{c}{2 \times BW} \\
-		\Delta{R} &= \frac{3 \cdot 10^{8}}{2 \cdot 5\times10^{6}}\\
-		\Delta{R} &= \frac{3 \cdot 10^{8}}{10^{7}}\\
-		\Delta{R} &= 30 m
-		\end{align*}
-	\item Menghitung jarak maksimum yang dapat dideteksi oleh radar digunakanlah persamaan \ref{eq:MaxRange}, namun sebelumnya harus ditentukan terlebih dahulu nilai K, yang merupakan tingkat kenaikan frekuensi pada suatu periode sesuai dengan persamaan \ref{eq:slope}
-		\begin{align*}
-		K &= \frac{f_{atas} - f_{bawah}}{T_{c}}\\
-		K &= \frac{3.005 \cdot 10^{9} - 3 \cdot 10^{9}}{5 \cdot 10^{-6}}\\
-		K &= 1 \cdot 10^{12} s
-		\end{align*}
-	Sehingga jarak maksimum yang didapat adalah.
-		\begin{align*}
-		R_{max} &= \frac{F_{s} c}{2 K}\\
-		R_{max} &= \frac{30 \cdot 10^{6} \times 3 \cdot 10^{8}}{2 \times 10^{12}}\\			R_{max} &= \frac{9 \cdot 10^{15}}{2 \cdot 10^{12}}\\
-		R_{max} &= 4500 m
-		\end{align*}
-	\item Kecepatan maksimum dapat dihitung dengan persamaan.
-		\begin{equation}
-		v_{max} = \frac{\lambda}{4 T_{c}}
-		\end{equation}
-	Sehingga, dengan $T_{c}$ $5 \cdot 10^{-6}$ dengan $\lambda$ bernilai 0.1 m maka.
+	\item Hitung panjang gelombang ($\lambda$) dari frekuensi tengah yang sudah ditentukan yaitu 3 GHz.
 	\begin{align*}
-		v_{max} &= \frac{0.1}{4 \times 5 \cdot 10^{-6}}\\
-		v_{max} &= 5000 m/s
+		\lambda &= \frac{c}{F_{c}}\\
+		\lambda &= \frac{3 \cdot 10^{8}}{3 \cdot 10^{9}}\\
+		\lambda &= 0.1 m
 	\end{align*}
-	\item Resolusi kecepatan dapat dihitung dengan persamaan.
-	\begin{equation}
-		\Delta{v} = \frac{\lambda}{2 T_{f}}
-	\end{equation}
-	Dengan $T_{f}$ sebagai durasi \textit{frame} bernilai 0.005 maka.
+
+	\item Menghitung resolusi jarak berdasarkan persamaan \ref{eq:RangeRes} dan dengan menentukan \textit{bandwidth} bernilai 50 MHz, maka.
+		\begin{align*}
+			R_{res} &= \frac{c}{2 BW} \\
+			R_{res} &= \frac{3 \cdot 10^{8}}{2 \cdot 50 MHz}\\
+			R_{res} &= 3 m
+		\end{align*}
+	\item Menghitung jarak maksimum yang dapat dideteksi oleh radar digunakanlah persamaan \ref{eq:MaxRange}, namun sebelumnya harus ditentukan terlebih dahulu nilai $\mu$, yang merupakan tingkat kenaikan frekuensi pada suatu periode sesuai dengan persamaan \ref{eq:chirpRate}, dengan nilai $T_{c}$ sesuai persamaan \ref{eq:chirpTime} dan nilai kecepatan maksimum ditentukan bernilai 15 m/s, maka.
+	
 	\begin{align*}
-		\Delta{v} &= \frac{\lambda}{2 T_{f}}\\
-		\Delta{v} &= \frac{0.1}{2 \times 0.005}\\
-		\Delta{v} &= 10 m/s
+		T_{c} &= \frac{\lambda}{4 \cdot V_{max}}\\
+		T_{c} &= \frac{0.1}{4 \cdot 15}\\
+		T_{c} &= 0.001667
 	\end{align*}
+
+	\item 
+	Sehingga nilai $\mu$ dapat dihitung menjadi.
+
+		\begin{align*}
+		\mu &= \frac{\textit{Bandwidth}}{T_{c}}\\
+		\mu &= \frac{\textit{50 MHz}}{0.001667}\\
+		\mu &= 30000 MHz/s
+		\end{align*}
+
+	\item 	
+	Dengan jarak maksimum yang didapat adalah.
+		\begin{align*}
+		R_{max} &= \frac{F_{s} \cdot c}{2 \cdot \mu}\\
+		R_{max} &= \frac{30 \cdot 10^{6} \cdot 3 \cdot 10^{8}}{2 \cdot 30000}\\
+		R_{max} &= 150 m
+		\end{align*}
+
+	\item 
+	Dengan $T_{f}$ sebagai durasi \textit{frame} bernilai 0.05 s maka resolusi kecepatannya.
+		\begin{align*}
+			V_{res} &= \frac{\lambda}{2 \cdot T_{f}}\\
+			V_{res} &= \frac{0.1}{2 \cdot 0.05}\\
+			V_{res} &= 1 m/s
+		\end{align*}
+
 \end{itemize}
 
 \section{Implementasi Sistem}
@@ -123,20 +131,30 @@ Implementasi sistem akan dilaksanakan pada beberapa perangkat, mulai dari laptop
 		\item \textit{Processor} : AMD Ryzen 7 6800H dengan Radeon Graphics 3.20 GHz
 		\item \textit{Memory} : 8,00 GB (7,19 GB \textit{usable})
 	\end{itemize}
-\end{enumerate}
 
-\begin{enumerate}
 	\item Perangkat \textit{Software Defined Radio} :
+	\begin{figure}
+		\begin{center}
+			\includegraphics[scale=0.06]{pics/bab3/usrp2.jpg}
+			\caption{Alat USRP B210}
+			\label{img:logPeriodic}
+		\end{center}
+	\end{figure}
 	\begin{itemize}
 		\item Tipe : USRP B210 
 		\item Jarak Frekuensi : 70 MHz - 6 GHz 
 	\end{itemize}
-\end{enumerate}
 
-\begin{enumerate}
 	\item Antena \textit{Log-periodic} :
+	\begin{figure}
+		\begin{center}
+			\includegraphics[scale=0.05]{pics/bab3/logPeriodic.jpg}
+			\caption{Antena \textit{Log Periodic} Pengujian}
+			\label{img:usrpBoard}
+		\end{center}
+	\end{figure}
 	\begin{itemize}
-		\item Frekuensi : 800 M - 6G 
+		\item Frekuensi : 800 MHz - 6GHz 
 		\item Pola Radiasi : \textit{Directional}
 		\item \textit{Gain} : 5.2 - 6.3 dB
 	\end{itemize}
@@ -158,14 +176,14 @@ Pengujian dilakukan dengan menggunakan kendaraan roda empat sebagai objek yang a
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[scale=0.5]{pics/bab3/skema.png}
+		\includegraphics[scale=0.4]{pics/bab3/skema.png}
 		\caption{Skema Penelitian}
 		\label{img:skema}
 	\end{center}
 \end{figure}
 
 \section{Konfigurasi Pengujian}
-Konfigurasi pengujian dilakukan sesuai dengan gambar \ref{img:skema}. Terdapat satu buah perangkat laptop yang terhubung dengan dua buah USRP, masing masing USRP terhubung dengan antena \textit{Log-periodic}. USRP 1 berperan sebagai \textit{transmitter} sedangkan USRP 2 berperan sebagai \textit{receiver}.
+Konfigurasi pengujian dilakukan sesuai dengan gambar \ref{img:skema}. Terdapat satu buah perangkat laptop yang terhubung dengan dua buah USRP, masing-masing USRP terhubung dengan antena \textit{Log-periodic}. USRP 1 berperan sebagai \textit{transmitter} sedangkan USRP 2 berperan sebagai \textit{receiver}.
 
 \begin{figure}
 	\begin{center}
