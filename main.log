@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  14 MAY 2024 15:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  14 MAY 2024 19:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -962,7 +962,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
@@ -1010,7 +1010,7 @@ BAB I.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/bab1/AplikasiRadar.png, id=327, 425.1885pt x 125.268pt>
+<pics/bab1/AplikasiRadar.png, id=330, 425.1885pt x 125.268pt>
 File: pics/bab1/AplikasiRadar.png Graphic file (type png)
 <use pics/bab1/AplikasiRadar.png>
 Package pdftex.def Info: pics/bab1/AplikasiRadar.png  used on input line 13.
@@ -1062,8 +1062,18 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [2]
+Underfull \hbox (badness 1521) in paragraph at lines 48--49
+[]\OT1/ptm/m/n/12 Untuk menge-tahui tingkat keakurasian pen-de-teksi, es-ti-masi jarak, dan
+ []
+
+
 Underfull \hbox (badness 1540) in paragraph at lines 57--58
 []\OT1/ptm/m/n/12 Pengujian sis-tem den-gan meng-gu-nakan USRP B210 un-tuk melakukan
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 69--70
+[]\OT1/ptm/m/n/12 Menguji keakurasian dari sis-tem FMCW Radar lewat es-ti-masi jarak,
  []
 
 
@@ -1825,7 +1835,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [9]
-<pics/bab2/skemaradar.png, id=403, 764.8575pt x 289.08pt>
+<pics/bab2/skemaradar.png, id=406, 764.8575pt x 289.08pt>
 File: pics/bab2/skemaradar.png Graphic file (type png)
 <use pics/bab2/skemaradar.png>
 Package pdftex.def Info: pics/bab2/skemaradar.png  used on input line 80.
@@ -1835,7 +1845,7 @@ Underfull \hbox (badness 3271) in paragraph at lines 86--87
 \OT1/ptm/m/n/12 kom-po-nen ini memi-liki per-an-nya sendiri se-hingga proses pen-gi-r-i-man dan
  []
 
-<pics/bab2/blokdiagram.png, id=407, 986.68625pt x 714.67pt>
+<pics/bab2/blokdiagram.png, id=410, 986.68625pt x 714.67pt>
 File: pics/bab2/blokdiagram.png Graphic file (type png)
 <use pics/bab2/blokdiagram.png>
 Package pdftex.def Info: pics/bab2/blokdiagram.png  used on input line 90.
@@ -1860,12 +1870,12 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [11 <./pics/bab2/blokDiagram.png>]
-<pics/bab2/rcsBentuk.png, id=429, 778.91pt x 464.73625pt>
+<pics/bab2/rcsBentuk.png, id=433, 778.91pt x 464.73625pt>
 File: pics/bab2/rcsBentuk.png Graphic file (type png)
 <use pics/bab2/rcsBentuk.png>
 Package pdftex.def Info: pics/bab2/rcsBentuk.png  used on input line 127.
 (pdftex.def)             Requested size: 199.1693pt x 118.82883pt.
-<pics/bab2/rcsPola.png, id=430, 533.995pt x 325.215pt>
+<pics/bab2/rcsPola.png, id=434, 533.995pt x 325.215pt>
 File: pics/bab2/rcsPola.png Graphic file (type png)
 <use pics/bab2/rcsPola.png>
 Package pdftex.def Info: pics/bab2/rcsPola.png  used on input line 131.
@@ -1880,13 +1890,13 @@ Underfull \hbox (badness 2856) in paragraph at lines 140--141
 []\OT1/ptm/m/n/12 Untuk men-da-pat su-atu kes-im-pu-lan dari sinyal radar, maka dibu-tuhkan
  []
 
-<pics/bab2/radarwaveform.png, id=433, 519.44063pt x 258.21469pt>
+<pics/bab2/radarwaveform.png, id=438, 519.44063pt x 258.21469pt>
 File: pics/bab2/radarwaveform.png Graphic file (type png)
 <use pics/bab2/radarwaveform.png>
-Package pdftex.def Info: pics/bab2/radarwaveform.png  used on input line 145.
+Package pdftex.def Info: pics/bab2/radarwaveform.png  used on input line 148.
 (pdftex.def)             Requested size: 415.55307pt x 206.57202pt.
 
-Overfull \hbox (17.21448pt too wide) in paragraph at lines 145--146
+Overfull \hbox (17.21448pt too wide) in paragraph at lines 148--149
  [] 
  []
 
@@ -1898,10 +1908,10 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [12 <./pics/bab2/rcsBentuk.png> <./pics/bab2/rcsPola.png>]
-<pics/bab2/blokDiagramFMCW.png, id=450, 1267.73625pt x 429.605pt>
+<pics/bab2/blokDiagramFMCW.png, id=453, 1267.73625pt x 429.605pt>
 File: pics/bab2/blokDiagramFMCW.png Graphic file (type png)
 <use pics/bab2/blokDiagramFMCW.png>
-Package pdftex.def Info: pics/bab2/blokDiagramFMCW.png  used on input line 162.
+Package pdftex.def Info: pics/bab2/blokDiagramFMCW.png  used on input line 165.
 (pdftex.def)             Requested size: 380.3238pt x 128.88249pt.
 
 
@@ -1912,19 +1922,19 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [13 <./pics/bab2/radarwaveform.png>]
-Underfull \hbox (badness 2922) in paragraph at lines 168--169
+Underfull \hbox (badness 2922) in paragraph at lines 171--172
 []\OT1/ptm/m/n/12 Dari blok di-a-gram terse-but, da-pat dil-i-hat bahwa sinyal yang di-ter-ima
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 168--169
+Underfull \hbox (badness 1097) in paragraph at lines 171--172
 \OT1/ptm/m/n/12 dise-babkan oleh jarak gelom-bang berg-erak, maka akan ter-de-teksi perbe-daan
  []
 
-<pics/bab2/txRxWave.jpg, id=458, 903.375pt x 601.24625pt>
+<pics/bab2/txRxWave.jpg, id=461, 903.375pt x 601.24625pt>
 File: pics/bab2/txRxWave.jpg Graphic file (type jpg)
 <use pics/bab2/txRxWave.jpg>
-Package pdftex.def Info: pics/bab2/txRxWave.jpg  used on input line 172.
+Package pdftex.def Info: pics/bab2/txRxWave.jpg  used on input line 175.
 (pdftex.def)             Requested size: 271.01459pt x 180.37526pt.
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -1934,7 +1944,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [14 <./pics/bab2/blokDiagramFMCW.png> <./pics/bab2/txRxWave.jpg>]
-Underfull \hbox (badness 2626) in paragraph at lines 206--207
+Underfull \hbox (badness 2626) in paragraph at lines 209--210
 []\OT1/ptm/m/n/12 Selain itu, salah satu fak-tor pent-ing yang perlu diper-hi-tungkan dalam
  []
 
@@ -1946,24 +1956,24 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [15]
-Underfull \hbox (badness 2941) in paragraph at lines 236--237
+Underfull \hbox (badness 2941) in paragraph at lines 239--240
 []\OT1/ptm/m/n/12 Salah satu je-nis gelom-bang LFM adalah \OT1/ptm/m/it/12 Lin-ear Tri-an-gu-lar Fre-quency
  []
 
-<pics/bab2/lfmTriangular.png, id=484, 595.22375pt x 234.8775pt>
+<pics/bab2/lfmTriangular.png, id=487, 595.22375pt x 234.8775pt>
 File: pics/bab2/lfmTriangular.png Graphic file (type png)
 <use pics/bab2/lfmTriangular.png>
-Package pdftex.def Info: pics/bab2/lfmTriangular.png  used on input line 240.
+Package pdftex.def Info: pics/bab2/lfmTriangular.png  used on input line 243.
 (pdftex.def)             Requested size: 416.6538pt x 164.41312pt.
 
-Overfull \hbox (18.3152pt too wide) in paragraph at lines 240--241
+Overfull \hbox (18.3152pt too wide) in paragraph at lines 243--244
  [] 
  []
 
-<pics/bab2/lfmSawtooth.png, id=488, 602.85225pt x 239.6955pt>
+<pics/bab2/lfmSawtooth.png, id=491, 602.85225pt x 239.6955pt>
 File: pics/bab2/lfmSawtooth.png Graphic file (type png)
 <use pics/bab2/lfmSawtooth.png>
-Package pdftex.def Info: pics/bab2/lfmSawtooth.png  used on input line 251.
+Package pdftex.def Info: pics/bab2/lfmSawtooth.png  used on input line 254.
 (pdftex.def)             Requested size: 391.84932pt x 155.80022pt.
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -1973,13 +1983,13 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [16 <./pics/bab2/lfmTriangular.png> <./pics/bab2/lfmSawtooth.png>]
-<pics/bab2/lfmDetail.png, id=499, 642.60075pt x 214.401pt>
+<pics/bab2/lfmDetail.png, id=502, 642.60075pt x 214.401pt>
 File: pics/bab2/lfmDetail.png Graphic file (type png)
 <use pics/bab2/lfmDetail.png>
-Package pdftex.def Info: pics/bab2/lfmDetail.png  used on input line 261.
+Package pdftex.def Info: pics/bab2/lfmDetail.png  used on input line 264.
 (pdftex.def)             Requested size: 417.68553pt x 139.359pt.
 
-Overfull \hbox (19.34694pt too wide) in paragraph at lines 261--262
+Overfull \hbox (19.34694pt too wide) in paragraph at lines 264--265
  [] 
  []
 
@@ -1991,14 +2001,42 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [17 <./pics/bab2/LFMDetail.png>]
-Underfull \hbox (badness 3281) in paragraph at lines 308--309
+Underfull \hbox (badness 3281) in paragraph at lines 297--298
 []\OT1/ptm/m/n/12 Dalam im-ple-men-tasinya, SDR mem-bu-tuhkan \OT1/ptm/m/it/12 Uni-ver-sal Soft-ware Ra-dio
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 314--315
+Underfull \hbox (badness 1975) in paragraph at lines 303--304
 []\OT1/ptm/m/it/12 Universal Soft-ware Ra-dio Pe-riph-eral \OT1/ptm/m/n/12 ser-ing dis-ingkat USRP meru-pakan
  []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 305--306
+\OT1/ptm/m/n/12 den-gan ke-mu-da-han-nya un-tuk melakukan pem-ro-gra-man ter-hadap USRP yang
+ []
+
+
+Underfull \hbox (badness 3601) in paragraph at lines 305--306
+\OT1/ptm/m/n/12 mem-buat alat ini terke-nal di kalan-gan akademisi dan peneliti. Karena
+ []
+
+<pics/bab2/B210.jpg, id=517, 474.95168pt x 269.01843pt>
+File: pics/bab2/B210.jpg Graphic file (type jpg)
+<use pics/bab2/B210.jpg>
+Package pdftex.def Info: pics/bab2/B210.jpg  used on input line 310.
+(pdftex.def)             Requested size: 199.1693pt x 112.81456pt.
+<pics/bab2/B210Board.jpg, id=518, 2979.13pt x 2453.165pt>
+File: pics/bab2/B210Board.jpg Graphic file (type jpg)
+<use pics/bab2/B210Board.jpg>
+Package pdftex.def Info: pics/bab2/B210Board.jpg  used on input line 314.
+(pdftex.def)             Requested size: 199.1693pt x 163.99062pt.
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 309--317
+[][] [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2008,35 +2046,20 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [18]
-Underfull \hbox (badness 1231) in paragraph at lines 316--317
-\OT1/ptm/m/n/12 den-gan ke-mu-da-han-nya un-tuk melakukan pem-ro-gra-man ter-hadap USRP yang
- []
-
-
-Underfull \hbox (badness 3601) in paragraph at lines 316--317
-\OT1/ptm/m/n/12 mem-buat alat ini terke-nal di kalan-gan akademisi dan peneliti. Karena
- []
-
-<pics/bab2/B210.jpg, id=527, 474.95168pt x 269.01843pt>
-File: pics/bab2/B210.jpg Graphic file (type jpg)
-<use pics/bab2/B210.jpg>
-Package pdftex.def Info: pics/bab2/B210.jpg  used on input line 321.
-(pdftex.def)             Requested size: 199.1693pt x 112.81456pt.
-<pics/bab2/B210Board.jpg, id=528, 2979.13pt x 2453.165pt>
-File: pics/bab2/B210Board.jpg Graphic file (type jpg)
-<use pics/bab2/B210Board.jpg>
-Package pdftex.def Info: pics/bab2/B210Board.jpg  used on input line 325.
-(pdftex.def)             Requested size: 199.1693pt x 163.99062pt.
-
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 320--328
-[][] [] 
- []
-
-
-Overfull \hbox (17.35826pt too wide) in alignment at lines 335--361
+Overfull \hbox (17.35826pt too wide) in alignment at lines 324--350
  [] [] [] [] 
  []
 
+
+Underfull \hbox (badness 4913) in paragraph at lines 352--353
+[]\OT1/ptm/m/n/12 Dengan spe-si-fikasi terse-but, maka USRP B210 memi-liki ke-mam-puan
+ []
+
+<pics/bab2/GNU.png, id=530, 702.625pt x 200.75pt>
+File: pics/bab2/GNU.png Graphic file (type png)
+<use pics/bab2/GNU.png>
+Package pdftex.def Info: pics/bab2/GNU.png  used on input line 358.
+(pdftex.def)             Requested size: 351.31163pt x 100.37474pt.
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2045,39 +2068,21 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [19 <./pics/bab2/B210.jpg> <./pics/bab2/B210Board.jpg>]
-Underfull \hbox (badness 4913) in paragraph at lines 363--364
-[]\OT1/ptm/m/n/12 Dengan spe-si-fikasi terse-but, maka USRP B210 memi-liki ke-mam-puan
- []
-
-<pics/bab2/GNU.png, id=535, 702.625pt x 200.75pt>
-File: pics/bab2/GNU.png Graphic file (type png)
-<use pics/bab2/GNU.png>
-Package pdftex.def Info: pics/bab2/GNU.png  used on input line 369.
-(pdftex.def)             Requested size: 351.31163pt x 100.37474pt.
 <pics/bab2/blokDiagramGRC.png, id=536, 1155.1155pt x 613.0905pt>
 File: pics/bab2/blokDiagramGRC.png Graphic file (type png)
 <use pics/bab2/blokDiagramGRC.png>
-Package pdftex.def Info: pics/bab2/blokDiagramGRC.png  used on input line 378.
+Package pdftex.def Info: pics/bab2/blokDiagramGRC.png  used on input line 367.
 (pdftex.def)             Requested size: 404.29648pt x 214.58488pt.
 
-Overfull \hbox (5.95789pt too wide) in paragraph at lines 378--379
+Overfull \hbox (5.95789pt too wide) in paragraph at lines 367--368
  [] 
  []
 
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
-
-[20 <./pics/bab2/GNU.png>]
-<pics/bab2/contohRunGRC.png, id=545, 720.291pt x 611.28375pt>
+<pics/bab2/contohRunGRC.png, id=539, 720.291pt x 611.28375pt>
 File: pics/bab2/contohRunGRC.png Graphic file (type png)
 <use pics/bab2/contohRunGRC.png>
-Package pdftex.def Info: pics/bab2/contohRunGRC.png  used on input line 388.
+Package pdftex.def Info: pics/bab2/contohRunGRC.png  used on input line 377.
 (pdftex.def)             Requested size: 288.11128pt x 244.50917pt.
-)
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2085,7 +2090,15 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[21 <./pics/bab2/blokDiagramGRC.png> <./pics/bab2/contohRunGRC.png>]
+[20 <./pics/bab2/GNU.png> <./pics/bab2/blokDiagramGRC.png>])
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
+
+[21 <./pics/bab2/contohRunGRC.png>]
 \openout2 = `bab3.aux'.
 
  (./bab3.tex
@@ -2094,7 +2107,7 @@ BAB III.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/bab3/flowchart2.png, id=552, 493.845pt x 878.28125pt>
+<pics/bab3/flowchart2.png, id=551, 493.845pt x 878.28125pt>
 File: pics/bab3/flowchart2.png Graphic file (type png)
 <use pics/bab3/flowchart2.png>
 Package pdftex.def Info: pics/bab3/flowchart2.png  used on input line 11.
@@ -2113,7 +2126,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [23]
-Underfull \hbox (badness 4779) in paragraph at lines 82--83
+Underfull \hbox (badness 4779) in paragraph at lines 84--85
 []\OT1/ptm/m/n/12 Menghitung res-o-lusi jarak berdasarkan per-samaan []2.10[] dan den-gan
  []
 
@@ -2133,35 +2146,35 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [25]
+<pics/bab3/laptop.jpg, id=576, 1106.63437pt x 877.77937pt>
+File: pics/bab3/laptop.jpg Graphic file (type jpg)
+<use pics/bab3/laptop.jpg>
+Package pdftex.def Info: pics/bab3/laptop.jpg  used on input line 134.
+(pdftex.def)             Requested size: 221.32295pt x 175.55276pt.
 <pics/bab3/usrp2.jpg, id=577, 4175.6pt x 3131.7pt>
 File: pics/bab3/usrp2.jpg Graphic file (type jpg)
 <use pics/bab3/usrp2.jpg>
-Package pdftex.def Info: pics/bab3/usrp2.jpg  used on input line 138.
-(pdftex.def)             Requested size: 250.52519pt x 187.89389pt.
-<pics/bab3/logPeriodic.jpg, id=578, 4175.6pt x 3131.7pt>
+Package pdftex.def Info: pics/bab3/usrp2.jpg  used on input line 148.
+(pdftex.def)             Requested size: 187.89389pt x 140.92041pt.
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
+
+[26 <./pics/bab3/laptop.jpg> <./pics/bab3/usrp2.jpg>]
+<pics/bab3/logPeriodic.jpg, id=584, 4175.6pt x 3131.7pt>
 File: pics/bab3/logPeriodic.jpg Graphic file (type jpg)
 <use pics/bab3/logPeriodic.jpg>
-Package pdftex.def Info: pics/bab3/logPeriodic.jpg  used on input line 151.
+Package pdftex.def Info: pics/bab3/logPeriodic.jpg  used on input line 161.
 (pdftex.def)             Requested size: 208.79224pt x 156.59416pt.
-
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
-
-[26 <./pics/bab3/usrp2.jpg> <./pics/bab3/logPeriodic.jpg>]
-<pics/bab3/petaPengujian.png, id=586, 543.2295pt x 389.65575pt>
+<pics/bab3/petaPengujian.png, id=585, 543.2295pt x 389.65575pt>
 File: pics/bab3/petaPengujian.png Graphic file (type png)
 <use pics/bab3/petaPengujian.png>
-Package pdftex.def Info: pics/bab3/petaPengujian.png  used on input line 169.
-(pdftex.def)             Requested size: 271.61407pt x 194.8274pt.
-<pics/bab3/skema.png, id=587, 725.71124pt x 263.98625pt>
-File: pics/bab3/skema.png Graphic file (type png)
-<use pics/bab3/skema.png>
-Package pdftex.def Info: pics/bab3/skema.png  used on input line 179.
-(pdftex.def)             Requested size: 290.27936pt x 105.59262pt.
+Package pdftex.def Info: pics/bab3/petaPengujian.png  used on input line 179.
+(pdftex.def)             Requested size: 217.28795pt x 155.85953pt.
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2170,11 +2183,16 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[27 <./pics/bab3/petaPengujian.png> <./pics/bab3/skema.png>]
-<pics/bab3/konfigurasiPengujian.jpg, id=595, 4175.6pt x 3131.7pt>
+[27 <./pics/bab3/logPeriodic.jpg> <./pics/bab3/petaPengujian.png>]
+<pics/bab3/skema.png, id=592, 725.71124pt x 263.98625pt>
+File: pics/bab3/skema.png Graphic file (type png)
+<use pics/bab3/skema.png>
+Package pdftex.def Info: pics/bab3/skema.png  used on input line 189.
+(pdftex.def)             Requested size: 290.27936pt x 105.59262pt.
+<pics/bab3/konfigurasiPengujian.jpg, id=594, 4175.6pt x 3131.7pt>
 File: pics/bab3/konfigurasiPengujian.jpg Graphic file (type jpg)
 <use pics/bab3/konfigurasiPengujian.jpg>
-Package pdftex.def Info: pics/bab3/konfigurasiPengujian.jpg  used on input line 190.
+Package pdftex.def Info: pics/bab3/konfigurasiPengujian.jpg  used on input line 200.
 (pdftex.def)             Requested size: 375.7878pt x 281.84084pt.
 )
 
@@ -2184,7 +2202,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[28 <./pics/bab3/konfigurasiPengujian.jpg>]
+[28 <./pics/bab3/skema.png> <./pics/bab3/konfigurasiPengujian.jpg>]
 \openout2 = `pustaka.aux'.
 
  (./pustaka.tex (./main.bbl
@@ -2278,21 +2296,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 362CB264ED5035F62D8E8F6F92B531C0;5859.
+(rerunfilecheck)             Checksum: 95F3A2CDB353A7A9729103BB5B2154EA;5851.
  ) 
 Here is how much of TeX's memory you used:
- 26981 strings out of 474137
- 483877 string characters out of 5748518
+ 26986 strings out of 474137
+ 484051 string characters out of 5748518
  1955190 words of memory out of 5000000
- 48620 multiletter control sequences out of 15000+600000
+ 48626 multiletter control sequences out of 15000+600000
  595976 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,101p,1088b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (38 pages, 5601505 bytes).
+Output written on main.pdf (38 pages, 5825991 bytes).
 PDF statistics:
  692 PDF objects out of 1000 (max. 8388607)
- 582 compressed objects within 6 object streams
- 152 named destinations out of 1000 (max. 500000)
- 400 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 581 compressed objects within 6 object streams
+ 151 named destinations out of 1000 (max. 500000)
+ 405 words of extra memory for PDF output out of 10000 (max. 10000000)
 

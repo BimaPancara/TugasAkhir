@@ -140,6 +140,9 @@ Dengan G sebagai \textit{gain} maksimum suatu antena, yaitu
 Untuk mendapat suatu kesimpulan dari sinyal radar, maka dibutuhkan pengolahan sinyal radar yang tepat. Pengolahan sinyal tersebut dilakukan mulai dari pembentukan gelombang hingga pengambilan kesimpulan. 
 
 \subsection{Bentuk Gelombang Radar}
+
+Bentuk gelombang radar dapat dibedakan menjadi dua kelas, yaitu radar dengan gelombang kontinyu dan radar pulsa. Seperti pada gambar \ref{pic:bentukgelradar}, kedua kelas tersebut masih dapat dibagi lagi kedalam beberapa teknik lain. Penggunaan salah satu jenis gelombang ditentukan berdasarkan kebutuhan radar yang akan di desain. 
+
 \begin{figure}
 	\begin{center}
 		\includegraphics[scale=0.8]{pics/bab2/radarwaveform.png}
@@ -147,7 +150,7 @@ Untuk mendapat suatu kesimpulan dari sinyal radar, maka dibutuhkan pengolahan si
 		\label{pic:bentukgelradar}
 	\end{center}
 \end{figure}
-Bentuk gelombang radar dapat dibedakan menjadi dua kelas, yaitu radar dengan gelombang kontinyu dan radar pulsa. Seperti pada gambar \ref{pic:bentukgelradar}, kedua kelas tersebut masih dapat dibagi lagi kedalam beberapa teknik lain. Penggunaan salah satu jenis gelombang ditentukan berdasarkan kebutuhan radar yang akan di desain. 
+
 
 Radar dengan gelombang pulsa akan memancarkan gelombang elektromagnetik dalam waktu singkat lalu jeda sejenak sesuai waktu yang ditentukan. Pada waktu jeda tersebut, radar akan mendeteksi sinyal pantul dari gelombang yang dikirim sebelumnya. Setelah waktu jeda berakhir, radar akan kembali memancarkan gelombang pulsa lagi. Radar dengan gelombang ini akan memancarkan gelombang elektromagnetik dengan \textit{power} yang tinggi. 
 
@@ -281,25 +284,11 @@ Pada persamaan tersebut, terdapat c sebagai kecepatan cahaya, $f_{b}$ adalah \te
 \end{equation}
 
 \subsection{Perhitungan \textit{Error}}
-Penghitungan galat dari radar yang telah di desain dapat dilakukan dengan menguji keakurasian dari hasil deteksi. Hasil akurasi deteksi radar dapat diuji dengan menggunakan \textit{Root Mean Square Error} (RMS E) dari \textit{Signal to Noise Ratio}, sesuai persamaan \ref{eq:sigmaRN}.
+Penghitungan galat dari radar yang telah di desain dapat dilakukan dengan menguji keakurasian dari hasil deteksi. Hasil akurasi deteksi radar dapat diuji dengan menggunakan \textit{Root Mean Square Error} (RMS E). Nilai dari RMS E bisa didapat dengan persamaan \ref{eq:rmsE} dengan nilai n adalah jumlah pengulangan dari uji coba.
 
 \begin{equation}
-	\sigma_{RN} = \frac{RMS E}{\sqrt{2 SNR_{L}}}
-	\label{eq:sigmaRN}
-\end{equation}
-
-Dengan nilai dari RMS E bisa didapat dengan persamaan \ref{eq:rmsE}.
-
-\begin{equation}
-	RMS E = \frac{\sqrt{\sum_{t = 1}^{k} (m(t)-n(t))^2}}{k}
+	RMS E = \sqrt{\frac{\sum_{i = 1}^{n} (simulasi_{i}-aktual_{i})^2}{n}}
 	\label{eq:rmsE}
-\end{equation}
-
-Nilai dari k adalah jumlah data, dengan m sebagai hasil data berdasarkan simulasi, dan n adalah data sebenarnya. Dengan begitu, nilai akurasi deteksi radar dapat dihitung dengan persamaan \ref{eq:accRadar}.
-
-\begin{equation}
-	Akurasi = 1 - \sigma_{RN}
-	\label{eq:accRadar}
 \end{equation}
 
 \section{\textit{Software Defined Radio}}
@@ -377,11 +366,11 @@ GNURadio adalah aplikasi yang dapat melakukan pemrograman terhadap USRP lewat an
 	\begin{center}
 		\includegraphics[scale=0.35]{pics/bab2/blokDiagramGRC.png} 
 		\caption[Contoh \textit{Flowgraph} GNURadio]{Contoh \textit{Flowgraph} GNURadio}
-		\label{pic:contohBlokGRC}
+		\label{pic:contohFlowGraphGRC}
 	\end{center}
 \end{figure}
 
-Gambar \ref{pic:contohBlokGRC} adalah contoh blok diagram sistem (\textit{flowgraph}) yang sukses dibuat pada aplikasi GNURadio. Pada gambar \ref{pic:contohRunGRC} menunjukkan hasil bila desain sistem tersebut dijalankan.
+Gambar \ref{pic:contohFlowGraphGRC} adalah contoh blok diagram sistem (\textit{flowgraph}) yang sukses dibuat pada aplikasi GNURadio. Pada gambar \ref{pic:contohRunGRC} menunjukkan hasil bila desain sistem tersebut dijalankan.
 
 \begin{figure}
 	\begin{center}

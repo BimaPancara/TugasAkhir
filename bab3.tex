@@ -45,8 +45,7 @@ Sementara itu, untuk memastikan hasil yang dicapai baik, maka perlu ditentukan p
 		No. & Parameter Pengujian		& Satuan\\ \hline
 		1.  &Jarak	   					& m\\
 		2.  &Kecepatan 					& m/s\\
-		3.  &Arah						& -\\
-		4.  &\textit{RMSE}				& -\\
+		3.  &\textit{RMSE}				& -\\
 		\hline
 	\end{longtable}
 \end{center}
@@ -63,10 +62,13 @@ Pada tahap ini, dilakukan perancangan tentang penelitian yang diangkat, dalam ko
 		1.  & USRP 							& B210\\
 		2.  & \textit{Center Frequency}  	& 3 GHz \\
 		3.  & \textit{Bandwidth} 			& 50 MHz \\
-		4.  & Jarak Maksimum 				& 150 km \\
-		5.  & Resolusi Jarak 				& 3 m \\
-		6.  & Kecepatan Maksimum			& 15 $m/s$ \\
-		7.  & Resolusi Kecepatan 			& 1 $m/s$\\
+		4.	& Bentuk Modulasi				& \textit{Triangular}\\
+		5.  & Jarak Maksimum 				& 150 km \\
+		6.  & Resolusi Jarak 				& 3 m \\
+		7.  & Kecepatan Maksimum			& 15 $m/s$ \\
+		8.  & Resolusi Kecepatan 			& 1 $m/s$\\
+		9.	& Durasi \textit{Chirp}			& 0.001667 s\\
+		10.	& \textit{Chirp Rate}			& 30000 MHz\\
 		\hline
 	\end{longtable}
 \end{center}
@@ -126,16 +128,24 @@ Tahap implementasi ini dilakukan pada aplikasi GNURadio dan menghasilkan \textit
 Implementasi sistem akan dilaksanakan pada beberapa perangkat, mulai dari laptop, antena, dan USRP. Berikut detail perangkat yang akan digunakan pada saat implementasi guna mendapat hasil yang baik.
 
 \begin{enumerate}
-	\item IdeaPad Gaming 3 15ARH7 :
+	\item \textit{IdeaPad Gaming 3 15ARH7} :
+	\begin{figure}
+		\begin{center}
+			\includegraphics[scale=0.2]{pics/bab3/laptop.jpg} 
+			\caption[Gambar Perangkat Laptop Yang Digunakan]{Gambar Perangkat Laptop Yang Digunakan}
+			\label{pic:contohBlokGRC}
+		\end{center}
+	\end{figure}
+
 	\begin{itemize}
-		\item \textit{Processor} : AMD Ryzen 7 6800H dengan Radeon Graphics 3.20 GHz
+		\item \textit{Processor} : AMD Ryzen 7 6800H dengan \textit{Radeon Graphics} 3.20 GHz
 		\item \textit{Memory} : 8,00 GB (7,19 GB \textit{usable})
 	\end{itemize}
 
 	\item Perangkat \textit{Software Defined Radio} :
 	\begin{figure}
 		\begin{center}
-			\includegraphics[scale=0.06]{pics/bab3/usrp2.jpg}
+			\includegraphics[scale=0.045]{pics/bab3/usrp2.jpg}
 			\caption{Alat USRP B210}
 			\label{img:logPeriodic}
 		\end{center}
@@ -166,7 +176,7 @@ Pada tahap ini, pengambilan data dengan radar yang sudah didesain dan diimplemen
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[scale=0.5]{pics/bab3/petaPengujian.png}
+		\includegraphics[scale=0.4]{pics/bab3/petaPengujian.png}
 		\caption{Lokasi Pengujian}
 		\label{img:petaUji}
 	\end{center}
