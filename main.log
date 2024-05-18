@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  30 MAR 2024 16:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  6 MAY 2024 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1053,57 +1053,72 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \openout2 = `sampul.aux'.
 
  (./sampul.tex
-<pics/pengantar/Untel.jpg, id=152, 148.8105pt x 148.8105pt>
-File: pics/pengantar/Untel.jpg Graphic file (type jpg)
-<use pics/pengantar/Untel.jpg>
-Package pdftex.def Info: pics/pengantar/Untel.jpg  used on input line 31.
-(pdftex.def)             Requested size: 148.81012pt x 148.81012pt.
+<pics/pengantar/TelUSBY.jpg, id=151, 169.38281pt x 169.38281pt>
+File: pics/pengantar/TelUSBY.jpg Graphic file (type jpg)
+<use pics/pengantar/TelUSBY.jpg>
+Package pdftex.def Info: pics/pengantar/TelUSBY.jpg  used on input line 31.
+(pdftex.def)             Requested size: 152.4431pt x 152.4431pt.
 
 [1
 
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/
-texmf-dist/fonts/enc/dvips/base/8r.enc} <./pics/pengantar/Untel.jpg>])
+texmf-dist/fonts/enc/dvips/base/8r.enc} <./pics/pengantar/TelUSBY.jpg>])
 \openout2 = `pengesahan.aux'.
 
 
 (./pengesahan.tex
+Underfull \hbox (badness 3271) in paragraph at lines 11--12
+[]|\OT1/ptm/m/n/12 Rancang Ban-gun Sis-tem \OT1/ptm/m/it/12 FMCW \OT1/ptm/m/n/1
+2 Radar Berba-sis \OT1/ptm/m/it/12 Soft-ware
+ []
+
+
+Overfull \hbox (1.85674pt too wide) in alignment at lines 10--14
+ [] [] [] 
+ []
+
+
+Overfull \hbox (1.85674pt too wide) in alignment at lines 20--24
+ [] [] [] 
+ []
+
 LaTeX Font Info:    Trying to load font information for OT1+ptmcm on input line
- 35.
- (c:/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
+ 32.
+(c:/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ptmcm on input line
- 35.
+ 32.
 
 (c:/texlive/2023/texmf-dist/tex/latex/psnfss/omlptmcm.fd
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+psycm on input line
- 35.
+ 32.
 
 (c:/texlive/2023/texmf-dist/tex/latex/psnfss/omxpsycm.fd
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
 
 
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
 
 
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (1.79459pt too wide) in paragraph at lines 35--40
+Overfull \hbox (1.79459pt too wide) in paragraph at lines 32--37
 [][] 
  []
 
@@ -1121,7 +1136,7 @@ Underfull \hbox (badness 1331) in paragraph at lines 23--24
 bukti yang
  []
 
-<pics/pengantar/BimaFoto.png, id=166, 896.34875pt x 1344.02126pt>
+<pics/pengantar/BimaFoto.png, id=168, 896.34875pt x 1344.02126pt>
 File: pics/pengantar/BimaFoto.png Graphic file (type png)
 <use pics/pengantar/BimaFoto.png>
 Package pdftex.def Info: pics/pengantar/BimaFoto.png  used on input line 28.
@@ -1262,35 +1277,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 2.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
+Underfull \hbox (badness 1728) in paragraph at lines 11--12
+\OT1/ptm/m/n/12 radar pun be-ralih fungsi. Seperti con-tohnya radar pen-de-teks
+i cuaca yang
  []
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 9--10
+Underfull \hbox (badness 3568) in paragraph at lines 13--14
 \OT1/ptm/m/it/12 Fre-quency Mod-u-lated Con-ti-nous Wave Radar \OT1/ptm/m/n/12 
 yang dikem-bangkan den-gan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
-
- []
-
-
-Underfull \hbox (badness 5847) in paragraph at lines 11--12
-\OT1/ptm/m/n/12 peng-gu-naan fung-sion-al-i-tas dari sis-tem radar yang diatur 
-lewat \OT1/ptm/m/it/12 Soft-ware
- []
-
-
-Underfull \hbox (badness 1460) in paragraph at lines 11--12
-\OT1/ptm/m/n/12 SDR lewat \OT1/ptm/m/it/12 Uni-ver-sal Soft-ware Ra-dio Pe-riph
--eral \OT1/ptm/m/n/12 (USRP) se-ba-gai perangkat
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
@@ -1299,33 +1298,49 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.12 
+l.14 
       [1
 
 
 
 
 ]
-Underfull \hbox (badness 1210) in paragraph at lines 14--15
+Underfull \hbox (badness 5847) in paragraph at lines 15--16
+\OT1/ptm/m/n/12 peng-gu-naan fung-sion-al-i-tas dari sis-tem radar yang diatur 
+lewat \OT1/ptm/m/it/12 Soft-ware
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 15--16
+\OT1/ptm/m/n/12 SDR lewat \OT1/ptm/m/it/12 Uni-ver-sal Soft-ware Ra-dio Pe-riph
+-eral \OT1/ptm/m/n/12 (USRP) se-ba-gai perangkat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 18--19
 []\OT1/ptm/m/n/12 GNURadio meru-pakan ap-likasi gratis yang be-rada dibawah lis
 ensi \OT1/ptm/m/it/12 GNU
  []
 
 
-Underfull \hbox (badness 4479) in paragraph at lines 14--15
+Underfull \hbox (badness 4479) in paragraph at lines 18--19
 \OT1/ptm/m/n/12 un-tuk melakukan an-tar-muka den-gan USRP yang dim-i-liki, pene
 liti da-pat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 17--18
-[]\OT1/ptm/m/n/12 Oleh karena itu, pada pro-posal ini di-lakukan \Ran-cang Ban-
-gun Sis-tem
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+[]\OT1/ptm/m/n/12 Bagaimana ran-can-gan sis-tem radar FMCW berba-sis USRP B210
  []
 
 
@@ -1337,18 +1352,11 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [2]
-Underfull \hbox (badness 1540) in paragraph at lines 46--47
+Underfull \hbox (badness 1540) in paragraph at lines 50--51
 []\OT1/ptm/m/n/12 Pengujian sis-tem den-gan meng-gu-nakan USRP B210 un-tuk mela
 kukan
  []
 
-
-Underfull \hbox (badness 2229) in paragraph at lines 63--64
-[]\OT1/ptm/m/n/12 Proposal ini di-lakukan den-gan pen-dekatan: studi teori-tis/
-s-tudi lit-er-atur,
- []
-
-)
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1358,6 +1366,29 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
 [3]
+Underfull \hbox (badness 5533) in paragraph at lines 85--85
+[]|\OT1/ptm/m/n/12 Penyusunan la-po-ran Tu-gas
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 89--58
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--58
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
+
+[4]
 \openout2 = `bab2.aux'.
 
  (./bab2.tex
@@ -1367,541 +1398,546 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 2.
 
 
-Overfull \hbox (0.59213pt too wide) in paragraph at lines 20--20
+Overfull \hbox (16.19841pt too wide) in paragraph at lines 10--12
+[][] 
+ []
+
+
+Overfull \hbox (0.59213pt too wide) in paragraph at lines 22--22
  []|\OT1/ptm/b/n/12 No.| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 []|\OT1/ptm/m/it/12 Real Time
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 \OT1/ptm/m/it/12 Im-ple-men-ta-tion of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 \OT1/ptm/m/it/12 FMCW Radar for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 []|\OT1/ptm/m/n/12 Sundaresan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 \OT1/ptm/m/n/12 S; An-jana C;
  []
 
 
-Underfull \hbox (badness 2865) in paragraph at lines 24--25
+Underfull \hbox (badness 2865) in paragraph at lines 26--27
 \OT1/ptm/m/n/12 Zacharia, Tessy;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 []|\OT1/ptm/m/n/12 Penggunaan radar FMCW
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/ptm/m/n/12 den-gan GNU-Ra-dio lewat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/ptm/m/n/12 USRP N210 dan an-tena
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 []|\OT1/ptm/m/it/12 FMCW Radar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 \OT1/ptm/m/it/12 Im-ple-mented with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 []|\OT1/ptm/m/n/12 Penggunaan GNU-Ra-dio
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 \OT1/ptm/m/n/12 san-gat baik karena tanpa
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 29--29
+Underfull \hbox (badness 1478) in paragraph at lines 31--31
 \OT1/ptm/m/n/12 bi-aya dan memi-liki tingkat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 \OT1/ptm/m/it/12 tar-gets de-tec-tion on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 \OT1/ptm/m/it/12 FMCW radar us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 \OT1/ptm/m/it/12 GNU radio-based
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 []|\OT1/ptm/m/n/12 Aulia, Siska;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 \OT1/ptm/m/n/12 Suksmono,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 \OT1/ptm/m/n/12 An-driyan Bayu;
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 33--33
+Underfull \hbox (badness 1902) in paragraph at lines 35--35
 []|\OT1/ptm/m/n/12 Implementasi radar FMCW
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
 \OT1/ptm/m/n/12 den-gan GNU-Ra-dio dan
  []
 
 
-Underfull \hbox (badness 6691) in paragraph at lines 33--33
+Underfull \hbox (badness 6691) in paragraph at lines 35--35
 \OT1/ptm/m/n/12 di-o-lah di Mat-lab berhasil
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
 \OT1/ptm/m/n/12 me-nun-jukkan ke-mam-puan
  []
 
 
-Underfull \hbox (badness 1577) in paragraph at lines 33--33
+Underfull \hbox (badness 1577) in paragraph at lines 35--35
 \OT1/ptm/m/n/12 tar-get, melakukan kalku-lasi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
 \OT1/ptm/m/n/12 ten-tang ke-cepatan re-latif,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
 []|\OT1/ptm/m/n/12 Implementasi Sis-tem
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
 \OT1/ptm/m/n/12 Radar Fre-quency
  []
 
 
-Underfull \hbox (badness 6592) in paragraph at lines 35--36
+Underfull \hbox (badness 6592) in paragraph at lines 37--38
 \OT1/ptm/m/n/12 Wave Un-tuk De-teksi
  []
 
 
-Underfull \hbox (badness 2970) in paragraph at lines 35--36
+Underfull \hbox (badness 2970) in paragraph at lines 37--38
 \OT1/ptm/m/n/12 Jarak Berba-sis USRP
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 []|\OT1/ptm/m/n/12 Saputro,
  []
 
 
-Underfull \hbox (badness 6110) in paragraph at lines 36--37
+Underfull \hbox (badness 6110) in paragraph at lines 38--39
 \OT1/ptm/m/n/12 Achmad Cahyo;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 \OT1/ptm/m/n/12 Ar-seno, Dharu;
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 37--37
+Underfull \hbox (badness 1902) in paragraph at lines 39--39
 []|\OT1/ptm/m/n/12 Implementasi radar FMCW
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \OT1/ptm/m/n/12 den-gan GNU-Ra-dio lewat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \OT1/ptm/m/n/12 USRP N210 den-gan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \OT1/ptm/m/n/12 band-width 10 MHz dan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \OT1/ptm/m/n/12 frekuensi 1 GHz bek-erja
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 []|\OT1/ptm/m/it/12 Implementation of a
  []
 
 
-Underfull \hbox (badness 6741) in paragraph at lines 39--40
+Underfull \hbox (badness 6741) in paragraph at lines 41--42
 \OT1/ptm/m/it/12 FMCW radar toolkit
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 []|\OT1/ptm/m/n/12 Mathumo,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 \OT1/ptm/m/n/12 Themba W.;
  []
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 40--41
+Underfull \hbox (badness 1033) in paragraph at lines 42--43
 \OT1/ptm/m/n/12 Swart, Theo G.;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 \OT1/ptm/m/n/12 Focke, Richard
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 41--41
+Underfull \hbox (badness 1902) in paragraph at lines 43--43
 []|\OT1/ptm/m/n/12 Implementasi radar FMCW
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 \OT1/ptm/m/n/12 den-gan GNU-ra-dio lewat
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 41--41
+Underfull \hbox (badness 2626) in paragraph at lines 43--43
 \OT1/ptm/m/n/12 USRP B210 da-pat bek-erja
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 []|\OT1/ptm/m/it/12 Linear Fre-quency
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 \OT1/ptm/m/it/12 Mod-u-lated Con-ti-nous
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 \OT1/ptm/m/it/12 Wave Radar Us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 []|\OT1/ptm/m/n/12 Saputera,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 \OT1/ptm/m/n/12 Yussi Per-dana;
  []
 
 
-Underfull \hbox (badness 5802) in paragraph at lines 44--45
+Underfull \hbox (badness 5802) in paragraph at lines 46--47
 \OT1/ptm/m/n/12 Her-diana, Dina;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 \OT1/ptm/m/n/12 Mad-i-nawati,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
 []|\OT1/ptm/m/n/12 Penggunaan radar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
 \OT1/ptm/m/n/12 Lin-ear FMCW yang
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
 \OT1/ptm/m/n/12 di-im-ple-men-tasikan den-gan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
 \OT1/ptm/m/n/12 GNU-Ra-dio dan USRP
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
 \OT1/ptm/m/n/12 bek-erja den-gan baik dan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
 \OT1/ptm/m/n/12 da-pat mende-teksi hingga
  []
 
 
-Underfull \hbox (badness 5637) in paragraph at lines 45--45
+Underfull \hbox (badness 5637) in paragraph at lines 47--47
 \OT1/ptm/m/n/12 3 ob-jek pada jarak yang
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 47--48
+Underfull \hbox (badness 5878) in paragraph at lines 49--50
 []|\OT1/ptm/m/it/12 Accuracy anal-y-sis of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 \OT1/ptm/m/it/12 FM chirp in GNU
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 \OT1/ptm/m/it/12 radio-based FMCW
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 \OT1/ptm/m/it/12 radar for mul-ti-ple
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 []|\OT1/ptm/m/n/12 Amin, Er-shad
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 \OT1/ptm/m/n/12 Junus;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 \OT1/ptm/m/n/12 Suksmono,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 \OT1/ptm/m/n/12 An-driyan Bayu;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
 []|\OT1/ptm/m/n/12 Penggunaan FM chirp
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
 \OT1/ptm/m/n/12 pada radar FMCW yang
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
 \OT1/ptm/m/n/12 di-im-ple-men-tasikan den-gan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
 \OT1/ptm/m/n/12 GNU-Ra-dio di-anal-isa.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
 \OT1/ptm/m/n/12 Di-lakukan per-bandin-gan
  []
 
 
-Underfull \hbox (badness 4316) in paragraph at lines 49--49
+Underfull \hbox (badness 4316) in paragraph at lines 51--51
 \OT1/ptm/m/n/12 an-tara 3 je-nis gelom-bang,
  []
 
 
-Underfull \hbox (badness 1874) in paragraph at lines 49--49
+Underfull \hbox (badness 1874) in paragraph at lines 51--51
 \OT1/ptm/m/n/12 den-gan frekuensi 1.5 MHz
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
 \OT1/ptm/m/n/12 dan \OT1/ptm/m/it/12 sam-ple rate \OT1/ptm/m/n/12 6Msps.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
 \OT1/ptm/m/n/12 Dite-mukan bahwa akurasi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 []|\OT1/ptm/m/it/12 FMCW radar
  []
 
 
-Underfull \hbox (badness 7451) in paragraph at lines 51--52
+Underfull \hbox (badness 7451) in paragraph at lines 53--54
 \OT1/ptm/m/it/12 im-ple-mented in SDR
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 \OT1/ptm/m/it/12 ar-chi-tec-ture us-ing a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 []|\OT1/ptm/m/n/12 Stasiak,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 \OT1/ptm/m/n/12 Krzysztof;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 \OT1/ptm/m/n/12 Sam-czyn-ski,
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 53--53
+Underfull \hbox (badness 1902) in paragraph at lines 55--55
 []|\OT1/ptm/m/n/12 Implementasi FMCW radar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
 \OT1/ptm/m/n/12 meng-gu-nakan frekuensi
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 53--53
+Underfull \hbox (badness 2753) in paragraph at lines 55--55
 \OT1/ptm/m/n/12 den-gan baik, na-mun perlu
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 []|\OT1/ptm/m/it/12 GNU Ra-dio based
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 \OT1/ptm/m/it/12 software-defined
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 \OT1/ptm/m/it/12 FMCW radar for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 \OT1/ptm/m/it/12 weather surveil-lance
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 []|\OT1/ptm/m/n/12 Prabaswara,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 \OT1/ptm/m/n/12 Aditya; Mu-nir,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 \OT1/ptm/m/n/12 Achmad;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 \OT1/ptm/m/n/12 Suksmono,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 []|\OT1/ptm/m/n/12 Penggunaan FMCW
  []
 
 
-Underfull \hbox (badness 8094) in paragraph at lines 57--57
+Underfull \hbox (badness 8094) in paragraph at lines 59--59
 \OT1/ptm/m/n/12 radar den-gan GNU ra-dio
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 \OT1/ptm/m/n/12 lewat USRP N210 telah
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 \OT1/ptm/m/n/12 di-im-ple-men-tasikan un-tuk
  []
 
 
-Underfull \hbox (badness 3229) in paragraph at lines 57--57
+Underfull \hbox (badness 3229) in paragraph at lines 59--59
 \OT1/ptm/m/n/12 men-gawasi cuaca. Radar
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 57--57
+Underfull \hbox (badness 2478) in paragraph at lines 59--59
 \OT1/ptm/m/n/12 bek-erja pada frekuensi 2.1
  []
 
 
-Underfull \hbox (badness 6236) in paragraph at lines 57--57
+Underfull \hbox (badness 6236) in paragraph at lines 59--59
 \OT1/ptm/m/n/12 kHz. Hasil men-e-mukan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 \OT1/ptm/m/n/12 bahwa pro-totipe da-pat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 \OT1/ptm/m/n/12 maka di-a-sum-sikan bahwa
  []
 
 
-Underfull \hbox (badness 6236) in paragraph at lines 57--57
+Underfull \hbox (badness 6236) in paragraph at lines 59--59
 \OT1/ptm/m/n/12 pro-totipe da-pat melakukan
  []
 
 
-Overfull \hbox (10.16626pt too wide) in alignment at lines 15--58
+Overfull \hbox (10.16626pt too wide) in alignment at lines 17--60
  [] [] [] [] 
  []
 
-[4
+[5
 
 
 
@@ -1915,82 +1951,35 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[5]
-Underfull \hbox (badness 3281) in paragraph at lines 66--67
-[]\OT1/ptm/m/n/12 Dalam im-ple-men-tasinya, SDR mem-bu-tuhkan \OT1/ptm/m/it/12 
-Uni-ver-sal Soft-ware Ra-dio
- []
-
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
-
 [6]
-<pics/bab2/B210.jpg, id=369, 474.95168pt x 269.01843pt>
-File: pics/bab2/B210.jpg Graphic file (type jpg)
-<use pics/bab2/B210.jpg>
-Package pdftex.def Info: pics/bab2/B210.jpg  used on input line 74.
-(pdftex.def)             Requested size: 199.1693pt x 112.81456pt.
-<pics/bab2/B210Board.jpg, id=370, 2979.13pt x 2453.165pt>
-File: pics/bab2/B210Board.jpg Graphic file (type jpg)
-<use pics/bab2/B210Board.jpg>
-Package pdftex.def Info: pics/bab2/B210Board.jpg  used on input line 78.
-(pdftex.def)             Requested size: 207.7052pt x 171.02788pt.
-
-Overfull \hbox (8.5359pt too wide) in paragraph at lines 78--79
-[][] 
- []
-
-
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 73--81
-[][] [] 
- []
-
-
-Underfull \hbox (badness 1596) in paragraph at lines 88--89
-\OT1/ptm/m/n/12 pula den-gan ke-mu-da-han-nya un-tuk melakukan pem-ro-gra-man t
-er-hadap USRP
- []
-
-
-Underfull \hbox (badness 4036) in paragraph at lines 88--89
-\OT1/ptm/m/n/12 ini yang mem-buat alat ini terke-nal di kalan-gan akademisi dan
- peneliti.
- []
-
-
-Underfull \hbox (badness 1163) in paragraph at lines 90--91
-[]\OT1/ptm/m/n/12 Untuk melakukan an-tar-muka dan juga pelak-sanaan pem-ro-gra-
-man den-gan
- []
-
-<pics/bab2/GNU.png, id=371, 702.625pt x 200.75pt>
-File: pics/bab2/GNU.png Graphic file (type png)
-<use pics/bab2/GNU.png>
-Package pdftex.def Info: pics/bab2/GNU.png  used on input line 96.
-(pdftex.def)             Requested size: 351.31163pt x 100.37474pt.
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
-
-[7 <./pics/bab2/B210.jpg> <./pics/bab2/B210Board.jpg>]
-Underfull \hbox (badness 1117) in paragraph at lines 155--156
+Underfull \hbox (badness 1117) in paragraph at lines 68--69
 []\OT1/ptm/m/n/12 Penggunaan gelom-bang elek-tro-mag-netik se-ba-gai sarana un-
 tuk mende-teksi
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 157--158
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
+
+[7]
+Underfull \hbox (badness 1354) in paragraph at lines 70--71
 []\OT1/ptm/m/n/12 Cara kerja dari radar adalah den-gan me-man-car-kan gelom-ban
 g di dalam
+ []
+
+<pics/bab2/skemaradar.png, id=389, 764.8575pt x 289.08pt>
+File: pics/bab2/skemaradar.png Graphic file (type png)
+<use pics/bab2/skemaradar.png>
+Package pdftex.def Info: pics/bab2/skemaradar.png  used on input line 83.
+(pdftex.def)             Requested size: 382.42781pt x 144.53964pt.
+
+Underfull \hbox (badness 3271) in paragraph at lines 89--90
+\OT1/ptm/m/n/12 kom-po-nen ini memi-liki per-an-nya sendiri se-hingga proses pe
+n-gi-r-i-man dan
  []
 
 
@@ -2001,25 +1990,14 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[8 <./pics/bab2/GNU.png>]
-<pics/bab2/skemaradar.png, id=391, 764.8575pt x 289.08pt>
-File: pics/bab2/skemaradar.png Graphic file (type png)
-<use pics/bab2/skemaradar.png>
-Package pdftex.def Info: pics/bab2/skemaradar.png  used on input line 170.
-(pdftex.def)             Requested size: 382.42781pt x 144.53964pt.
-
-Underfull \hbox (badness 3271) in paragraph at lines 176--177
-\OT1/ptm/m/n/12 kom-po-nen ini memi-liki per-an-nya sendiri se-hingga proses pe
-n-gi-r-i-man dan
- []
-
-<pics/bab2/blokdiagram.png, id=395, 986.68625pt x 714.67pt>
+[8 <./pics/bab2/skemaradar.png>]
+<pics/bab2/blokdiagram.png, id=404, 986.68625pt x 714.67pt>
 File: pics/bab2/blokdiagram.png Graphic file (type png)
 <use pics/bab2/blokdiagram.png>
-Package pdftex.def Info: pics/bab2/blokdiagram.png  used on input line 180.
+Package pdftex.def Info: pics/bab2/blokdiagram.png  used on input line 93.
 (pdftex.def)             Requested size: 345.34535pt x 250.13824pt.
 
-Underfull \hbox (badness 1137) in paragraph at lines 186--187
+Underfull \hbox (badness 1137) in paragraph at lines 99--100
 []\OT1/ptm/m/n/12 Persamaan radar berguna un-tuk menghubungkan selu-ruh kom-po-
 nen yang
  []
@@ -2032,47 +2010,35 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[9 <./pics/bab2/skemaradar.png> <./pics/bab2/blokDiagram.png>]
-<pics/bab2/rcsBentuk.png, id=406, 778.91pt x 464.73625pt>
+[9 <./pics/bab2/blokDiagram.png>]
+<pics/bab2/rcsBentuk.png, id=416, 778.91pt x 464.73625pt>
 File: pics/bab2/rcsBentuk.png Graphic file (type png)
 <use pics/bab2/rcsBentuk.png>
-Package pdftex.def Info: pics/bab2/rcsBentuk.png  used on input line 225.
+Package pdftex.def Info: pics/bab2/rcsBentuk.png  used on input line 130.
 (pdftex.def)             Requested size: 199.1693pt x 118.82883pt.
-<pics/bab2/rcsPola.png, id=407, 533.995pt x 325.215pt>
+<pics/bab2/rcsPola.png, id=417, 533.995pt x 325.215pt>
 File: pics/bab2/rcsPola.png Graphic file (type png)
 <use pics/bab2/rcsPola.png>
-Package pdftex.def Info: pics/bab2/rcsPola.png  used on input line 229.
+Package pdftex.def Info: pics/bab2/rcsPola.png  used on input line 134.
 (pdftex.def)             Requested size: 199.1693pt x 121.30028pt.
 
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 224--232
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 129--137
 [][] [] 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 2856) in paragraph at lines 238--239
+Underfull \hbox (badness 2856) in paragraph at lines 143--144
 []\OT1/ptm/m/n/12 Untuk men-da-pat su-atu kes-im-pu-lan dari sinyal radar, maka
  dibu-tuhkan
  []
 
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
-
-[10]
-<pics/bab2/radarwaveform.png, id=419, 519.44063pt x 258.21469pt>
+<pics/bab2/radarwaveform.png, id=420, 519.44063pt x 258.21469pt>
 File: pics/bab2/radarwaveform.png Graphic file (type png)
 <use pics/bab2/radarwaveform.png>
-Package pdftex.def Info: pics/bab2/radarwaveform.png  used on input line 243.
+Package pdftex.def Info: pics/bab2/radarwaveform.png  used on input line 148.
 (pdftex.def)             Requested size: 415.55307pt x 206.57202pt.
 
-Overfull \hbox (17.21448pt too wide) in paragraph at lines 243--244
+Overfull \hbox (17.21448pt too wide) in paragraph at lines 148--149
  [] 
  []
 
@@ -2084,13 +2050,41 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[11 <./pics/bab2/rcsBentuk.png> <./pics/bab2/rcsPola.png> <./pics/bab2/radarwav
-eform.png>]
-Underfull \hbox (badness 2941) in paragraph at lines 269--270
+[10 <./pics/bab2/rcsBentuk.png> <./pics/bab2/rcsPola.png>]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
+
+[11 <./pics/bab2/radarwaveform.png>]
+Underfull \hbox (badness 2941) in paragraph at lines 174--175
 []\OT1/ptm/m/n/12 Salah satu je-nis gelom-bang LFM adalah \OT1/ptm/m/it/12 Lin-
 ear Tri-an-gu-lar Fre-quency
  []
 
+<pics/bab2/lfmTriangular.png, id=446, 595.22375pt x 234.8775pt>
+File: pics/bab2/lfmTriangular.png Graphic file (type png)
+<use pics/bab2/lfmTriangular.png>
+Package pdftex.def Info: pics/bab2/lfmTriangular.png  used on input line 178.
+(pdftex.def)             Requested size: 416.6538pt x 164.41312pt.
+
+Overfull \hbox (18.3152pt too wide) in paragraph at lines 178--179
+ [] 
+ []
+
+
+Overfull \hbox (16.19841pt too wide) in paragraph at lines 184--185
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2099,15 +2093,95 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[12]
-<pics/bab2/lfmTriangular.png, id=443, 595.22375pt x 234.8775pt>
-File: pics/bab2/lfmTriangular.png Graphic file (type png)
-<use pics/bab2/lfmTriangular.png>
-Package pdftex.def Info: pics/bab2/lfmTriangular.png  used on input line 273.
-(pdftex.def)             Requested size: 416.6538pt x 164.41312pt.
+[12 <./pics/bab2/lfmTriangular.png>]
+Overfull \hbox (16.19841pt too wide) in paragraph at lines 190--191
+[][]
+ []
 
-Overfull \hbox (18.3152pt too wide) in paragraph at lines 273--274
- [] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 196--197
+[]\OT1/ptm/m/n/12 Dalam im-ple-men-tasinya, SDR mem-bu-tuhkan \OT1/ptm/m/it/12 
+Uni-ver-sal Soft-ware Ra-dio
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 204--205
+\OT1/ptm/m/n/12 pula den-gan ke-mu-da-han-nya un-tuk melakukan pem-ro-gra-man t
+er-hadap USRP
+ []
+
+
+Underfull \hbox (badness 4036) in paragraph at lines 204--205
+\OT1/ptm/m/n/12 ini yang mem-buat alat ini terke-nal di kalan-gan akademisi dan
+ peneliti.
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
+
+[13]
+<pics/bab2/B210.jpg, id=464, 474.95168pt x 269.01843pt>
+File: pics/bab2/B210.jpg Graphic file (type jpg)
+<use pics/bab2/B210.jpg>
+Package pdftex.def Info: pics/bab2/B210.jpg  used on input line 209.
+(pdftex.def)             Requested size: 199.1693pt x 112.81456pt.
+<pics/bab2/B210Board.jpg, id=465, 2979.13pt x 2453.165pt>
+File: pics/bab2/B210Board.jpg Graphic file (type jpg)
+<use pics/bab2/B210Board.jpg>
+Package pdftex.def Info: pics/bab2/B210Board.jpg  used on input line 213.
+(pdftex.def)             Requested size: 207.7052pt x 171.02788pt.
+
+Overfull \hbox (8.5359pt too wide) in paragraph at lines 213--214
+[][] 
+ []
+
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 208--216
+[][] [] 
+ []
+
+
+Overfull \hbox (17.35826pt too wide) in alignment at lines 223--249
+ [] [] [] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
+
+[14 <./pics/bab2/B210.jpg> <./pics/bab2/B210Board.jpg>]
+Underfull \hbox (badness 4913) in paragraph at lines 251--252
+[]\OT1/ptm/m/n/12 Dengan spe-si-fikasi terse-but, maka USRP B210 memi-liki ke-m
+am-puan
+ []
+
+<pics/bab2/GNU.png, id=474, 702.625pt x 200.75pt>
+File: pics/bab2/GNU.png Graphic file (type png)
+<use pics/bab2/GNU.png>
+Package pdftex.def Info: pics/bab2/GNU.png  used on input line 257.
+(pdftex.def)             Requested size: 351.31163pt x 100.37474pt.
+
+Overfull \hbox (16.19841pt too wide) in paragraph at lines 264--265
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
+
  []
 
 )
@@ -2119,7 +2193,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[13 <./pics/bab2/lfmTriangular.png>]
+[15 <./pics/bab2/GNU.png>]
 \openout2 = `bab3.aux'.
 
  (./bab3.tex
@@ -2128,25 +2202,43 @@ BAB III.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/bab3/flowchart2.png, id=452, 493.845pt x 878.28125pt>
+<pics/bab3/flowchart2.png, id=480, 493.845pt x 878.28125pt>
 File: pics/bab3/flowchart2.png Graphic file (type png)
 <use pics/bab3/flowchart2.png>
 Package pdftex.def Info: pics/bab3/flowchart2.png  used on input line 11.
 (pdftex.def)             Requested size: 246.92189pt x 439.13956pt.
-[14
+[16
 
 
 
 
  <./pics/bab3/flowchart2.png>]
-Overfull \hbox (17.35826pt too wide) in alignment at lines 27--51
- [] [] [] [] 
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
+
+[17]
+Overfull \hbox (16.19841pt too wide) in paragraph at lines 80--81
+[][]
  []
 
 
-Underfull \hbox (badness 4913) in paragraph at lines 53--54
-[]\OT1/ptm/m/n/12 Dengan spe-si-fikasi terse-but, maka USRP B210 memi-liki ke-m
-am-puan
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+
+Overfull \hbox (16.19841pt too wide) in paragraph at lines 95--96
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
  []
 
 
@@ -2157,16 +2249,54 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[15])
-Underfull \hbox (badness 3128) in paragraph at lines 85--62
-[]\OT1/ptm/m/n/12 Tabel []3.2[] men-je-laskan ten-tang spe-si-fikasi radar yang
- di-ran-cang dalam
+[18]
+Overfull \hbox (16.19841pt too wide) in paragraph at lines 101--102
+[][]
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 85--62
-\OT1/ptm/m/n/12 melak-sanakan peneli-tian ini. Den-gan spe-si-fikasi terse-but 
-di-hara-p-kan da-pat
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+<pics/bab3/skema.png, id=495, 354.123pt x 142.131pt>
+File: pics/bab3/skema.png Graphic file (type png)
+<use pics/bab3/skema.png>
+Package pdftex.def Info: pics/bab3/skema.png  used on input line 105.
+(pdftex.def)             Requested size: 354.12212pt x 142.13063pt.
+)
+Underfull \hbox (badness 2671) in paragraph at lines 112--62
+[]\OT1/ptm/m/n/12 Konfigurasi pen-gu-jian di-lakukan sesuai den-gan gam-bar []3
+.2[]. Ter-da-pat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--62
+\OT1/ptm/m/n/12 satu buah perangkat lap-top yang ter-hubung den-gan dua buah US
+RP,
+ []
+
+
+Underfull \hbox (badness 3407) in paragraph at lines 112--62
+\OT1/ptm/m/n/12 mas-ing mas-ing USRP ter-hubung den-gan an-tena \OT1/ptm/m/it/1
+2 Log-periodic\OT1/ptm/m/n/12 . USRP 1
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 112--62
+\OT1/ptm/m/n/12 berperan se-ba-gai \OT1/ptm/m/it/12 trans-mit-ter \OT1/ptm/m/n/
+12 sedan-gkan USRP 2 berperan se-ba-gai \OT1/ptm/m/it/12 re-ceiver\OT1/ptm/m/n/
+12 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--62
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--62
+
  []
 
 
@@ -2177,7 +2307,16 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[16]
+[19 <./pics/bab3/skema.png>]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
+
+[20]
 \openout2 = `pustaka.aux'.
 
  (./pustaka.tex (./main.bbl
@@ -2210,7 +2349,7 @@ Underfull \hbox (badness 1117) in paragraph at lines 50--55
 s (ICRAMET)\OT1/ptm/m/n/12 ,
  []
 
-[17
+[21
 
 
 
@@ -2234,13 +2373,7 @@ sed
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 79--83
-\OT1/ptm/m/n/12 mimo-ofdm sys-tem,'' \OT1/ptm/m/it/12 Ju-r-nal RESTI (Rekayasa 
-Sis-tem dan Teknologi
- []
-
-
-Underfull \hbox (badness 1072) in paragraph at lines 85--89
+Underfull \hbox (badness 1072) in paragraph at lines 73--77
 []\OT1/ptm/m/n/12 M. I. Skol-nik, \OT1/ptm/m/it/12 In-tro-duc-tion to radar sys
 -tems\OT1/ptm/m/n/12 .  McGraw-Hill elec-tri-cal
  []
@@ -2253,7 +2386,13 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[18]))
+[22]
+Underfull \hbox (badness 4084) in paragraph at lines 112--116
+\OT1/ptm/m/n/12 mimo-ofdm sys-tem,'' \OT1/ptm/m/it/12 Ju-r-nal RESTI (Rekayasa 
+Sis-tem dan Teknologi
+ []
+
+))
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2262,7 +2401,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.49998pt}.
 
-[19]
+[23]
 \openout2 = `markLampiran.aux'.
 
  (./markLampiran.tex
@@ -2284,16 +2423,16 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D7B266FA1C789F56EBC8A8188D3764EA;6145.
+(rerunfilecheck)             Checksum: BDCF485951DAC647E8570B7D1BB40B94;6208.
  ) 
 Here is how much of TeX's memory you used:
- 26929 strings out of 474137
- 483251 string characters out of 5748518
- 1950190 words of memory out of 5000000
- 48581 multiletter control sequences out of 15000+600000
+ 26954 strings out of 474137
+ 483601 string characters out of 5748518
+ 1951190 words of memory out of 5000000
+ 48595 multiletter control sequences out of 15000+600000
  596468 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,14n,101p,1061b,658s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,14n,101p,1060b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dis
@@ -2301,10 +2440,10 @@ t/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/t
 imes/utmb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><
 c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2023/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (31 pages, 1807667 bytes).
+Output written on main.pdf (35 pages, 1807601 bytes).
 PDF statistics:
- 551 PDF objects out of 1000 (max. 8388607)
- 472 compressed objects within 5 object streams
- 112 named destinations out of 1000 (max. 500000)
- 369 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 590 PDF objects out of 1000 (max. 8388607)
+ 504 compressed objects within 6 object streams
+ 123 named destinations out of 1000 (max. 500000)
+ 374 words of extra memory for PDF output out of 10000 (max. 10000000)
 

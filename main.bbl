@@ -69,18 +69,6 @@ A.~Prabaswara, A.~Munir, and A.~B. Suksmono, ``Gnu radio based software-defined
   International Conference on Telecommunication Systems, Services, and
   Applications (TSSA)}, IEEE, Oct. 2011.
 
-\bibitem{Anisah2018}
-I.~Anisah, H.~Briantoro, A.~Zainudin, and D.~I. Permatasari, ``Implementasi
-  sistem komunikasi nirkabel ofdm berbasis software defined radio (sdr),'' {\em
-  Jurnal Nasional Teknik Elektro dan Teknologi Informasi (JNTETI)}, vol.~7,
-  June 2018.
-
-\bibitem{Gulo2023}
-M.~M. Gulo, I.~G.~P. Astawa, Arifin, Y.~Moegiharto, and H.~Briantoro, ``The
-  joint channel coding and pre-distortion technique on the usrp-based mimo-ofdm
-  system,'' {\em Jurnal RESTI (Rekayasa Sistem dan Teknologi Informasi)},
-  vol.~7, pp.~930--939, Aug. 2023.
-
 \bibitem{Skolnik2001}
 M.~I. Skolnik, {\em Introduction to radar systems}.
 \newblock McGraw-Hill electrical engineering series, Boston, Mass.: McGraw
@@ -113,5 +101,17 @@ J.~Scheer, M.~A. Richards, and W.~A. Holm, eds., {\em Principles of modern
 M.~Jankiraman, {\em FMCW radar design}.
 \newblock Artech House radar series, Boston: Artech House, 2018.
 \newblock Includes bibliographical references and index.
+
+\bibitem{Anisah2018}
+I.~Anisah, H.~Briantoro, A.~Zainudin, and D.~I. Permatasari, ``Implementasi
+  sistem komunikasi nirkabel ofdm berbasis software defined radio (sdr),'' {\em
+  Jurnal Nasional Teknik Elektro dan Teknologi Informasi (JNTETI)}, vol.~7,
+  June 2018.
+
+\bibitem{Gulo2023}
+M.~M. Gulo, I.~G.~P. Astawa, Arifin, Y.~Moegiharto, and H.~Briantoro, ``The
+  joint channel coding and pre-distortion technique on the usrp-based mimo-ofdm
+  system,'' {\em Jurnal RESTI (Rekayasa Sistem dan Teknologi Informasi)},
+  vol.~7, pp.~930--939, Aug. 2023.
 
 \end{thebibliography}
