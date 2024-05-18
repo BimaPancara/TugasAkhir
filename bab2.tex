@@ -7,56 +7,55 @@
 %-----------------------------------------------------------------------------%
 Banyak sekali referensi yang menjadi bagian besar dalam tertulisnya proposal ini, referensi tersebut terdiri atas berbagai macam jenis literatur dari sumber yang dapat diakses secara daring. Tak sedikit pula literatur tersebut menjadi alasan besar latar belakang dari proposal ini dilahirkan, berikut adalah beberapa penelitian terdahulu yang menjadi referensi dalam melakukan penyusunan proposal ini :
 
-\todo{UPDATE!!! 2024-2020}
 % Penelitian Terdahulu
 \begin{center}
 	\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{1pt}}m{#1}}
 	\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{1pt}}m{#1}}
 	\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{1pt}}m{#1}}
 	
-	\begin{longtable}{|>{\centering\arraybackslash}p{0.6cm}|p{4cm}|p{3cm}|p{5cm}|}
+	\begin{longtable}{|>{\centering\arraybackslash}p{0.6cm}|p{4cm}|p{4cm}|p{4cm}|}
 	\caption{Penelitian Terdahulu}
-	\label{tab:table1}\\
+	\label{tab:PenelitianDulu}\\
 	
 	\hline
 	\textbf{No.} & \textbf{Judul} & \textbf{Penulis} & \textbf{Hasil}\\
 	\hline
 	
-	1.& \textit{Real Time Implementation of FMCW Radar for Target Detection Using GNURadio and USRP} (2015)
-	& Sundaresan S; Anjana C; Zacharia, Tessy; Gandhiraj R 	
-	& Penggunaan radar FMCW dengan GNURadio lewat USRP N210 dan antena \textit{Log-periodic} bekerja dengan baik pada frekuensi 1GHz. \\ \hline
+	1.& \textit{Multitarget Physical Activities Monitoring and Classification Using a V-Band FMCW Radar} (2023)
+	& Rizzi Varela, Victor G.; Rodrigues, Davi V. Q.; Zeng, Leya; Li, Changzhi
+	& - \\ \hline
 	
-	2. & \textit{FMCW Radar Implemented with GNURadio Companion} (2016)
-	& Qizhao Zhu; Yaqi Wang 
-	& Penggunaan GNURadio untuk simulasi radar FMCW sangat baik karena tanpa biaya dan memiliki tingkat kompleksitas yang rendah\\ \hline
+	2. & \textit{A Short-Range FMCW Radar-Based Approach for Multi-Target Human-Vehicle Detection} (2022)
+	& Tavanti, Emanuele; Rizik, Ali; Fedeli, Alessandro; Caviglia, Daniele D.; Randazzo, Andrea 
+	& - \\ \hline
 	
-	3. & \textit{Stationary and moving targets detection on FMCW radar using GNU radio-based software defined radio} (2015)
-	& Aulia, Siska; Suksmono, Andriyan Bayu; Munir, Achmad
-	& Implementasi radar FMCW dengan GNURadio dan diolah di Matlab berhasil menunjukkan kemampuan radar dalam mendeteksi jarak target, melakukan kalkulasi tentang kecepatan relatif, dan memprediksi arah gerak target terhadap radar.\\ \hline
+	3. & \textit{FMCW Radar With Enhanced Resolution and Processing Time by Beam Switching} (2021)
+	& Hilario Re, Pascual D.; Comite, Davide; Podilchak, Symon K.; Alistarh, Cristian A.; Goussetis, George; Sellathurai, Mathini; Thompson, John; Lee, Jaesup
+	& - \\ \hline
 	
-	4. & Implementasi Sistem Radar Frequency Modulated Continuous Wave Untuk Deteksi Jarak Berbasis USRP (2019)
-	& Saputro, Achmad Cahyo; Arseno, Dharu; Pramudita, A. A.
-	& Implementasi radar FMCW dengan GNURadio lewat USRP N210 dengan bandwidth 10 MHz dan frekuensi 1 GHz bekerja dengan baik. \\ \hline
+	4. & \textit{An X–band FMCW Radar Demonstrator Based on an SDR Platform} (2020)
+	& Dabrowski, Grzegorz; Stasiak, Krzysztof; Drozdowicz, Jedrzej; Gromek, Damian; Samczynski, Piotr
+	& - \\ \hline
 	
-	5. & \textit{Implementation of a GNU radio and python FMCW radar toolkit } (2017)
-	& Mathumo, Themba W.; Swart, Theo G.; Focke, Richard W.
-	& Implementasi radar FMCW dengan GNUradio lewat USRP B210 dapat bekerja hingga jarak 150 m. Radar bekerja pada \textit{center frequency} 5.5 GHz dengan \textit{bandwidth} 28 MHz resolusi yang dicapai sekitar 5.35 m. \\ \hline
+	5. & \textit{Single Target Recognition Using a Low-Cost FMCW Radar Based on Spectrum Analysis} (2020)
+	& Rizik, Ali; Tavanti, Emanuele; Vio, Roberto; Delucchi, Alessandro; Chible, Hussien; Randazzo, Andrea; Caviglia, Daniele D.
+	& - \\ \hline
 	
-	6. & \textit{Linear Frequency Modulated Continous Wave Radar Using GNU Radio and USRP} (2015)
-	& Saputera, Yussi Perdana; Herdiana, Dina; Madinawati, Hanny; Andriyan Bayu Suksmono, Achmad Munir
-	& Penggunaan radar Linear FMCW yang diimplementasikan dengan GNURadio dan USRP bekerja dengan baik dan dapat mendeteksi hingga 3 objek pada jarak yang berbeda. \\ \hline
+	6. & \textit{Educational Low-Cost C-Band FMCW Radar System Comprising Commercial Off-the-Shelf Components for Indoor Through-Wall Object Detection} (2021)
+	& Jeong, Hyunmin; Kim, Sangkil
+	& - \\ \hline
 	
-	7. & \textit{Accuracy analysis of FM chirp in GNU radio-based FMCW radar for multiple target detection} (2014)
-	& Amin, Ershad Junus; Suksmono, Andriyan Bayu; Munir, Achmad
-	& Penggunaan FM chirp pada radar FMCW yang diimplementasikan dengan GNURadio dianalisa. Dilakukan perbandingan antara 3 jenis gelombang, dengan frekuensi 1.5 MHz dan \textit{sample rate} 6Msps. Ditemukan bahwa akurasi tertinggi ada pada gelombang segitiga. \\ \hline
+	7. & \textit{Modified FMCW system for non-contact sensing of human respiration} (2020)
+	& Pramudita, Aloysius Adya; Suratman, Fiky Y.; Arseno, Dharu
+	& - \\ \hline
 	
-	8. & \textit{FMCW radar implemented in SDR architecture using a USRP device} (2017)
-	& Stasiak, Krzysztof; Samczynski, Piotr
-	& Implementasi FMCW radar dengan USRP telah dilakukan menggunakan frekuensi carrier 5.8 GHz. Ditemukan bahwa implementasi bekerja dengan baik, namun perlu dilakukannya riset agar dapat melakukan deteksi real time. \\ \hline
+	8. & \textit{FMCW Radar for Noncontact Bridge Structure Displacement Estimation} (2023)
+	& Pramudita, Aloysius Adya; Lin, Ding-Bing; Dhiyani, Azizka Ayu; Ryanu, Harfan Hian; Adiprabowo, Tjahjo; Yudha, Erfansyah Ali
+	& - \\ \hline
 	
-	9. & \textit{GNU Radio based software-defined FMCW radar for weather surveillance application} (2011)
-	& Prabaswara, Aditya; Munir, Achmad; Suksmono, Andriyan Bayu
-	& Penggunaan FMCW radar dengan GNU radio lewat USRP N210 telah diimplementasikan untuk mengawasi cuaca. Radar bekerja pada frekuensi 2.1 GHz dengan bandwidth 750 kHz. Hasil menemukan bahwa prototipe dapat melakukan pengukuran jarak, maka diasumsikan bahwa prototipe dapat melakukan pendeteksi Gerakan partikel, posisi, dan intensitas. \\ \hline
+	9. & \textit{A Novel Scheme of High-Precision Heart Rate Detection With a mm-Wave FMCW Radar} (2023)
+	& Zhou, Min; Liu, Yunxue; Wu, Shie; Wang, Chengyou; Chen, Zekun; Li, Hongfei
+	& - \\ \hline
 	\end{longtable}
 \end{center}
 %-----------------------------------------------------------------------------%
@@ -158,15 +157,55 @@ Sedangkan radar dengan gelombang kontinyu akan terus memancarkan serta menerima 
 
 \subsection{\textit{Frequency Modulated Continuous Wave Radar}}
 
-Radar FMCW memancarkan sinyal yang bila terpantul objek, akan kembali terdeteksi. Kemudian sinyal yang diterima dicampurkan dengan sinyal yang dikirim, sehingga karena adanya \textit{delay} yang disebabkan oleh jarak gelombang bergerak, maka akan terdeteksi perbedaan frekuensi. Dengan begitu, perbedaan pada fasa dan frekuensi menjadi tolok ukur antara sinyal yang dikirim dengan sinyal yang di dapatkan kembali.
+Radar FMCW memancarkan sinyal yang bila terpantul objek, akan kembali terdeteksi. Hal ini dapat direalisasikan dengan blok diragram dari sistem radar FMCW seperti pada gambar \ref{pic:FMCWBlock}.  
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.3]{pics/bab2/blokDiagramFMCW.png}
+		\caption[Blok Diagram Radar FMCW]{Blok Diagram Radar FMCW}
+		\label{pic:FMCWBlock}
+	\end{center}
+\end{figure}
+
+Dari blok diagram tersebut, dapat dilihat bahwa sinyal yang diterima dicampurkan dengan sinyal yang dikirim, sehingga karena adanya \textit{delay} yang disebabkan oleh jarak gelombang bergerak, maka akan terdeteksi perbedaan frekuensi. Dengan begitu, perbedaan pada fasa dan frekuensi menjadi tolok ukur antara sinyal yang dikirim dengan sinyal yang di dapatkan kembali.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.3]{pics/bab2/txRxWave.jpg}
+		\caption[FMCW Dalam Domain Waktu]{FMCW Dalam Domain Waktu}
+		\label{pic:FMCWTime}
+	\end{center}
+\end{figure}
+
 Oleh karena itu, salah satu karakteristik dari radar FMCW adalah bahwa jarak pengukuran dapat dihitung dengan membandingkan frekuensi sinyal yang diterima dengan sinyal yang ditransmisikan.   
 
 \begin{equation} 
-	f_{r} = f_{0} T = \frac{2R}{c} f_{0}
+	R = \frac{c \Delta{t}}{2} = \frac{c \Delta{f}}{2(\frac{d(f)}{d(t)})}
 	\label{eq:PersFMCW}
 \end{equation}
 
-Persamaan \ref{eq:PersFMCW} menunjukkan perhitungan jarak dan pengukuran doppler, dengan $f_{B}$ sebagai \textit{beat note} (perbedaan frekuensi) yang diproduksi. Bila tidak terdapat pergeseran frekuensi doppler, maka \textit{beat note} merupakan pengukuran jarak target dengan $f_{b} = f_{r}$ dimana $f_{r}$ merupakan \textit{beat frequency} dari jarak target. Bila nilai perubahan frekuensi \textit{carrier} adalah $f_{0}$, maka \textit{beat frequency} adalah persamaan \ref{eq:PersFMCW}.
+Persamaan \ref{eq:PersFMCW} menunjukkan jarak (R) dengan objek yang terdeteksi. Yang mana $\Delta{t}$ adalah waktu tunda dalam detik, $\Delta{f}$ merupakan pergeseran frekuensi terukur dalam Hertz, dengan d(f)/d(t) sebagai pergeseran frekuensi dalam suatu periode. 
+
+\begin{equation}
+	R_{max} = \frac{F_{s} c}{2 K}
+	\label{eq:MaxRange}
+\end{equation}
+
+Persamaan \ref{eq:MaxRange} menunjukkan jarak maksimum yang dapat di deteksi oleh radar FMCW. $F_{s}$ merupakan frekuensi \textit{sampling}, dan K adalah tingkat kenaikan frekuensi pada suatu periode yang dapat dihitung dengan persamaan \ref{eq:slope} yaitu mengurangi nilai maksimum frekuensi dengan nilai minimumnya, lalu membaginya dengan waktu \textit{sweep} (\textit{chirp}).
+
+\begin{equation}
+	K = \frac{f_{atas} - f_{bawah}}{T_{c}}
+	\label{eq:slope}
+\end{equation}
+
+Selain itu, salah satu faktor penting yang perlu diperhitungkan dalam perancangan radar FMCW adalah resolusi jarak. Resolusi jarak sendiri merupakan kemampuan dari suatu radar dalam membedakan dua buah objek yang berdekatan.
+
+\begin{equation}
+	\Delta{R} = \frac{c}{2 BW}
+	\label{eq:RangeRes}
+\end{equation}
+
+Persamaan \ref{eq:RangeRes} menjelaskan bahwa dengan membagi kecepatan cahaya dengan dua kali lebar pita frekuensi (\textit{Bandwidth}), maka resolusi jarak akan didapatkan.
 
 \subsection{\textit{Linear Frequency Modulated Continuous Wave Radar}}
 \textit{Linear Frequency Modulated}, yang juga sering disingkat sebagai LFM adalah teknik pengolahan sinyal yang dilakukan dengan menyapu frekuensi dari bawah ke atas (\textit{Up-Chirp}) atau dari atas ke bawah (\textit{Down-Chirp}). Dengan $f_{0}$ sebagai frekuensi tengah, dan dilakukan pada \textit{bandwidth} yang telah ditentukan. Teknik ini akan membantu pencapaian radar dengan resolusi yang lebih tinggi karena \textit{bandwidth} yang dicapai akan menjadi lebih tinggi.
@@ -181,14 +220,64 @@ Salah satu jenis gelombang LFM adalah \textit{Linear Triangular Frequency Modula
 	\end{center}
 \end{figure}
 
-\todo{Tambah lfmcw teknik lain (sawtooth,..) berikan alasan keunggulan masing masing, lalu unggulkan triangular :))}
 
-\subsection{Pengolahan Sinyal \textit{Receiver}}
+Selain gelombang LFM segitiga, ada pula yang berbentuk seperti gigi gergaji (\textit{Sawtooth}) seperti gambar \ref{pic:lfmSaw}.
 
-\todo{
-	Masukkan pengertian efek doppler, persamaan efek doppler, efek doppler pada radar, turunan rumus dari efek doppler di radar
-}
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.65]{pics/bab2/lfmSawtooth.png}
+		\caption[LFM Tipe Gigi Gergaji]{LFM Tipe Gigi Gergaji \cite{Jankiraman2018}}
+		\label{pic:lfmSaw}
+	\end{center}
+\end{figure}
 
+Seluruh teknik tersebut memiliki keunggulannya masing masing. Keunggulan tersebut didapat karena proses analisis yang berbeda. Pada LFM berbentuk gigi gergaji, maka hanya objek diam saja yang dapat dideteksi jarak dan kecepatannya seperti pada gambar \ref{pic:lfmDetail}. Namun bila menggunakan LFM berbentuk segitiga, maka objek yang bergerak dapat dideteksi jarak dan kecepatannya dalam waktu yang bersamaan.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.65]{pics/bab2/lfmDetail.png}
+		\caption[Detail Analisis LFM \textit{Sawtooth}]{Detail Analisis LFM \textit{Sawtooth} \cite{Jankiraman2018}}
+		\label{pic:lfmDetail}
+	\end{center}
+\end{figure}
+
+
+\subsection{Teknik Pengolahan Sinyal}
+Untuk melakukan pengambilan keputusan dari data yang diambil oleh radar, maka dibutuhkan langkah pengolahan yang benar dan mencakup berbagai hal. Beberapa parameter yang bisa diambil estimasinya adalah jarak dan kecepatan dari objek yang terdeteksi. Pada estimasi jarak, persamaan \ref{eq:RangeEst} dapat menjelaskan hubungan jarak dengan beberapa faktor yang mempengaruhinya.
+
+\begin{equation}
+	d_{0} = \frac{c f_{b}}{2 \mu} = \frac{c T_{c} f_{b}}{2 B}
+	\label{eq:RangeEst}
+\end{equation}
+
+Pada persamaan tersebut, terdapat c sebagai kecepatan cahaya, $f_{b}$ adalah \textit{beat frequency} yang merupakan perbedaan pada frekuensi,  $\mu$ yang merupakan laju perubahan frekuensi pada suatu waktu (\textit{chirp rate}), dengan $T_{c}$ sebagai waktu \textit{Sweep}. Sedangkan untuk melakukan estimasi kecepatan terdapat pergeseran frekuensi akibat efek doppler, yang menjelaskan perubahan frekuensi suatu gelombang karena suatu objek sumber yang bergerak. Bila pergeseran doppler ($f_{d}$), dengan v sebagai kecepatan, dan $\lambda$ adalah panjang gelombang, maka didapatkan persamaan \ref{eq:velocity}.
+
+\begin{equation}
+	v = \frac{f_{d}}{2}\lambda
+	\label{eq:velocity}
+\end{equation}
+
+\subsection{Perhitungan \textit{Error}}
+Penghitungan galat dari radar yang telah didesain dapat dilakukan dengan menguji keakurasian dari hasil deteksi. Hasil akurasi deteksi radar dapat diuji dengan menggunakan \textit{Root Mean Square Error} (RMS E) dari \textit{Signal to Noise Ratio}, sesuai persamaan \ref{eq:sigmaRN}.
+
+\begin{equation}
+	\sigma_{RN} = \frac{RMS E}{\sqrt{2 SNR_{L}}}
+	\label{eq:sigmaRN}
+\end{equation}
+
+Dengan nilai dari RMS E bisa didapat dengan persamaan \ref{eq:rmsE}.
+
+\begin{equation}
+	RMS E = \frac{\sqrt{\sum_{t = 1}^{k} (m(t)-n(t))^2}}{k}
+	\label{eq:rmsE}
+\end{equation}
+
+Nilai dari k adalah jumlah data, dengan m sebagai hasil data berdasarkan simulasi, dan n adalah data sebenarnya. Dengan begitu, nilai akurasi deteksi radar dapat dihitung dengan persamaan \ref{eq:accRadar}.
+
+\begin{equation}
+	Akurasi = 1 - \sigma_{RN}
+	\label{eq:accRadar}
+\end{equation}
 
 \section{\textit{Software Defined Radio}}
 \textit{Software Defined Radio} atau yang sering disingkat menjadi SDR merupakan teknologi komunikasi berbasis nirkabel yang kegunaannya dapat ditentukan oleh perangkat lunak \cite{Anisah2018}. Sehingga dalam implementasinya, tidak perlu dilakukan perubahan perangkat keras baru bila ingin melakukan perubahan, baik dari segi standar, teknologi, dan layanan. Hanya dengan melakukan perubahan konfigurasi saja, lalu SDR akan langsung dapat digunakan. 
@@ -261,6 +350,23 @@ Dengan spesifikasi tersebut, maka USRP B210 memiliki kemampuan \textit{instantne
 \end{figure}
 GNURadio adalah aplikasi yang dapat melakukan pemrograman terhadap USRP lewat antarmuka. GNURadio merupakan \textit{software open source} sehingga semua orang dapat mengakses, mengubah, dan membagikan \textit{source code} dari program tersebut secara bebas. Dengan menggunakan aplikasi ini, perubahan parameter pada USRP dapat dilakukan dengan mudah.
 
-\todo{masukkan langkah gnuradio generate python dari flowdiagram yang dirancang}
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.35]{pics/bab2/blokDiagramGRC.png} 
+		\caption[Contoh \textit{Flowgraph} GNURadio]{Contoh \textit{Flowgraph} GNURadio}
+		\label{pic:contohBlokGRC}
+	\end{center}
+\end{figure}
+
+Gambar \ref{pic:contohBlokGRC} adalah contoh blok diagram sistem (\textit{flowgraph}) yang sukses dibuat pada aplikasi GNURadio. Pada gambar \ref{pic:contohRunGRC} menunjukkan hasil bila desain sistem tersebut dijalankan.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.4]{pics/bab2/contohRunGRC.png} 
+		\caption[Hasil Desain Sistem GNURadio]{Hasil Desain Sistem GNURadio}
+		\label{pic:contohRunGRC}
+	\end{center}
+\end{figure}
+
 
 

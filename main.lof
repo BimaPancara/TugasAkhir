@@ -1,12 +1,21 @@
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Penggunaan Radar Otomotif}}{1}{figure.caption.4}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Skema Dasar Radar}}{8}{figure.caption.7}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Blok Diagram Radar}}{9}{figure.caption.8}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces \textit {Radar Cross Section}}}{10}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Bentuk Gelombang Radar}}{11}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces LFM Tipe Segitiga}}{12}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces USRP B210}}{14}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Logo GNURadio}}{15}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Skema Dasar Radar}}{7}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Blok Diagram Radar}}{8}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces \textit {Radar Cross Section}}}{9}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Bentuk Gelombang Radar}}{10}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Blok Diagram Radar FMCW}}{11}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces FMCW Dalam Domain Waktu}}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces LFM Tipe Segitiga}}{13}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces LFM Tipe Gigi Gergaji}}{13}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Detail Analisis LFM \textit {Sawtooth}}}{14}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces USRP B210\relax }}{16}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Logo GNURadio}}{17}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Contoh \textit {Flowgraph} GNURadio}}{17}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Hasil Desain Sistem GNURadio}}{18}{figure.caption.17}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces \textit {Flowchart} Penelitian}}{16}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Skema Penelitian}}{19}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \textit {Flowchart} Penelitian}}{19}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Lokasi Pengujian\relax }}{23}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Skema Penelitian\relax }}{24}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Konfigurasi Pengujian\relax }}{24}{figure.caption.21}%

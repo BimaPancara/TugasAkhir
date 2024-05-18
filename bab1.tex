@@ -8,15 +8,22 @@ Untuk melakukan pendeteksian objek, banyak cara yang dapat dilakukan agar hal it
 
 Radar sendiri adalah singkatan dari \textit{radio detection and ranging} yang berarti bahwa fokus kegunaan radar adalah pada pendeteksian dan estimasi jarak suatu benda. Dibandingkan dengan teknik pengukuran lain, keunggulan dari penggunaan radar adalah mampu mendeteksi objek pada jarak yang jauh serta dapat menembus kabut. Keunggulannya tersebut adalah alasan awal digunakannya radar dahulu kala, yaitu  pada medan perang untuk mendeteksi pasukan sebelum nampak sehingga dapat melakukan persiapan terlebih dahulu. 
 
-Namun, saat zaman semakin modern dan peperangan mulai berkurang, maka radar pun beralih fungsi. Seperti contohnya radar pendeteksi cuaca yang digunakan oleh badan klimatologi untuk memudahkan prediksi cuaca, radar pada menara pengawas bandara yang berguna dalam memonitor pergerakan pesawat di udara, dan radar pendeteksi objek pada kendaraan otomotif yang berguna untuk mendeteksi objek dan mencegah tabrakan.
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.5]{pics/bab1/AplikasiRadar.png} 
+		\caption[Penggunaan Radar Otomotif]{Penggunaan Radar Otomotif}
+		\label{pic:aplikasiRadarKini}
+	\end{center}
+\end{figure}
 
-Karena kemampuan radar dalam melakukan deteksi dan estimasi jarak tersebut, maka riset untuk mengembangkan implementasi radar dengan berbagai teknik semakin banyak \cite{Jia2020,Xia2021,MoraHuaman2020,Sundaresan2015}. Salah satu diantaranya adalah implementasi \textit{Real-Time Frequency Modulated Continous Wave Radar} yang dikembangkan dengan GNURadio dan digunakan pada \textit{Software Defined Radio} \cite{Sundaresan2015}. Teknik \textit{Frequency Modulated Continous Wave} atau yang disingkat dengan FMCW merupakan teknik transmisi secara kontinyu dari radar yang dapat memiliki energi yang lebih tinggi dengan \textit{peak power} yang lebih rendah \cite{Stasiak2017}. FMCW sangat populer digunakan pada industri, seperti untuk mendeteksi objek bawah tanah \cite{Macasero2018}, pada sistem pengawasan maritim \cite{Lestari2017}, dan bidang otomotif  karena dapat bertahan pada berbagai cuaca, dapat menghasilkan performa yang sangat baik, dapat memprediksi jarak dan kecepatan suatu objek \cite{Deng2017}. \\
+Namun, saat zaman semakin modern dan peperangan mulai berkurang, maka radar pun beralih fungsi. Seperti contohnya radar pendeteksi cuaca yang digunakan oleh badan klimatologi untuk memudahkan prediksi cuaca, radar pada menara pengawas bandara yang berguna dalam memonitor pergerakan pesawat di udara, dan radar pendeteksi objek pada kendaraan otomotif yang berguna untuk mendeteksi objek dan mencegah tabrakan seperti pada gambar \ref{pic:aplikasiRadarKini}.
 
-Sedangkan \textit{Software Defined Radio}, atau dalam kasus ini Radar, merupakan penggunaan fungsionalitas dari sistem radar yang diatur lewat \textit{Software} dengan maksud untuk memvirtualisasikan \textit{hardware} dan membuat manajemen pemrograman yang dilakukan menjadi lebih mudah \cite{Zeng2019}. Dengan menggunakan SDR lewat \textit{Universal Software Radio Peripheral} (USRP) sebagai perangkat kerasnya, maka proses riset dan pengembangan menjadi lebih murah, dikarenakan tidak diperlukannya fabrikasi material tiap uji coba pada frekuensi tertentu. Peneliti hanya perlu memprogram USRP yang dimilikinya untuk menghasilkan frekuensi tertentu yang mereka inginkan. Salah satu alat yang dapat digunakan dalam melakukan pemrograman terhadap USRP adalah GNURadio.\\
+Karena kemampuan radar dalam melakukan deteksi dan estimasi jarak tersebut, maka riset untuk mengembangkan implementasi radar dengan berbagai teknik semakin banyak \cite{Jia2020,Xia2021,MoraHuaman2020,Sundaresan2015}. Salah satu diantaranya adalah implementasi \textit{Real-Time Frequency Modulated Continous Wave Radar} yang dikembangkan dengan GNURadio dan digunakan pada \textit{Software Defined Radio} \cite{Sundaresan2015}. Teknik \textit{Frequency Modulated Continous Wave} atau yang disingkat dengan FMCW merupakan teknik transmisi secara kontinyu dari radar yang dapat memiliki energi yang lebih tinggi dengan \textit{peak power} yang lebih rendah \cite{Stasiak2017}. FMCW sangat populer digunakan pada industri, seperti untuk mendeteksi objek bawah tanah \cite{Macasero2018}, pada sistem pengawasan maritim \cite{Lestari2017}, dan bidang otomotif  karena dapat bertahan pada berbagai cuaca, dapat menghasilkan performa yang sangat baik, dapat memprediksi jarak dan kecepatan suatu objek \cite{Deng2017}. 
+
+Sedangkan \textit{Software Defined Radio}, atau dalam kasus ini Radar, merupakan penggunaan fungsionalitas dari sistem radar yang diatur lewat \textit{Software} dengan maksud untuk memvirtualisasikan \textit{hardware} dan membuat manajemen pemrograman yang dilakukan menjadi lebih mudah \cite{Zeng2019}. Dengan menggunakan SDR lewat \textit{Universal Software Radio Peripheral} (USRP) sebagai perangkat kerasnya, maka proses riset dan pengembangan menjadi lebih murah, dikarenakan tidak diperlukannya fabrikasi material tiap uji coba pada frekuensi tertentu. Peneliti hanya perlu memprogram USRP yang dimilikinya untuk menghasilkan frekuensi tertentu yang mereka inginkan. Salah satu alat yang dapat digunakan dalam melakukan pemrograman terhadap USRP adalah GNURadio.
 
 
-GNURadio merupakan aplikasi gratis yang berada dibawah lisensi \textit{GNU General Public License} untuk mempelajari pembuatan dan pengimplementasian sistem \textit{software defined radio}. Dengan melakukan pemrograman pada GNURadio untuk melakukan antarmuka dengan USRP yang dimiliki, peneliti dapat menentukan berapa frekuensi hingga \textit{sampling rate} yang diinginkan \cite{Prabaswara2011}.\\
-
+GNURadio merupakan aplikasi tak berbayar yang berada dibawah lisensi \textit{GNU General Public License} untuk mempelajari pembuatan dan pengimplementasian sistem \textit{software defined radio}. Dengan melakukan pemrograman pada GNURadio untuk melakukan antarmuka dengan USRP yang dimiliki, peneliti dapat menentukan berapa frekuensi hingga \textit{sampling rate} yang diinginkan \cite{Prabaswara2011}.
 
 Oleh karena itu, pada proposal ini dilakukan “\judul” sehingga dapat membuktikan bahwa sistem yang dirancang dapat melakukan pendeteksian objek dan estimasi jarak.
 
@@ -74,16 +81,18 @@ Dalam melakukan pengerjaan Tugas Akhir yang diajukan, penyelesaian yang digunaka
 Untuk memastikan proposal ini berjalan dengan lancar, maka diperlukannya penentuan capaian yang ingin diraih pada suatu periode yang sudah ditentukan. Dengan teraihnya capaian tersebut maka tahapan selanjutnya dapat mulai dilakukan.
 
 \begin{center}
-\begin{tabular}{|c|m{5cm}|c|m{4.5cm}|}
-	\hline
-	No. & Deskripsi Tahapan & Durasi & \textit{Milestone} \\
-	\hline
-	1. & Desain Sistem & 1 bulan &  Diagram blok dan simulasi \\
-	\hline
-	2. & Implementasi dan pengujian& 1 bulan & Pengujian sistem selesai \\
-	\hline
-	3. & Penyusunan laporan Tugas Akhir & 2 minggu & Buku Tugas Akhir selesai \\
-	\hline
-\end{tabular}
+	\begin{longtable}{|c|m{3.8cm}|c | m{3cm} |m{3cm}|}
+		\caption{Agenda Penelitian}
+		\label{tab:Agenda}\\
+		\hline
+		No. & Deskripsi Tahapan & Durasi & Tanggal & \textit{Milestone} \\
+		\hline
+		1. & Desain Sistem & 1 bulan & 1 September 2024 - 30 September 2024 & Diagram blok dan simulasi \\
+		\hline
+		2. & Implementasi dan pengujian& 1 bulan & 1 Oktober 2024 - 31 Oktober 2024 & Pengujian sistem selesai \\
+		\hline
+		3. & Penyusunan laporan Tugas Akhir & 2 minggu & 1 November 2024 - 15 November 2024 & Buku Tugas Akhir selesai \\
+		\hline
+	\end{longtable}
 \end{center}
-\todo{tambah tanggal +bulan}
+

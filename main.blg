@@ -3,24 +3,19 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: sampul.aux
 A level-1 auxiliary file: pengesahan.aux
-A level-1 auxiliary file: orisinalitas.aux
 A level-1 auxiliary file: abstrak.aux
-A level-1 auxiliary file: abstract.aux
-A level-1 auxiliary file: pengantar.aux
-A level-1 auxiliary file: listofappendix.aux
 A level-1 auxiliary file: bab1.aux
 A level-1 auxiliary file: bab2.aux
 A level-1 auxiliary file: bab3.aux
 A level-1 auxiliary file: pustaka.aux
 The style file: ieeetr.bst
-A level-1 auxiliary file: markLampiran.aux
 Database file #1: dafpus.bib
 Warning--can't use both author and editor fields in Kingsley1999
 Warning--can't use both volume and number fields in Melvin2014
 Warning--can't use both volume and number fields in Scheer2015
 You've used 20 entries,
             1876 wiz_defined-function locations,
-            627 strings with 8392 characters,
+            622 strings with 8317 characters,
 and the built_in function-call counts, 4323 in all, are:
 = -- 346
 > -- 251

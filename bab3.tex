@@ -43,10 +43,10 @@ Sementara itu, untuk memastikan hasil yang dicapai baik, maka perlu ditentukan p
 		\label{tab:paramUji}\\
 		\hline
 		No. & Parameter Pengujian		& Satuan\\ \hline
-		1.  &Jarak	   					& \\
-		2.  &Kecepatan 					&  \\
-		3.  &Arah						& \\
-		4.  &\textit{RMSE}				&  \\
+		1.  &Jarak	   					& m\\
+		2.  &Kecepatan 					& m/s\\
+		3.  &Arah						& -\\
+		4.  &\textit{RMSE}				& -\\
 		\hline
 	\end{longtable}
 \end{center}
@@ -62,47 +62,103 @@ Pada tahap ini, dilakukan perancangan tentang penelitian yang diangkat, dalam ko
 		No. & Spesifikasi 					& Keterangan\\\hline
 		1.  & USRP 							& B210\\
 		2.  & \textit{Center Frequency}  	& 3 GHz \\
-		3.  & \textit{Bandwidth} 			& A MHz \\
-		4.  & Jarak Maksimum 				& A m \\
-		5.  & Resolusi Jarak 				& A m \\
-		6.  & Kecepatan 					& A $m/s$ \\
-		7.  & Resolusi Kecepatan 			& A $m/s$\\
+		3.  & \textit{Bandwidth} 			& 5 MHz \\
+		4.  & Jarak Maksimum 				& 4500 m \\
+		5.  & Resolusi Jarak 				& 30 m \\
+		6.  & Kecepatan Maksimum			& 5000 $m/s$ \\
+		7.  & Resolusi Kecepatan 			& 10 $m/s$\\
 		\hline
 	\end{longtable}
 \end{center}
 
+\begin{itemize}
+	\item Menghitung resolusi jarak berdasarkan persamaan \ref{eq:RangeRes} dan dengan menentukan \textit{bandwidth} bernilai 5 MHz, maka.
+		\begin{align*}
+		\Delta{R} &= \frac{c}{2 \times BW} \\
+		\Delta{R} &= \frac{3 \cdot 10^{8}}{2 \cdot 5\times10^{6}}\\
+		\Delta{R} &= \frac{3 \cdot 10^{8}}{10^{7}}\\
+		\Delta{R} &= 30 m
+		\end{align*}
+	\item Menghitung jarak maksimum yang dapat dideteksi oleh radar digunakanlah persamaan \ref{eq:MaxRange}, namun sebelumnya harus ditentukan terlebih dahulu nilai K, yang merupakan tingkat kenaikan frekuensi pada suatu periode sesuai dengan persamaan \ref{eq:slope}
+		\begin{align*}
+		K &= \frac{f_{atas} - f_{bawah}}{T_{c}}\\
+		K &= \frac{3.005 \cdot 10^{9} - 3 \cdot 10^{9}}{5 \cdot 10^{-6}}\\
+		K &= 1 \cdot 10^{12} s
+		\end{align*}
+	Sehingga jarak maksimum yang didapat adalah.
+		\begin{align*}
+		R_{max} &= \frac{F_{s} c}{2 K}\\
+		R_{max} &= \frac{30 \cdot 10^{6} \times 3 \cdot 10^{8}}{2 \times 10^{12}}\\			R_{max} &= \frac{9 \cdot 10^{15}}{2 \cdot 10^{12}}\\
+		R_{max} &= 4500 m
+		\end{align*}
+	\item Kecepatan maksimum dapat dihitung dengan persamaan.
+		\begin{equation}
+		v_{max} = \frac{\lambda}{4 T_{c}}
+		\end{equation}
+	Sehingga, dengan $T_{c}$ $5 \cdot 10^{-6}$ dengan $\lambda$ bernilai 0.1 m maka.
+	\begin{align*}
+		v_{max} &= \frac{0.1}{4 \times 5 \cdot 10^{-6}}\\
+		v_{max} &= 5000 m/s
+	\end{align*}
+	\item Resolusi kecepatan dapat dihitung dengan persamaan.
+	\begin{equation}
+		\Delta{v} = \frac{\lambda}{2 T_{f}}
+	\end{equation}
+	Dengan $T_{f}$ sebagai durasi \textit{frame} bernilai 0.005 maka.
+	\begin{align*}
+		\Delta{v} &= \frac{\lambda}{2 T_{f}}\\
+		\Delta{v} &= \frac{0.1}{2 \times 0.005}\\
+		\Delta{v} &= 10 m/s
+	\end{align*}
+\end{itemize}
 
 \section{Implementasi Sistem}
-Tahap implementasi ini dilakukan pada aplikasi GNURadio dan menghasilkan \textit{flow diagram} yang merepresentasikan langkah yang dilakukan pada USRP. \textit{Flow diagram} yang didesain sudah memenuhi spesifikasi sistem radar pada tabel \ref{tab:spekRadar}.
+Tahap implementasi ini dilakukan pada aplikasi GNURadio dan menghasilkan \textit{flow diagram} yang merepresentasikan langkah yang dilakukan pada USRP. \textit{Flow diagram} yang didesain sudah memenuhi spesifikasi sistem radar pada tabel \ref{tab:spekRadar}. 
 
-\todo{
-	Masukkan narasi simulasi sistem
-}
+Implementasi sistem akan dilaksanakan pada beberapa perangkat, mulai dari laptop, antena, dan USRP. Berikut detail perangkat yang akan digunakan pada saat implementasi guna mendapat hasil yang baik.
 
-\todo{
-Detail perangkat Laptop :\\
-.\\
-.\\
-.\\
-Detail Perangkat USRP :\\
-.\\
-.\\
-.\\
-Detail Perangkat Antena \textit{Log-periodic} :\\
-.\\
-.\\
-.\\
-}
+\begin{enumerate}
+	\item IdeaPad Gaming 3 15ARH7 :
+	\begin{itemize}
+		\item \textit{Processor} : AMD Ryzen 7 6800H dengan Radeon Graphics 3.20 GHz
+		\item \textit{Memory} : 8,00 GB (7,19 GB \textit{usable})
+	\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+	\item Perangkat \textit{Software Defined Radio} :
+	\begin{itemize}
+		\item Tipe : USRP B210 
+		\item Jarak Frekuensi : 70 MHz - 6 GHz 
+	\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+	\item Antena \textit{Log-periodic} :
+	\begin{itemize}
+		\item Frekuensi : 800 M - 6G 
+		\item Pola Radiasi : \textit{Directional}
+		\item \textit{Gain} : 5.2 - 6.3 dB
+	\end{itemize}
+\end{enumerate}
 
 	
 \section{Pengambilan Data}
 Pada tahap ini, pengambilan data dengan radar yang sudah didesain dan diimplementasikan pada USRP dilakukan. Pengambilan data akan dilaksanakan di lokasi lapangan Univertitas Telkom Surabaya yang beralamat Jl. Ketintang No.156, Ketintang, Kec. Gayungan, Surabaya, Jawa Timur 60231.
 
-\todo{Masukkan gambar peta google maps lapangan + Skenario pengujian}
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.5]{pics/bab3/petaPengujian.png}
+		\caption{Lokasi Pengujian}
+		\label{img:petaUji}
+	\end{center}
+\end{figure}
+
+Pengujian dilakukan dengan menggunakan kendaraan roda empat sebagai objek yang akan dideteksi. Dengan begitu, maka pengambilan data kecepatan dapat dilakukan dan dapat dibandingkan dengan hasil yang didapat dari radar yang telah didesain.
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[scale=1]{pics/bab3/skema.png}
+		\includegraphics[scale=0.5]{pics/bab3/skema.png}
 		\caption{Skema Penelitian}
 		\label{img:skema}
 	\end{center}
@@ -110,6 +166,11 @@ Pada tahap ini, pengambilan data dengan radar yang sudah didesain dan diimplemen
 
 \section{Konfigurasi Pengujian}
 Konfigurasi pengujian dilakukan sesuai dengan gambar \ref{img:skema}. Terdapat satu buah perangkat laptop yang terhubung dengan dua buah USRP, masing masing USRP terhubung dengan antena \textit{Log-periodic}. USRP 1 berperan sebagai \textit{transmitter} sedangkan USRP 2 berperan sebagai \textit{receiver}.
-\todo{
-foto laptop + USRP + antena
-}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.09]{pics/bab3/konfigurasiPengujian.jpg}
+		\caption{Konfigurasi Pengujian}
+		\label{img:konfigurasi}
+	\end{center}
+\end{figure}

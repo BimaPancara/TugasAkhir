@@ -1,21 +1,20 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.15)  15 MAR 2024 19:05
-entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**dafpus.tex
+This is LuaTeX, Version 1.17.0 (TeX Live 2023)  (format=dvilualatex 2024.5.9)  11 MAY 2024 13:22
+ restricted system commands enabled.
+**/run/media/bimapancara/New Volume/TUGAS AKHIR Ver/V5/bab2.tex
 
 ! Emergency stop.
-<*> dafpus.tex
-              
-*** (job aborted, file error in nonstop mode)
+<*> /run/media/bimapancara/New 
+                            Volume/TUGAS AKHIR Ver/V5/bab2.tex
 
- 
-Here is how much of TeX's memory you used:
- 3 strings out of 476034
- 102 string characters out of 5792864
- 1849388 words of memory out of 6000000
- 20560 multiletter control sequences out of 15000+600000
- 512287 words of font info for 32 fonts, out of 8000000 for 9000
- 1137 hyphenation exceptions out of 8191
- 0i,0n,0p,1b,6s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+Here is how much of LuaTeX's memory you used:
+ 5 strings out of 478280
+ 100000,1977958 words of node,token memory allocated
+ 270 words of node memory still in use:
+   1 hlist, 39 glue_spec nodes
+   avail lists: 2:12,3:3,4:1,5:1
+ 20331 multiletter control sequences out of 65536+600000
+ 14 fonts using 591679 bytes
+ 0i,0n,0p,0b,6s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, bad output DVI file produced!
+No pages of output.
+

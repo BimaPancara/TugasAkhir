@@ -4,7 +4,7 @@
 
 % Load konfigurasi LaTeX untuk tipe laporan thesis
 \usepackage{ta}	
-
+\usepackage{amsmath}
 % Load konfigurasi khusus untuk laporan yang sedang dibuat
 \input{konfigurasi}
 
@@ -20,23 +20,23 @@
 \include{pengesahan}
 
 % Halaman pernyataan orisinalitas
-\addChapter{LEMBAR PERNYATAAN ORISINALITAS}
-\include{orisinalitas}
+%\addChapter{LEMBAR PERNYATAAN ORISINALITAS}
+%\include{orisinalitas}
 
 % Gunakan penomoran halaman romawi
 \pagenumbering{roman}
 
-% setelah bagian ini, halaman dihitung sebagai halaman ke 4
-\setcounter{page}{4}
+% setelah bagian ini, halaman dihitung sebagai halaman ke 3
+\setcounter{page}{3}
 
 % Abstrak Bahasa Indonesia dan Bahasa Iggris
 \addChapter{ABSTRAK}
 \include{abstrak}
-\include{abstract}
+%\include{abstract}
 
 % Kata Pengantar
-\addChapter{\kataPengantar}
-\include{pengantar}
+%\addChapter{\kataPengantar}
+%\include{pengantar}
 
 %\addChapter{UCAPAN TERIMA KASIH}
 %\include{ucapan}
@@ -49,8 +49,8 @@
 \listoftables
 \clearpage
 % Daftar Lampiran
-\addChapter{DAFTAR LAMPIRAN}
-\include{listofappendix}
+%\addChapter{DAFTAR LAMPIRAN}
+%\include{listofappendix}
 
 % Gunakan penomeran Arab (1, 2, 3, ...) setelah bagian ini.
 \pagenumbering{arabic}
@@ -72,10 +72,10 @@
 \include{pustaka}
 
 % Lampiran 
-\begin{appendix}
-	\pagenumbering{gobble}
-	\include{markLampiran}
+%\begin{appendix}
+%	\pagenumbering{gobble}
+%	\include{markLampiran}
 %	\setcounter{page}{2}
-\end{appendix}
+%\end{appendix}
 
 \end{document}
