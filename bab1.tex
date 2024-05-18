@@ -1,0 +1,64 @@
+%-----------------------------------------------------------------------------%
+\chapter{\babSatu}
+%-----------------------------------------------------------------------------%
+%-----------------------------------------------------------------------------%
+\section{Latar Belakang}
+%-----------------------------------------------------------------------------%
+Untuk melakukan pendeteksian objek, banyak cara yang dapat dilakukan agar hal itu bisa dicapai. Seperti contohnya adalah dengan menggunakan pengolahan visual dari hasil tangkapan kamera untuk melakukan analisis video, apalagi dengan menggunakan \textit{multi-camera network} \cite{Zhang2015}. Adapula penggunaan gelombang suara yang memanfaatkan frekuensi suara pada jarak ultrasonik untuk mendeteksi objek dan jarak dengan menggunakan mikrokontroler dan sensor ultrasonik \cite{Biswas2020}. Teknik lain yang menjadi alternatif adalah penggunaan gelombang elektromagnetik untuk mendeteksi objek dan jarak suatu benda dengan menggunakan radar. Radar sendiri adalah singkatan dari \textit{radio detection and ranging} yang berarti bahwa fokus kegunaan radar adalah pada pendeteksian dan estimasi jarak suatu benda.\\
+
+Karena kemampuan radar dalam melakukan deteksi dan estimasi jarak tersebut, maka riset untuk mengembangkan implementasi radar dengan berbagai teknik semakin banyak \cite{Jia2020,Xia2021,MoraHuaman2020,Sundaresan2015}. Salah satu diantaranya adalah implementasi \textit{Real-Time Frequency Modulated Continous Wave Radar} yang dikembangkan dengan GNURadio dan digunakan pada \textit{Software Defined Radio} \cite{Sundaresan2015}. Teknik \textit{Frequency Modulated Continous Wave} atau yang disingkat dengan FMCW merupakan teknik transm-isi secara kontinyu dari radar yang dapat memiliki energi yang lebih tinggi dengan \textit{peak power} yang lebih rendah \cite{Stasiak2017}. FMCW sangat populer digunakan pada industri, seperti untuk mendeteksi objek bawah tanah \cite{Macasero2018}, pada sistem pengawasan maritim \cite{Lestari2017}, dan bidang otomotif  karena dapat bertahan pada berbagai cuaca, dapat menghasilkan performa yang sangat baik, dapat memprediksi jarak dan kecepatan suatu objek \cite{Deng2017}. \\
+
+Sedangkan \textit{Software Defined Radio}, atau dalam kasus ini Radar, merupakan penggunaan fungsionalitas dari sistem radar yang diatur lewat \textit{Software} dengan maksud untuk memvirtualisasikan \textit{hardware} dan membuat manajemen pemrograman yang dilakukan menjadi lebih mudah \cite{Zeng2019}. Dengan menggunakan SDR lewat \textit{Universal Software Radio Peripheral} sebagai perangkat kerasnya, maka proses riset dan pengembangan menjadi lebih murah, dikarenakan tidak diperlukannya fabrikasi material tiap uji coba pada frekuensi tertentu. Peneliti hanya perlu memprogram USRP yang dimilikinya untuk menghasilkan frekuensi tertentu yang mereka inginkan. Salah satu alat yang dapat digunakan dalam melakukan pemrograman terhadap USRP adalah GNURadio.\\
+
+
+GNURadio merupakan aplikasi gratis yang berada dibawah lisensi \textit{GNU General Public License} untuk mempelajari pembuatan dan pengimplementasian sistem \textit{software defined radio}. Dengan melakukan pemrograman pada GNURadio untuk melakukan antarmuka dengan USRP yang dimiliki, peneliti dapat menentukan berapa frekuensi hingga \textit{sampling rate} yang diinginkan \cite{Prabaswara2011}.\\
+
+
+Oleh karena itu, pada proposal ini dilakukan “Rancang Bangun Sistem \textit{Frequency Modulated Continous Wave Radar }Berbasis \textit{Software Defined Radio} Dengan \textit{GNURadio }Untuk Mendeteksi Objek dan Estimasi Jarak” sehingga dapat membuktikan bahwa sistem yang dirancang dapat melakukan pendeteksian objek dan estimasi jarak.
+
+%-----------------------------------------------------------------------------%
+\section{Rumusan Masalah}
+%-----------------------------------------------------------------------------%
+Dari latar belakang yang telah dipaparkan diatas, maka ditemukannya rumusan masalah, yaitu:
+\begin{enumerate}
+	\item Bagaimana langkah melakukan rancang bangun sistem radar FMCW pada perangkat lunak GNURadio?
+	\item Bagaimana proses pelaksanaan sistem radar FMCW pada USRP?
+	\item Bagaimana tingkat keakurasian dari sistem radar FMCW pada USRP dalam mendeteksi objek, melakukan estimasi jarak, dan kecepatan?
+\end{enumerate} 
+
+%-----------------------------------------------------------------------------%
+\section{Tujuan dan Manfaat}
+%-----------------------------------------------------------------------------%
+Dari rumusan masalah yang sudah didapatkan, maka bisa diambil beberapa tujuan yang ingin dicapai oleh penulis, yaitu:
+
+\begin{enumerate}
+	\item Untuk melakukan rancang bangun sistem radar FMCW pada perangkat lunak GNURadio.
+	\item Untuk melakukan pelaksanaan sistem radar FMCW pada USRP.
+	\item Untuk mengetahui tingkat keakurasian pendeteksi objek, estimasi jarak, dan kecepatan menggunakan radar FMCW pada USRP.
+\end{enumerate}
+
+%-----------------------------------------------------------------------------%
+\section{Batasan Permasalahan}
+%-----------------------------------------------------------------------------%
+Hal yang akan dilakukan dalam penelitian ini adalah.
+\begin{enumerate}
+	\item Parameter yang diidentifikasi pada rancang bangun ini adalah resolusi jarak dan tingkat keakurasian.
+	\item Pengujian sistem dengan menggunakan USRP B210 untuk melakukan pendeteksian objek dan estimasi jarak.
+	\item Perangkat lunak yang digunakan adalah GNURadio.
+\end{enumerate}
+
+%-----------------------------------------------------------------------------%
+\section{Manfaat}
+%-----------------------------------------------------------------------------%
+Manfaat yang diharapkan dari hasil penelitian terkait dengan penelitian ini adalah. 
+\begin{enumerate}
+	\item Menguji keakurasian dari sistem FMCW Radar lewat estimasi jarak dan deteksi objek.
+	\item Menjadi referensi dalam implementasi FMCW Radar pada berbagai macam industri.
+\end{enumerate}
+
+%-----------------------------------------------------------------------------%
+\section{Metode Penelitian}
+%-----------------------------------------------------------------------------%
+Proposal ini dilakukan dengan pendekatan: studi teoritis/studi literatur, pengukuran empirik, analisis statistik, simulasi, perancangan, dan implementasi.
+
+
