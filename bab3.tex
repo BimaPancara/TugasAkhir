@@ -8,20 +8,20 @@
 Dalam suatu penelitian, terdapat urutan tahapan yang perlu dilakukan. Alur penelitian ini mengandung seluruh langkah yang harus ditempuh, mulai dari fase perancangan hingga tahap akhir penelitian.
  \begin{figure}
 	\begin{center}
-		\includegraphics[scale=0.6]{pics/bab3/flowchart.png} 
+		\includegraphics[scale=0.5]{pics/bab3/flowchart2.png} 
 		\label{img:gambar 1}
 		\caption[\textit{Flowchart} Penelitian]{\textit{Flowchart} Penelitian}
 	\end{center}
 \end{figure}
 Pada alur penelitian yang telah dirancang, terdapat 6 tahap yang perlu dilakukan setelah penelitian dimulai dan sebelum penelitian diakhiri. Tiap tahapan yang telah dirancang harus dilaksanakan sebaik mungkin agar hasil yang diharapkan dapat tercapai.
 
-\section{Analisis Permasalahan}
-Tahap ini dilakukan dengan tujuan untuk melakukan analisa terhadap masalah yang dipilih. Saat analisis telah didapat, maka perancangan solusi akan lebih mudah dilakukan.
-
-\section{Studi Literatur}Studi Literatur
+\section{Studi Literatur}
 Pada tahap ini, dilakukan studi literatur terhadap masalah yang diangkat serta solusi yang diajukan pada proposal ini. Studi literatur meliputi kajian artikel terdahulu hingga kajian terhadap perangkat lunak yang digunakan serta metode yang dilakukan dalam penyelesaian masalah.
 	
-\section{Perancangan}
+\section{Penentuan Parameter}
+
+
+\section{Perancangan Spesifikasi Sistem}
 Pada tahap ini, dilakukan perancangan tentang penelitian yang diangkat, dalam konteks ini adalah radar. Sehingga perlu dilakukannya penentuan spesifikasi radar berdasarkan perangkat keras yang digunakan. Penelitian ini menggunakan alat USRP berseri B210.  Spesifikasi dari alat ini akan dijelaskan pada tabel berikut.
 
 \begin{longtable}{|c|c|c|c|}
@@ -46,20 +46,21 @@ Pada tahap ini, dilakukan perancangan tentang penelitian yang diangkat, dalam ko
 	\hline
 	9. &  \textit{W/ GPS Unlocked TCXO Reference} & $\pm 75$ & ppb \\
 	\hline
-	10. & \textit{W/ GPS Locked TCXO Reference} & $<$ 1 & ppb \\ \hline
+	10. & \textit{W/ GPS Locked TCXO Reference} & $<$ 1 & ppb \\ 
+	\hline
 \end{longtable}
 
 Dengan spesifikasi tersebut, maka USRP B210 memiliki kemampuan \textit{instantneous bandwidth} hingga 56 MHz pada transmisi 1 X 1 dan 30.72 MHz pada transmisi 2 X 2.
 
-\section{Implementasi}
+\section{Implementasi Sistem}
 Tahap implementasi dilakukan dengan menerapkan hasil dari tahap perancangan pada alat USRP yang digunakan. 
 
 \section{Evaluasi Sistem}
-Tahap ini berguna untuk menguji sistem yang telah diimplementasikan di USRP. Bila sistem yang dirancang dapat berjalan dengan baik, maka tahap pengambilan data dapat dilakukan. Namun bila sistem tidak berjalan dengan baik maka proses penelitian akan dimulai kembali pada tahap perancangan.
+Tahap ini berguna untuk menguji sistem yang telah   perancangan.
 	
 \section{Pengambilan Data}
 Pada tahap ini, pengambilan data dengan radar yang sudah didesain dan diimplementasikan pada USRP dilakukan.
-\todo{Skema konfigurasi percobaan dan pengujian jarak}
+%\todo{Skema konfigurasi percobaan dan pengujian jarak}
 
 \section{Penentuan Spesifikasi Radar}
 Dari studi literatur yang telah dilakukan, maka ditemukan parameter yang perlu di perhitungkan dalam melakukan perancangan radar FMCW, yaitu.
@@ -71,8 +72,8 @@ Dari studi literatur yang telah dilakukan, maka ditemukan parameter yang perlu d
 	No. & Spesifikasi & Keterangan\\
 	\hline
 	1. & USRP & B210\\
-	2. & \textit{Center Frequency} & A GHz \\
-	3. & \textit{Bandwidth} & A MHz \\
+	2. & \textit{Center Frequency} & 3 GHz \\
+	3. & \textit{Bandwidth} & 56 MHz \\
 	4. & Jarak & A m \\
 	5. & Resolusi Jarak & A m \\
 	6.& Kecepatan & A $m/s$ \\

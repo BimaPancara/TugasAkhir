@@ -69,36 +69,6 @@ A.~Prabaswara, A.~Munir, and A.~B. Suksmono, ``Gnu radio based software-defined
   International Conference on Telecommunication Systems, Services, and
   Applications (TSSA)}, IEEE, Oct. 2011.
 
-\bibitem{Zhu2016}
-Q.~Zhu and Y.~Wang, ``Fmcw radar implemented with gnu radio companion,'' 2016.
-
-\bibitem{Aulia2015}
-S.~Aulia, A.~B. Suksmono, and A.~Munir, ``Stationary and moving targets
-  detection on fmcw radar using gnu radio-based software defined radio,'' in
-  {\em 2015 International Symposium on Intelligent Signal Processing and
-  Communication Systems (ISPACS)}, IEEE, Nov. 2015.
-
-\bibitem{Saputro2019}
-A.~C. Saputro, ``Implementasi sistem radar frequency modulated continuous wave
-  untuk deteksi jarak berbasis usrp,'' 2019.
-
-\bibitem{Mathumo2017}
-T.~W. Mathumo, T.~G. Swart, and R.~W. Focke, ``Implementation of a gnu radio
-  and python fmcw radar toolkit,'' in {\em 2017 IEEE AFRICON}, IEEE, Sept.
-  2017.
-
-\bibitem{Saputera2015}
-Y.~P. Saputera, D.~Herdiana, H.~Madinawati, A.~B. Suksmono, and A.~Munir,
-  ``Linear frequency modulated continuous wave radar using gnu radio and
-  usrp,'' in {\em 2015 1st International Conference on Wireless and Telematics
-  (ICWT)}, IEEE, Nov. 2015.
-
-\bibitem{Amin2014}
-E.~J. Amin, A.~B. Suksmono, and A.~Munir, ``Accuracy analysis of fm chirp in
-  gnu radio-based fmcw radar for multiple target detection,'' in {\em 2014
-  International Conference on Computer, Control, Informatics and Its
-  Applications (IC3INA)}, IEEE, Oct. 2014.
-
 \bibitem{Anisah2018}
 I.~Anisah, H.~Briantoro, A.~Zainudin, and D.~I. Permatasari, ``Implementasi
   sistem komunikasi nirkabel ofdm berbasis software defined radio (sdr),'' {\em
@@ -110,15 +80,6 @@ M.~M. Gulo, I.~G.~P. Astawa, Arifin, Y.~Moegiharto, and H.~Briantoro, ``The
   joint channel coding and pre-distortion technique on the usrp-based mimo-ofdm
   system,'' {\em Jurnal RESTI (Rekayasa Sistem dan Teknologi Informasi)},
   vol.~7, pp.~930--939, Aug. 2023.
-
-\bibitem{Faruque2017}
-S.~Faruque, {\em Radio Frequency Modulation Made Easy}.
-\newblock Springer International Publishing, 2017.
-
-\bibitem{Jankiraman2018}
-M.~Jankiraman, {\em FMCW radar design}.
-\newblock Artech House radar series, Boston: Artech House, 2018.
-\newblock Includes bibliographical references and index.
 
 \bibitem{Skolnik2001}
 M.~I. Skolnik, {\em Introduction to radar systems}.
@@ -146,6 +107,11 @@ W.~L. Melvin, ed., {\em Principles of modern radar}, vol.~3.
 J.~Scheer, M.~A. Richards, and W.~A. Holm, eds., {\em Principles of modern
   radar}, vol.~Volume 1.
 \newblock Raleigh, NC: SciTech Pub, reprinted with corrections~ed., 2015.
+\newblock Includes bibliographical references and index.
+
+\bibitem{Jankiraman2018}
+M.~Jankiraman, {\em FMCW radar design}.
+\newblock Artech House radar series, Boston: Artech House, 2018.
 \newblock Includes bibliographical references and index.
 
 \end{thebibliography}
