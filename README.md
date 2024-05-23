@@ -1,8 +1,8 @@
 # TugasAkhir_TelU
 Berisi dokumen Tugas Akhir
 
-# Pra Seminar Proposal
-Repositori ini berisi dokumen Pra Seminar Proposal tahun 2024 milik Bima Pancara Haryono Putra, sebagai mahasiswa Program Studi Teknik Telekomunikasi Telkom University Surabaya tahun.
+# Seminar Proposal
+Repositori ini berisi dokumen Seminar Proposal tahun 2024 milik Bima Pancara Haryono Putra, sebagai mahasiswa Program Studi Teknik Telekomunikasi Telkom University Surabaya tahun.
 
 # *Honorable Mention*
 

@@ -4,9 +4,9 @@
 %-----------------------------------------------------------------------------%
 \section{Latar Belakang}
 %-----------------------------------------------------------------------------%
-Untuk melakukan pendeteksian objek, banyak cara yang dapat dilakukan agar hal itu bisa dicapai. Seperti contohnya adalah dengan menggunakan pengolahan visual dari hasil tangkapan kamera untuk melakukan analisis video, apalagi dengan menggunakan \textit{multi-camera network} \cite{Zhang2015}. Adapula penggunaan gelombang suara yang memanfaatkan frekuensi suara pada jarak ultrasonik untuk mendeteksi objek dan jarak dengan menggunakan mikrokontroler dan sensor ultrasonik \cite{Biswas2020}. Teknik lain yang menjadi alternatif adalah penggunaan gelombang elektromagnetik untuk mendeteksi objek dan jarak suatu benda dengan menggunakan radar. 
+Teknologi penginderaan sangat penting pada masa kini, salah satunya adalah untuk melakukan pendeteksian objek. Dalam implementasi pendeteksian objek, banyak cara yang dapat dilakukan agar hal itu bisa dicapai. Seperti contohnya adalah dengan menggunakan pengolahan visual dari hasil tangkapan kamera untuk melakukan analisis video, apalagi dengan menggunakan \textit{multi-camera network} \cite{Zhang2015}. Adapula penggunaan gelombang suara yang memanfaatkan frekuensi suara pada jarak ultrasonik untuk mendeteksi objek dan jarak dengan menggunakan mikrokontroler dan sensor ultrasonik \cite{Biswas2020}. Teknik lain yang menjadi alternatif adalah penggunaan gelombang elektromagnetik untuk mendeteksi objek dan jarak suatu benda dengan menggunakan radar. 
 
-Radar sendiri adalah singkatan dari \textit{radio detection and ranging} yang berarti bahwa fokus kegunaan radar adalah pada pendeteksian dan estimasi jarak suatu benda. Dibandingkan dengan teknik pengukuran lain, keunggulan dari penggunaan radar adalah mampu mendeteksi objek pada jarak yang jauh serta dapat menembus kabut. Keunggulannya tersebut adalah alasan awal digunakannya radar dahulu kala, yaitu  pada medan perang untuk mendeteksi pasukan sebelum nampak sehingga dapat melakukan persiapan terlebih dahulu. 
+Radar adalah singkatan dari radio \textit{detection and ranging} yang berarti bahwa fokus kegunaan radar adalah pada pendeteksian dan estimasi jarak suatu benda dengan menggunakan gelombang elektromagnetik. Dibandingkan dengan teknik pengukuran lain, keunggulan dari penggunaan radar adalah mampu mendeteksi objek pada jarak yang jauh serta dapat menembus kabut. Keunggulannya tersebut adalah alasan awal digunakannya radar dahulu kala, yaitu  pada medan perang untuk mendeteksi pasukan sebelum nampak sehingga dapat melakukan persiapan terlebih dahulu. 
 
 \begin{figure}
 	\begin{center}
@@ -16,11 +16,11 @@ Radar sendiri adalah singkatan dari \textit{radio detection and ranging} yang be
 	\end{center}
 \end{figure}
 
-Namun, saat zaman semakin modern dan peperangan mulai berkurang, maka radar pun beralih fungsi. Seperti contohnya radar pendeteksi cuaca yang digunakan oleh badan klimatologi untuk memudahkan prediksi cuaca, radar pada menara pengawas bandara yang berguna dalam memonitor pergerakan pesawat di udara, dan radar pendeteksi objek pada kendaraan otomotif yang berguna untuk mendeteksi objek dan mencegah tabrakan seperti pada gambar \ref{pic:aplikasiRadarKini}.
+Waktu berjalan dan zaman semakin modern serta peperangan mulai berkurang, maka radar pun beralih fungsi. Seperti contohnya radar pendeteksi cuaca yang digunakan oleh badan klimatologi untuk memudahkan prediksi cuaca, radar pada menara pengawas bandara yang berguna dalam memonitor pergerakan pesawat di udara, dan radar pendeteksi objek pada kendaraan otomotif yang berguna untuk mendeteksi objek dan mencegah tabrakan seperti pada gambar \ref{pic:aplikasiRadarKini}.
 
-Karena kemampuan radar dalam melakukan deteksi dan estimasi jarak tersebut, maka riset untuk mengembangkan implementasi radar dengan berbagai teknik semakin banyak \cite{Jia2020,Xia2021,MoraHuaman2020,Sundaresan2015}. Salah satu diantaranya adalah implementasi \textit{Real-Time Frequency Modulated Continous Wave Radar} yang dikembangkan dengan GNURadio dan digunakan pada \textit{Software Defined Radio} \cite{Sundaresan2015}. Teknik \textit{Frequency Modulated Continous Wave} atau yang disingkat dengan FMCW merupakan teknik transmisi secara kontinyu dari radar yang dapat memiliki energi yang lebih tinggi dengan \textit{peak power} yang lebih rendah \cite{Stasiak2017}. FMCW sangat populer digunakan pada industri, seperti untuk mendeteksi objek bawah tanah \cite{Macasero2018}, pada sistem pengawasan maritim \cite{Lestari2017}, dan bidang otomotif  karena dapat bertahan pada berbagai cuaca, dapat menghasilkan performa yang sangat baik, dapat memprediksi jarak dan kecepatan suatu objek \cite{Deng2017}. 
+Kemampuan radar dalam melakukan deteksi dan estimasi jarak sangatlah penting, maka riset untuk mengembangkan implementasi radar dengan berbagai teknik semakin banyak \cite{Jia2020,Xia2021,MoraHuaman2020,Sundaresan2015}. Salah satu diantaranya adalah implementasi \textit{Real-Time Frequency Modulated Continuous Wave Radar} yang dikembangkan dengan GNURadio dan digunakan pada \textit{Software Defined Radio} \cite{Sundaresan2015}. Teknik \textit{Frequency Modulated Continuous Wave} atau yang disingkat dengan FMCW merupakan teknik transmisi secara kontinyu dari radar yang dapat memiliki energi yang lebih tinggi dengan \textit{peak power} yang lebih rendah \cite{Stasiak2017}. FMCW sangat populer digunakan pada industri, seperti untuk mendeteksi objek bawah tanah \cite{Macasero2018}, pada sistem pengawasan maritim \cite{Lestari2017}, dan bidang otomotif  karena dapat bertahan pada berbagai cuaca, dapat menghasilkan performa yang sangat baik, dapat memprediksi jarak dan kecepatan suatu objek \cite{Deng2017}. 
 
-Sedangkan \textit{Software Defined Radio}, atau dalam kasus ini Radar, merupakan penggunaan fungsionalitas dari sistem radar yang diatur lewat \textit{Software} dengan maksud untuk memvirtualisasikan \textit{hardware} dan membuat manajemen pemrograman yang dilakukan menjadi lebih mudah \cite{Zeng2019}. Dengan menggunakan SDR lewat \textit{Universal Software Radio Peripheral} (USRP) sebagai perangkat kerasnya, maka proses riset dan pengembangan menjadi lebih murah, dikarenakan tidak diperlukannya fabrikasi material tiap uji coba pada frekuensi tertentu. Peneliti hanya perlu memprogram USRP yang dimilikinya untuk menghasilkan frekuensi tertentu yang mereka inginkan. Salah satu alat yang dapat digunakan dalam melakukan pemrograman terhadap USRP adalah GNURadio.
+\textit{Software Defined Radio}, atau dalam kasus ini Radar, merupakan penggunaan fungsionalitas dari sistem radar yang diatur lewat \textit{Software} dengan maksud untuk memvirtualisasikan \textit{hardware} dan membuat manajemen pemrograman yang dilakukan menjadi lebih mudah \cite{Zeng2019}. Dengan menggunakan SDR lewat \textit{Universal Software Radio Peripheral} (USRP) sebagai perangkat kerasnya, maka proses riset dan pengembangan menjadi lebih murah, dikarenakan tidak diperlukannya fabrikasi material tiap uji coba pada frekuensi tertentu. Peneliti hanya perlu memprogram USRP yang dimilikinya untuk menghasilkan frekuensi tertentu yang mereka inginkan. Salah satu alat yang dapat digunakan dalam melakukan pemrograman terhadap USRP adalah GNURadio.
 
 
 GNURadio merupakan aplikasi tak berbayar yang berada dibawah lisensi \textit{GNU General Public License} untuk mempelajari pembuatan dan pengimplementasian sistem \textit{software defined radio}. Dengan melakukan pemrograman pada GNURadio untuk melakukan antarmuka dengan USRP yang dimiliki, peneliti dapat menentukan berapa frekuensi hingga \textit{sampling rate} yang diinginkan \cite{Prabaswara2011}.
@@ -30,17 +30,20 @@ Oleh karena itu, pada proposal ini dilakukan “\judul” sehingga dapat membukt
 %-----------------------------------------------------------------------------%
 \section{Rumusan Masalah}
 %-----------------------------------------------------------------------------%
-Dari latar belakang yang telah dipaparkan diatas, maka ditemukannya rumusan masalah, yaitu:
+Dari latar belakang yang telah dipaparkan diatas, maka ditemukannya rumusan masalah, yaitu:\\
+\todo{Cek Ulang !!}
 \begin{enumerate}
-	\item Bagaimana rancangan sistem radar FMCW berbasis USRP B210 menggunakan GNURadio? 
+	\item Belum ada rancangan sistem radar FMCW menggunakan GNURadio yang memaksimalkan kemampuan USRP B210.
+	\item Penggunaan GNURadio berbasis USRP 
 	\item Bagaimana sistem radar FMCW berbasis USRP B210 yang telah dirancang dapat mendeteksi, mengestimasi jarak, dan kecepatan objek?
 	\item Bagaimana tingkat keakurasian dari sistem radar FMCW pada USRP dalam mendeteksi, melakukan estimasi jarak, dan kecepatan objek?
 \end{enumerate} 
 
 %-----------------------------------------------------------------------------%
-\section{Tujuan Penelitian}
+\section{Tujuan dan Manfaat}
 %-----------------------------------------------------------------------------%
-Dari rumusan masalah yang sudah didapatkan, maka bisa diambil beberapa tujuan yang ingin dicapai oleh penulis, yaitu:
+Dari rumusan masalah yang sudah didapatkan, maka bisa diambil beberapa tujuan yang ingin dicapai oleh penulis, yaitu:\\
+\todo{Ubah !!}
 
 \begin{enumerate}
 	\item Untuk melakukan perancangan sistem radar FMCW berbasis USRP B210 menggunakan GNURadio.
@@ -49,7 +52,7 @@ Dari rumusan masalah yang sudah didapatkan, maka bisa diambil beberapa tujuan ya
 \end{enumerate}
 
 %-----------------------------------------------------------------------------%
-\section{Batasan Permasalahan}
+\section{Batasan Masalah}
 %-----------------------------------------------------------------------------%
 Hal yang akan dilakukan dalam penelitian ini adalah.
 \begin{enumerate}
@@ -59,15 +62,6 @@ Hal yang akan dilakukan dalam penelitian ini adalah.
 	\item Antena yang digunakan adalah antena \textit{Log Periodik}
 	\item Frekuensi kerja radar pada 3 GHz.
 	\item Objek deteksi adalah kendaraan empat roda.
-\end{enumerate}
-
-%-----------------------------------------------------------------------------%
-\section{Manfaat}
-%-----------------------------------------------------------------------------%
-Manfaat yang diharapkan dari hasil penelitian terkait dengan penelitian ini adalah. 
-\begin{enumerate}
-	\item Menguji keakurasian dari sistem FMCW Radar lewat estimasi jarak, kecepatan, dan deteksi objek.
-	\item Menjadi referensi dalam implementasi FMCW Radar pada berbagai macam industri.
 \end{enumerate}
 
 %-----------------------------------------------------------------------------%

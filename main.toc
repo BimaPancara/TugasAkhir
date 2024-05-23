@@ -8,9 +8,8 @@
 \contentsline {section}{\numberline {1.2}Rumusan Masalah}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Tujuan Penelitian}{3}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Batasan Permasalahan}{3}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Manfaat}{4}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Metode Penelitian}{4}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Jadwal Penelitian}{4}{section.1.7}%
+\contentsline {section}{\numberline {1.5}Metode Penelitian}{3}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Jadwal Penelitian}{4}{section.1.6}%
 \contentsline {chapter}{\numberline {II}\uppercase {Konsep Dasar}}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Kajian Penelitian Terkait}{5}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Radar}{9}{section.2.2}%
