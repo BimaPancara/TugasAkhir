@@ -6,28 +6,28 @@
 \contentsline {chapter}{\numberline {I}\uppercase {Pendahuluan}}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Rumusan Masalah}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Tujuan Penelitian}{3}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Batasan Permasalahan}{3}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Metode Penelitian}{3}{section.1.5}%
+\contentsline {section}{\numberline {1.3}Tujuan dan Manfaat}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Batasan Masalah}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Metode Penelitian}{4}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Jadwal Penelitian}{4}{section.1.6}%
 \contentsline {chapter}{\numberline {II}\uppercase {Konsep Dasar}}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Kajian Penelitian Terkait}{5}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Radar}{9}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Pengolahan Sinyal Radar}{12}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Bentuk Gelombang Radar}{12}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}\textit {Frequency Modulated Continuous Wave Radar}}{13}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}\textit {Linear Frequency Modulated Continuous Wave Radar}}{16}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Teknik Pengolahan Sinyal}{17}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Perhitungan \textit {Error}}{18}{subsection.2.3.5}%
-\contentsline {section}{\numberline {2.4}\textit {Software Defined Radio}}{18}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}\textit {Universal Software Radio Peripheral}}{18}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}\textit {GNURadio}}{20}{subsection.2.4.2}%
-\contentsline {chapter}{\numberline {III}\uppercase {Model Sistem Dan Perancangan}}{22}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Alur Penelitian}{22}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Studi Literatur}{23}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Penentuan Parameter}{23}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Perancangan Spesifikasi Sistem}{24}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Implementasi Sistem}{26}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Pengambilan Data}{27}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Konfigurasi Pengujian}{28}{section.3.7}%
-\contentsline {chapter}{DAFTAR REFERENSI}{29}{figure.caption.24}%
+\contentsline {section}{\numberline {2.3}Pengolahan Sinyal Radar}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Bentuk Gelombang Radar}{11}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}\textit {Frequency Modulated Continuous Wave Radar}}{12}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}\textit {Linear Frequency Modulated Continuous Wave Radar}}{15}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Teknik Pengolahan Sinyal}{16}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Perhitungan \textit {Error}}{17}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}\textit {Software Defined Radio}}{17}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}\textit {Universal Software Radio Peripheral}}{17}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}\textit {GNURadio}}{19}{subsection.2.4.2}%
+\contentsline {chapter}{\numberline {III}\uppercase {Model Sistem Dan Perancangan}}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Alur Penelitian}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Penentuan Parameter}{22}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Perancangan Spesifikasi Sistem}{22}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Implementasi Sistem}{24}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Pengambilan Data}{26}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Konfigurasi Pengujian}{26}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Perhitungan Nilai Simulasi}{27}{section.3.7}%
+\contentsline {chapter}{DAFTAR REFERENSI}{28}{section.3.7}%

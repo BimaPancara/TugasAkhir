@@ -9,51 +9,63 @@ Banyak sekali referensi yang menjadi bagian besar dalam tertulisnya proposal ini
 
 % Penelitian Terdahulu
 \begin{center}
-	\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{1pt}}m{#1}}
-	\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{1pt}}m{#1}}
-	\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{1pt}}m{#1}}
-	
-	\begin{longtable}{|>{\centering\arraybackslash}p{0.6cm}|p{4cm}|p{4cm}|p{4cm}|}
-	\caption{Penelitian Terdahulu}
+	\begin{longtable}{|p{0.5cm}|p{2cm}|p{3cm}|p{2cm}|p{4cm}|}
+	\caption{Penelitian Terkait}
 	\label{tab:PenelitianDulu}\\
 	\hline
-	\textbf{No.} & \textbf{Judul} & \textbf{Penulis} & \textbf{Hasil}\\
+	\textbf{No.} & \textbf{Nama} & \textbf{Judul} &\textbf{Jurnal} & \textbf{Deskripsi}\\
 	\hline
-	1.& \textit{Respiratory and Heart Rate Detection Using Continuous-Wave Radar Testbed Implemented in GNU Radio } (2022)
-	& Lenz, Isabella;\newline Holtom, Jacob;\newline Herschfelt, Andrew;\newline Rong, Yu;\newline Bliss, Daniel 
-	& Penggunaan radar CW untuk memonitor detak jantung dan pernapasan menggunakan GNURadio dan USRP X310. Proses pengolahan data secara langsung dapat dilakukan dengan hasil estimasi di dalam jarak 5 BPM dibanding dengan alat monitor detak jantung. \\ \hline
+	1.& Lenz, Isabella;\newline Holtom, Jacob;\newline Herschfelt, Andrew;\newline Rong, Yu;\newline Bliss, Daniel 
+	& \textit{Respiratory and Heart Rate Detection Using Continuous-Wave Radar Testbed Implemented in GNU Radio } (2022)
+	& -
+	& Penggunaan radar CW untuk observasi detak jantung dan pernapasan menggunakan GNURadio dan USRP X310. Proses pengolahan data secara langsung dengan hasil estimasi pada jarak 5 BPM dibanding alat monitor detak jantung. 
+	\\ \hline
 	
-	2. & \textit{Development of L-Band FMCW Radar on SDR using GNU RADIO} (2024)
-	& Wankhede, Animesh;\newline De, Sampurna
-	& Penggunaan radar FMCW pada pita frekuensi kelas L yang di aplikasikan sebagai radar penembus tanah menunjukkan hasil yang efektif dalam melakukan deteksi dan \textit{imaging} objek dengan akurasi dan resolusi tinggi.  \\ \hline
+	2. 	& Wankhede, Animesh;\newline De, Sampurna
+	& \textit{Development of L-Band FMCW Radar on SDR using GNU RADIO} (2024)
+	& - 
+	& Penggunaan radar FMCW pada pita frekuensi kelas L untuk radar penembus tanah menunjukkan hasil yang efektif dalam melakukan deteksi dan \textit{imaging} objek dengan akurasi dan resolusi tinggi. \\ \hline
 	
-	3. & \textit{FMCW Radar With Enhanced Resolution and Processing Time by Beam Switching} (2021)
-	& Hilario Re, Pascual D.;\newline Comite, Davide;\newline Podilchak, Symon K.;\newline Alistarh, Cristian A.;\newline Goussetis, George;\newline Sellathurai, Mathini;\newline Thompson, John;\newline Lee, Jaesup
-	& Pengimplementasian radar FMCW pada pita frekuensi kelas K dengan antena \textit{array} dan \textit{beammforming} untuk sistem deteksi arah pada kendaraan otomotif. Dengan penggunaan frekuensi 24 GHz, radar mampu mendeteksi objek dengan jarak 2\textdegree.\\ \hline
+	3. & Hilario Re, Pascual D.;\newline Comite, Davide;\newline Podilchak, Symon K.;\newline Alistarh, Cristian A.;\newline Goussetis, George;\newline Sellathurai, 
+	& \textit{FMCW Radar With Enhanced Resolution and Processing Time by Beam Switching} (2021)
+	Mathini;\newline Thompson, John;\newline Lee, Jaesup
+	& -
+	& Implementasi radar FMCW pada frekuensi kelas K dengan antena \textit{array} dan \textit{beammforming} untuk deteksi arah pada kendaraan otomotif. Radar mampu mendeteksi objek dengan jarak 2\textdegree.
+	\\ \hline
 	
-	4. & \textit{An X–band FMCW Radar Demonstrator Based on an SDR Platform} (2020)
-	& Dabrowski, Grzegorz;\newline Stasiak, Krzysztof;\newline Drozdowicz, Jedrzej;\newline Gromek, Damian;\newline Samczynski, Piotr
-	& Desain dan implementasi radar FMCW dengan \textit{bandwidth} 1 GHz untuk mendapatkan resolusi jarak yang kecil dilakukan, didapati hasil pengujian yang memuaskan dengan menunjukkan adanya pergerakan pada daerah yang ditandai memiliki banyak aktivitas. \\ \hline
+	4.& Dabrowski, Grzegorz;\newline Stasiak, Krzysztof;\newline Drozdowicz, Jedrzej;\newline Gromek, Damian;\newline Samczynski, Piotr
+	& \textit{An X–band FMCW Radar Demonstrator Based on an SDR Platform} (2020)
+	& -
+	& Desain radar FMCW dengan \textit{bandwidth} 1 GHz untuk mendapatkan resolusi jarak yang kecil, didapat hasil pengujian yang memuaskan dengan adanya pergerakan pada daerah yang ditandai memiliki banyak aktivitas. \\ \hline
 	
-	5. & \textit{Single Target Recognition Using a Low-Cost FMCW Radar Based on Spectrum Analysis} (2020)
-	& Rizik, Ali;\newline Tavanti, Emanuele;\newline Vio, Roberto;\newline Delucchi, Alessandro;\newline Chible, Hussien;\newline Randazzo, Andrea;\newline Caviglia, Daniele D.
-	& Implementasi dan pengolahan sinyal radar dilakukan dengan melakukan klasifikasi terhadap data yang diterima. Klasifikasi dilakukan dengan menggunakan \textit{Support Vector Machine} (SVM), didapati hasil menunjukkan hasil akurasi klasifikasi target mencapai 100\%. \\ \hline
+	5.& Rizik, Ali;\newline Tavanti, Emanuele;\newline Vio, Roberto;\newline Delucchi, Alessandro;\newline Chible, Hussien;\newline Randazzo, Andrea;\newline Caviglia, Daniele D.
+	& \textit{Single Target Recognition Using a Low-Cost FMCW Radar Based on Spectrum Analysis} (2020)
+	& -
+	& Implementasi dan pengolahan sinyal radar dilakukan dengan melakukan klasifikasi data yang diterima. Klasifikasi dilakukan dengan \textit{Support Vector Machine} (SVM), didapat hasil menunjukkan akurasi klasifikasi target mencapai 100\%. 
+	\\ \hline
 	
-	6. & \textit{Educational Low-Cost C-Band FMCW Radar System Comprising Commercial Off-the-Shelf Components for Indoor Through-Wall Object Detection} (2021)
-	& Jeong, Hyunmin;\newline Kim, Sangkil
-	& Desain dan implementasi radar FMCW pada frekuensi kelas C dilakukan menggunakan komponen elektronik yang mudah didapat di pasar. Implementasi dilakukan dengan skenario pengujian dalam ruangan dan tembus dinding. Didapatkan hasil rata rata akurasi sekitar 5.6 cm dibanding data asli. \\ \hline
+	6. & Jeong, Hyunmin;\newline Kim, Sangkil
+	& \textit{Educational Low-Cost C-Band FMCW Radar System Comprising Commercial Off-the-Shelf Components for Indoor Through-Wall Object Detection} (2021)
+	& -
+	& Desain dan implementasi radar FMCW pada frekuensi kelas C dilakukan menggunakan komponen elektronik yang mudah didapat. Implementasi dilakukan dengan skenario pengujian dalam ruangan dan tembus dinding. Didapat hasil rata rata akurasi sekitar 5.6 cm. \\ \hline
 	
-	7. & \textit{Modified FMCW system for non-contact sensing of human respiration} (2020)
-	& Pramudita, Aloysius Adya;\newline Suratman, Fiky Y.;\newline Arseno, Dharu
-	& Dengan melakukan modifikasi pada pendeteksian aktivitas pernafasan lewat pergeseran kecil, khususnya pada pengolahan data fasa setelah filter \textit{Low Pass}. Didapatkan hasil bahwa desain modifikasi mampu mendeteksi waktu dan amplitudo pernafasan, serta lokasi dari target. \\ \hline
+	7. & Pramudita, Aloysius Adya;\newline Suratman, Fiky Y.;\newline Arseno, Dharu
+	& \textit{Modified FMCW system for non-contact sensing of human respiration} (2020)
+	& -
+	& Dengan melakukan modifikasi pada pengolahan data fasa setelah filter \textit{Low Pass}. Didapatkan hasil bahwa desain modifikasi mampu mendeteksi waktu dan amplitudo pernafasan, serta lokasi dari target. 
+	\\ \hline
 	
-	8. & \textit{FMCW Radar for Noncontact Bridge Structure Displacement Estimation} (2023)
-	& Pramudita, Aloysius Adya;\newline Lin, Ding-Bing;\newline Dhiyani, Azizka Ayu;\newline Ryanu, Harfan Hian;\newline Adiprabowo, Tjahjo;\newline Yudha, Erfansyah Ali
-	& Dilakukan implementasi radar FMCW pada frekuensi 24 GHz dengan \textit{bandwidth} 150 MHz untuk mendeteksi pergeseran kecil pada bangunan jembatan. Dengan menggunakan analisis fasa untuk mendapat resolusi yang baik dalam melakukan pendeteksian, didapat hasil bahwa metode berhasil dilakukan dengan kondisi banyak \textit{noise} dan nilai SNR rendah dengan rata rata galat 0.13 mm.\\ \hline
+	8. & Pramudita, Aloysius Adya;\newline Lin, Ding-Bing;\newline Dhiyani, Azizka Ayu;\newline Ryanu, Harfan Hian;\newline Adiprabowo, Tjahjo;\newline Yudha, Erfansyah Ali
+	& \textit{FMCW Radar for Noncontact Bridge Structure Displacement Estimation} (2023)
+	& -
+	& Implementasi radar FMCW pada frekuensi 24 GHz dengan \textit{bandwidth} 150 MHz untuk mendeteksi pergeseran kecil pada bangunan jembatan. Hasil menunjukkan metode berhasil dengan kondisi banyak \textit{noise} dan nilai SNR rendah dengan rata rata galat 0.13 mm.
+	\\ \hline
 	
-	9. & \textit{A Novel Scheme of High-Precision Heart Rate Detection With a mm-Wave FMCW Radar} (2023)
-	& Zhou, Min;\newline Liu, Yunxue;\newline Wu, Shie;\newline Wang, Chengyou;\newline Chen, Zekun;\newline Li, Hongfei
-	& Penggunaan radar FMCW dengan gelombang milimeter untuk monitor detak jantung telah banyak dilakukan. Sehingga usaha peningkatan akurasi menjadi arah selanjutnya, dengan implementasi algoritma \textit{Variable Mode Extraction} sinyal detak jantung di ambil dan teknik pengukuran frekuensi \textit{Double-CZT} dilakukan. Hasil menunjukkan tingkat akurasi yang meningkat dengan rata rata eror absolut kurang dari 1 bpm, selain itu nilai SNR meningkat sehingga estimasi akurasi detak jantung juga meningkat.\\ \hline
+	9. & Zhou, Min;\newline Liu, Yunxue;\newline Wu, Shie;\newline Wang, Chengyou;\newline Chen, Zekun;\newline Li, Hongfei
+	& \textit{A Novel Scheme of High-Precision Heart Rate Detection With a mm-Wave FMCW Radar} (2023)
+	& -
+	& Radar FMCW dengan gelombang milimeter untuk peningkatan akurasi menggunakan algoritma \textit{Variable Mode Extraction} dan teknik pengukuran frekuensi \textit{Double-CZT}. Tingkat akurasi meningkat dengan rata rata eror absolut kurang dari 1 bpm, nilai SNR meningkat sehingga estimasi akurasi detak jantung juga meningkat.
+	\\ \hline
 	\end{longtable}
 \end{center}
 %-----------------------------------------------------------------------------%
@@ -93,6 +105,8 @@ Gambar \ref{pic:blokdiagram} menunjukkan blok diagram dari sistem radar pulsa se
 	\end{center}
 \end{figure}
 
+\todo{Penjelasan !!}
+
 Persamaan radar berguna untuk menghubungkan seluruh komponen yang terdapat pada suatu sistem radar. Hubungan di antara seluruh komponen tersebut akan di perlihatkan secara matematis, sehingga penerapannya pada suatu alat akan terlihat dengan jelas. Dengan adanya beberapa persamaan ini, proses desain suatu radar akan menjadi lebih mudah dilakukan dan prediksi dari hasil radar yang dirancang bisa didapatkan.
 
 Salah satu persamaan pada radar adalah \textit{maximum unambiguous range}, yang bersimbol $R_{un}$, dengan $T_{p}$ sebagai periode pengulangan pulsa, yang bernilai $\frac{1}{f_{p}}$, dengan $f_{p}$ sebagai frekuensi pengulangan pulsa.
@@ -118,23 +132,6 @@ Dengan G sebagai \textit{gain} maksimum suatu antena, yaitu
 \begin{equation}
 	G  = \frac{\text{Kerapatan daya maksimum dari antena \textit{directional}}}{\text{Kerapatan daya antena Isotrop \textit{lossless} dengan daya yang sama}}
 \end{equation}
-
-\textit{Radar Cross Section} atau yang sering disingkat dengan RCS merupakan daerah suatu objek dari target yang dapat terdeteksi oleh suatu radar. Area tersebut diperhitungkan dengan mempertimbangkan bentuk dari objek dan interaksinya dengan gelombang elektromagnetik. Pada \ref{pic:RCS} ditunjukkan beberapa sifat RCS dan persamaannya.
-
-\begin{center}
-	\begin{figure}[h!]
-		\begin{subfigure}[b]{0.5\linewidth}
-			\includegraphics[width=\linewidth]{pics/bab2/rcsBentuk.png}
-			\caption{Bentuk dan Persamaan \textit{Radar Cross Section}}
-		\end{subfigure}
-		\begin{subfigure}[b]{0.5\linewidth}
-			\includegraphics[width=\linewidth]{pics/bab2/rcsPola.png}
-			\caption{Pola Radiasi dari \textit{Radar Cross Section}}
-		\end{subfigure}
-		\caption[\textit{Radar Cross Section}]{\textit{Radar Cross Section} \cite{ONeill2012}}
-		\label{pic:RCS}
-	\end{figure}
-\end{center}
 
 \section{Pengolahan Sinyal Radar}
 Untuk mendapat suatu kesimpulan dari sinyal radar, maka dibutuhkan pengolahan sinyal radar yang tepat. Pengolahan sinyal tersebut dilakukan mulai dari pembentukan gelombang hingga pengambilan kesimpulan. 
