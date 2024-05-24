@@ -44,7 +44,7 @@ Pada tahap ini, dilakukan perancangan tentang penelitian yang diangkat, dalam ko
 		\hline
 		No. & Spesifikasi 					& Keterangan\\\hline
 		1.  & USRP 							& B210\\
-		2.  & \textit{Center Frequency}  	& 3 GHz \\
+		2.  & \textit{Center Frequency}  	& 3000 MHz \\
 		3.  & \textit{Bandwidth} 			& 50 MHz \\
 		4.	& Bentuk Modulasi				& \textit{Triangular}\\
 		5.  & Jarak Maksimum 				& 150 km \\
@@ -136,7 +136,7 @@ Implementasi sistem akan dilaksanakan pada beberapa perangkat, mulai dari laptop
 	\end{figure}
 	\begin{itemize}
 		\item Tipe : USRP B210 
-		\item Jarak Frekuensi : 70 MHz - 6 GHz 
+		\item Jarak Frekuensi : 70 MHz - 6000 MHz 
 	\end{itemize}
 
 	\item Antena \textit{Log-periodic} :
@@ -148,7 +148,7 @@ Implementasi sistem akan dilaksanakan pada beberapa perangkat, mulai dari laptop
 		\end{center}
 	\end{figure}
 	\begin{itemize}
-		\item Frekuensi : 800 MHz - 6GHz 
+		\item Frekuensi : 800 MHz - 6000 MHz 
 		\item Pola Radiasi : \textit{Directional}
 		\item \textit{Gain} : 5.2 - 6.3 dB
 	\end{itemize}
@@ -156,7 +156,17 @@ Implementasi sistem akan dilaksanakan pada beberapa perangkat, mulai dari laptop
 
 	
 \section{Pengambilan Data}
-Pada tahap ini, pengambilan data dengan radar yang sudah didesain dan diimplementasikan pada USRP dilakukan. Pengambilan data akan dilaksanakan di lokasi lapangan Univertitas Telkom Surabaya yang beralamat Jl. Ketintang No.156, Ketintang, Kec. Gayungan, Surabaya, Jawa Timur 60231.
+Pada tahap ini, pengambilan data dengan radar yang sudah didesain dan diimplementasikan pada USRP dilakukan. Pengujian dilakukan dengan menggunakan kendaraan roda empat sebagai objek yang akan dideteksi. Sehingga pengambilan data kecepatan dan prediksi jarak dapat dilakukan. Hasil prediksi jarak dan kecepatan radar akan dibandingkan dengan nilai aktual jarak pada kenyataan dan kecepatan tercatat pada \textit{speedometer}.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.5]{pics/bab3/skema.png}
+		\caption{Skema Penelitian}
+		\label{img:skema}
+	\end{center}
+\end{figure}
+
+Data berupa nilai \textit{beat frequency} dan \textit{doppler frequency shift} yang sudah ditentukan sebagai parameter pengujian telah didapat dari hasil pengambilan data akan dibandingkan dengan nilai prediksi berdasarkan perhitungan. Dengan begitu, maka nilai RMSE dapat dihitung.
 
 \begin{figure}
 	\begin{center}
@@ -166,15 +176,7 @@ Pada tahap ini, pengambilan data dengan radar yang sudah didesain dan diimplemen
 	\end{center}
 \end{figure}
 
-Pengujian dilakukan dengan menggunakan kendaraan roda empat sebagai objek yang akan dideteksi. Dengan begitu, maka pengambilan data kecepatan dapat dilakukan dan dapat dibandingkan dengan hasil yang didapat dari radar yang telah didesain.
-
-\begin{figure}
-	\begin{center}
-		\includegraphics[scale=0.4]{pics/bab3/skema.png}
-		\caption{Skema Penelitian}
-		\label{img:skema}
-	\end{center}
-\end{figure}
+Pengambilan data akan dilaksanakan di lokasi lapangan Univertitas Telkom Surabaya yang beralamat Jl. Ketintang No.156, Ketintang, Kec. Gayungan, Surabaya, Jawa Timur 60231.
 
 \section{Konfigurasi Pengujian}
 Konfigurasi pengujian dilakukan sesuai dengan gambar \ref{img:skema}. Terdapat satu buah perangkat laptop yang terhubung dengan dua buah USRP, masing-masing USRP terhubung dengan antena \textit{Log-periodic}. USRP 1 berperan sebagai \textit{transmitter} sedangkan USRP 2 berperan sebagai \textit{receiver}.
