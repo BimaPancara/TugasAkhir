@@ -190,6 +190,65 @@ Konfigurasi pengujian dilakukan sesuai dengan gambar \ref{img:skema}. Terdapat s
 \end{figure}
 
 
-% \section{Perhitungan Nilai Simulasi}
-% \todo{Hitung Nilai $F_{b}$ dan $F_{d}$ dengan tabel}
-% Dolore velit amet amet aliqua exercitation velit nulla ad eu. Ad voluptate minim fugiat et mollit commodo elit. Excepteur minim magna aute commodo consectetur velit aute et consectetur sit. Fugiat voluptate ea officia labore. Ut aute voluptate proident officia consequat nostrud aute nulla consequat enim. Lorem nostrud sit pariatur officia Lorem officia. Aliquip labore Lorem quis ea proident reprehenderit labore sit.
+\section{Prediksi Hasil Pengujian}
+
+Prediksi hasil pengujian diperlukan untuk menjadi pembanding dari hasil yang akan didapat setelah melakukan pengujian. Perhitungan prediksi ini berupa nilai \textit{beat frequency} dan \textit{doppler frequency}. Prediksi nilai \textit{beat frequency} didapat pada persamaan \ref{eq:RangeEst} dan memodifikasinya dengan menentukan nilai jarak ($d_{0}$) pada estimasi jarak. Sehingga akan didapat persamaan estimasi \textit{beat frequency}($f_{b}$) seperti berikut.
+
+\begin{equation}
+	f_{b} = \frac{d_{0} \cdot 2 \mu}{c} = \frac{d_{0} \cdot 2B}{c \cdot T_{c}}
+	\label{eq:predFb}
+\end{equation}
+
+Persamaan \ref{eq:predFb} menunjukkan bahwa dengan menentukan jarak ($d_{0}$) dalam meter, \textit{chirp rate} ($\mu$) dalam $Hz/\mu s$, kecepatan cahaya (c) dalam $m/s$, lebar pita frekuensi (B) dalam Hz, dan waktu \textit{chirp} ($T_{c}$) dalam $\mu s$. Maka \textit{beat frequency} ($f_{b}$) yang ditemukan akan memiliki satuan Hz.
+
+
+Prediksi nilai frekuensi doppler dapat dilakukan dengan mengubah persamaan \ref{eq:velocity} lalu memberikan asumsi nilai kecepatan (v) pada estimasi kecepatan dengan satuan m/s dan panjang gelombang frekuensi ($\lambda$) yang digunakan dengan satuan meter. Sehingga persamaan estimasi \textit{doppler frequency} ($f_{d}$) akan menjadi berikut.
+
+\begin{equation}
+	f_{d} = \frac{v \cdot 2}{\lambda}
+	\label{eq:predFd}
+\end{equation}
+
+Hasil prediksi dari nilai \textit{beat frequency} yang telah dihitung menggunakan persamaan \ref{eq:predFb} berada pada tabel \ref{tab:predFbeat}.
+
+\begin{center}
+	\begin{longtable}{|c|c|}
+		\caption{Prediksi Nilai \textit{Beat Frequency}}
+		\label{tab:predFbeat}\\
+		\hline
+		d0 & Prediksi $f_{b}$  \\
+		\hline
+		5 m & 1000 Hz\\
+		\hline
+		10 m & 2000 Hz\\
+		\hline
+		15 m & 3000 Hz\\
+		\hline
+		20 m & 4000 Hz\\
+		\hline
+		25 m & 5000 Hz\\
+		\hline
+	\end{longtable}
+\end{center}
+
+Hasil prediksi dari nilai \textit{doppler frequency} yang didapat dengan persamaan \ref{eq:predFd} terdata dalam tabel \ref{tab:predFdopp}.
+
+\begin{center}
+	\begin{longtable}{|c|c|}
+		\caption{Prediksi Nilai \textit{Doppler Frequency}}
+		\label{tab:predFdopp}\\
+		\hline
+		v & Prediksi $f_{d}$  \\
+		\hline
+		3 m & 60 Hz\\
+		\hline
+		6 m & 120 Hz\\
+		\hline
+		9 m & 180 Hz\\
+		\hline
+		12 m & 240 Hz\\
+		\hline
+		15 m & 300 Hz\\
+		\hline
+	\end{longtable}
+\end{center}

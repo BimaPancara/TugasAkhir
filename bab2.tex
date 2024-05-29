@@ -10,8 +10,8 @@ Banyak sekali referensi yang menjadi bagian besar dalam tertulisnya proposal ini
 %-----------------------------------------------------------------------------%
 % Penelitian Terdahulu
 %-----------------------------------------------------------------------------%
-\begin{center}
-	\begin{longtable}{|p{0.5cm}|p{2cm}|p{3cm}|p{2.5cm}|p{4cm}|}
+\begin{center}			% no	nama	 judul	jurnal		deskripsi
+	\begin{longtable}{|p{0.5cm}|p{2cm}|p{3cm}|p{2cm}|p{3.5cm}|}
 	\caption{Penelitian Terkait}
 	\label{tab:PenelitianDulu}\\
 	\hline
@@ -277,7 +277,7 @@ Selain gelombang LFM segitiga, ada pula yang berbentuk seperti gigi gergaji (\te
 	\end{center}
 \end{figure}
 
-Seluruh teknik tersebut memiliki keunggulannya masing-masing. Keunggulan tersebut didapat karena proses analisis yang berbeda. Pada LFM berbentuk gigi gergaji, maka hanya objek diam saja yang dapat dideteksi jarak dan kecepatannya seperti pada gambar \ref{pic:lfmDetail}. Namun bila menggunakan LFM berbentuk segitiga, maka objek yang bergerak dapat dideteksi jarak dan kecepatannya dalam waktu yang bersamaan.
+Seluruh teknik tersebut memiliki keunggulannya masing-masing. Keunggulan tersebut didapat karena proses analisis yang berbeda. Pada LFM berbentuk gigi gergaji, maka hanya objek diam saja yang dapat dideteksi jarak dan kecepatannya seperti pada gambar \ref{pic:lfmDetail}.
 
 \begin{figure}
 	\begin{center}
@@ -287,11 +287,11 @@ Seluruh teknik tersebut memiliki keunggulannya masing-masing. Keunggulan tersebu
 	\end{center}
 \end{figure}
 
-Cara melakukan analisa pada teknik modulasi frekuensi dengan gelombang kontinyu dapat dilihat lebih jelas pada gambar \ref{pic:DetailMod}.
+Bila menggunakan LFM berbentuk segitiga, maka objek yang bergerak dapat dideteksi jarak dan kecepatannya dalam waktu yang bersamaan. Cara melakukan analisa pada teknik LFM segitiga dapat dilihat lebih jelas pada gambar \ref{pic:DetailMod}.
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[scale=1]{pics/bab2/DetailMod.png}
+		\includegraphics[scale=0.3]{pics/bab2/DetailMod.jpg}
 		\caption[Detail Analisa LFM \textit{Triangular}]{Detail Analisis LFM \textit{Triangular}}
 		\label{pic:DetailMod}
 	\end{center}
@@ -307,14 +307,14 @@ Untuk melakukan pengambilan keputusan dari data yang diambil oleh radar, maka di
 	\label{eq:RangeEst}
 \end{equation}
 
-Pada persamaan tersebut, terdapat c sebagai kecepatan cahaya, $f_{b}$ adalah \textit{beat frequency} yang merupakan perbedaan pada frekuensi,  $\mu$ yang merupakan laju perubahan frekuensi pada suatu waktu (\textit{chirp rate}), dengan $T_{c}$ sebagai waktu \textit{Sweep}. Sedangkan untuk melakukan estimasi kecepatan terdapat pergeseran frekuensi akibat efek doppler, yang menjelaskan perubahan frekuensi suatu gelombang karena suatu objek sumber yang bergerak. 
+Pada persamaan \ref{eq:RangeEst} tersebut, $d_{0}$ merujuk ke hasil estimasi jarak dengan satuan meter,  c sebagai kecepatan cahaya, $f_{b}$ adalah \textit{beat frequency} yang merupakan perbedaan pada frekuensi,  $\mu$ yang merupakan laju perubahan frekuensi pada suatu waktu (\textit{chirp rate}), dengan $T_{c}$ sebagai waktu \textit{Sweep}. Sedangkan untuk melakukan estimasi kecepatan terdapat pergeseran frekuensi akibat efek doppler, yang menjelaskan perubahan frekuensi suatu gelombang karena suatu objek sumber yang bergerak. 
 
 \begin{equation}
 	v = \frac{f_{d}}{2}\lambda
 	\label{eq:velocity}
 \end{equation}
 
-Persamaan \ref{eq:velocity} akan didapat dengan menunjukkan hubungan antara pergeseran doppler ($f_{d}$), dengan v sebagai kecepatan, dan $\lambda$ adalah panjang gelombang. 
+Persamaan \ref{eq:velocity} akan didapat dengan menunjukkan hubungan antara pergeseran doppler ($f_{d}$), dengan v sebagai kecepatan yang memiliki satuan m/s, dan $\lambda$ adalah panjang gelombang dengan satuan meter. 
 
 \subsection{Perhitungan \textit{Error}}
 Penghitungan galat dari radar yang telah di desain dapat dilakukan dengan menguji keakurasian dari hasil deteksi. Hasil akurasi deteksi radar dapat diuji dengan menggunakan \textit{Root Mean Square Error} (RMS E). Nilai dari RMS E bisa didapat dengan persamaan \ref{eq:rmsE} dengan nilai n adalah jumlah pengulangan dari uji coba.
@@ -388,7 +388,7 @@ Dengan spesifikasi tersebut, maka USRP B210 memiliki kemampuan \textit{instantne
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[scale=0.5]{pics/bab2/GNU.png} 
+		\includegraphics[scale=0.35]{pics/bab2/GNU.png} 
 		\caption[Logo GNURadio]{Logo GNURadio}
 		\label{pic:logoGnuRadio}
 	\end{center}
@@ -397,7 +397,7 @@ GNURadio adalah aplikasi yang dapat melakukan pemrograman terhadap USRP lewat an
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[scale=0.2]{pics/bab2/blokDiagramGRC.png} 
+		\includegraphics[scale=0.25]{pics/bab2/blokDiagramGRC.png} 
 		\caption[Contoh \textit{Flowgraph} GNURadio]{Contoh \textit{Flowgraph} GNURadio}
 		\label{pic:contohFlowGraphGRC}
 	\end{center}
