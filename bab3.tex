@@ -8,34 +8,16 @@
 Dalam suatu penelitian, terdapat urutan tahapan yang perlu dilakukan. Alur penelitian ini mengandung seluruh langkah yang harus ditempuh, mulai dari fase perancangan hingga tahap akhir penelitian.
  \begin{figure}
 	\begin{center}
-		\includegraphics[scale=0.5]{pics/bab3/flowchart2.png} 
+		\includegraphics[scale=0.65]{pics/bab3/FlowchartSempro.png} 
 		\label{img:flowchart}
 		\caption[\textit{Flowchart} Penelitian]{\textit{Flowchart} Penelitian}
 	\end{center}
 \end{figure}
-Pada alur penelitian yang telah dirancang, terdapat 6 tahap yang perlu dilakukan setelah penelitian dimulai dan sebelum penelitian diakhiri. Tiap tahapan yang telah dirancang harus dilaksanakan sebaik mungkin agar hasil yang diharapkan dapat tercapai.
-
-
-\section{Studi Literatur}
-Pada tahap ini, dilakukan studi literatur terhadap masalah yang diangkat serta solusi yang diajukan pada proposal ini. Studi literatur meliputi kajian artikel terdahulu hingga kajian terhadap perangkat lunak yang digunakan serta metode yang dilakukan dalam penyelesaian masalah.
+Pada alur penelitian yang telah dirancang, terdapat beberapa tahap yang perlu dilakukan setelah penelitian dimulai dan sebelum penelitian diakhiri. Tiap tahapan yang telah dirancang harus dilaksanakan sebaik mungkin agar hasil yang diharapkan dapat tercapai.
 	
 \section{Penentuan Parameter}
 
-Pada tahap ini, parameter penelitian ditentukan, dengan parameter perancangan sebagai berikut.
-
-\begin{center}
-	\begin{longtable}{| c | c | c |}
-		\caption{Parameter Penelitian}
-		\label{tab:param}\\
-		\hline
-		No. & Parameter Penelitian 			& Satuan\\ \hline
-		1.  &\textit{Center Frequency}	   	& GHz\\
-		2.  &\textit{Bandwidth} 			& MHz \\
-		\hline
-	\end{longtable}
-\end{center}
-
-Sementara itu, untuk memastikan hasil yang dicapai baik, maka perlu ditentukan pula parameter pengujian, sebagai berikut.
+Pada tahap ini parameter pengujian ditentukan sehingga hasil yang dicapai dapat dikatakan baik, sebagai berikut.
 
 \begin{center}
 	\begin{longtable}{| c | c | c |}
@@ -46,77 +28,81 @@ Sementara itu, untuk memastikan hasil yang dicapai baik, maka perlu ditentukan p
 		1.  &Jarak	   					& m\\
 		2.  &Kecepatan 					& m/s\\
 		3.  &\textit{RMSE}				& -\\
+		4.	&Nilai prediksi \textit{beat frequency}	& Hz \\
+		5.	&Nilai prediksi \textit{doppler frequency shift} & Hz \\
 		\hline
 	\end{longtable}
 \end{center}
 
 \section{Perancangan Spesifikasi Sistem}
-Pada tahap ini, dilakukan perancangan tentang penelitian yang diangkat, dalam konteks ini adalah radar. Sehingga perlu dilakukannya penentuan spesifikasi radar berdasarkan perangkat keras yang digunakan. Penelitian ini menggunakan alat USRP berseri B210.  Spesifikasi dari alat ini akan dijelaskan pada tabel berikut.
+Pada tahap ini, dilakukan perancangan sistem radar. Maka perlu ditentukannya spesifikasi radar berdasarkan perangkat keras USRP berseri B210 yang digunakan.  Spesifikasi dari sistem ini akan dijelaskan pada tabel berikut.
 
 \begin{center}
 	\begin{longtable}{| c | c | c |}
 		\caption{Spesifikasi Sistem Radar}
 		\label{tab:spekRadar}\\
 		\hline
-		No. & Spesifikasi 					& Keterangan\\\hline
-		1.  & USRP 							& B210\\
-		2.  & \textit{Center Frequency}  	& 3 GHz \\
-		3.  & \textit{Bandwidth} 			& 50 MHz \\
-		4.	& Bentuk Modulasi				& \textit{Triangular}\\
-		5.  & Jarak Maksimum 				& 150 km \\
-		6.  & Resolusi Jarak 				& 3 m \\
-		7.  & Kecepatan Maksimum			& 15 $m/s$ \\
-		8.  & Resolusi Kecepatan 			& 1 $m/s$\\
-		9.	& Durasi \textit{Chirp}			& 0.001667 s\\
-		10.	& \textit{Chirp Rate}			& 30000 MHz\\
+		No. & Spesifikasi 								& Keterangan\\\hline
+		1.  & USRP 										& B210\\
+		2.  & \textit{Carrier Frequency} ($F_{c}$) 		& 3100 MHz \\
+		3.  & \textit{Bandwidth} 	(BW)				& 50 MHz \\
+		4.	& Frekuensi \textit{Sampling}	($F_{s}$)	& 30 MHz	\\
+		5.	& Bentuk Modulasi							& \textit{Triangular}\\
+		6.  & Jarak Maksimum 		($R_{max}$)			& 145.16 km \\
+		7.  & Resolusi Jarak 		($R_{res}$)			& 3 m \\
+		8.  & Kecepatan Maksimum	($V_{max}$)			& 15 $m/s$ \\
+		9.  & Resolusi Kecepatan 	($V_{res}$)			& 1 $m/s$\\
+		10.	& Durasi \textit{Chirp}	($T_{c}$)			& 1613 $\mu s$\\
+		11.	& \textit{Chirp Rate}	($\mu$)				& 0.031 $MHz/\mu s$\\
+		12. & Durasi \textit{frame}	($T_{f}$)			& 48 ms \\
 		\hline
 	\end{longtable}
 \end{center}
 
 \begin{itemize}
-	\item Hitung panjang gelombang ($\lambda$) dari frekuensi tengah yang sudah ditentukan yaitu 3 GHz.
+	\item Hitung panjang gelombang ($\lambda$) dari frekuensi karier yang sudah ditentukan yaitu 3.1 GHz.
 	\begin{align*}
 		\lambda &= \frac{c}{F_{c}}\\
-		\lambda &= \frac{3 \cdot 10^{8}}{3 \cdot 10^{9}}\\
-		\lambda &= 0.1 m
+		\lambda &= \frac{3 \cdot 10^{8}}{3.1 \cdot 10^{9}}\\
+		\lambda &= 0.0967 m
 	\end{align*}
 
 	\item Menghitung resolusi jarak berdasarkan persamaan \ref{eq:RangeRes} dan dengan menentukan \textit{bandwidth} bernilai 50 MHz, maka.
 		\begin{align*}
 			R_{res} &= \frac{c}{2 BW} \\
-			R_{res} &= \frac{3 \cdot 10^{8}}{2 \cdot 50 MHz}\\
+			R_{res} &= \frac{3 \cdot 10^{8}}{2 \cdot 50}\\
 			R_{res} &= 3 m
 		\end{align*}
 	\item Menghitung jarak maksimum yang dapat dideteksi oleh radar digunakanlah persamaan \ref{eq:MaxRange}, namun sebelumnya harus ditentukan terlebih dahulu nilai $\mu$, yang merupakan tingkat kenaikan frekuensi pada suatu periode sesuai dengan persamaan \ref{eq:chirpRate}, dengan nilai $T_{c}$ sesuai persamaan \ref{eq:chirpTime} dan nilai kecepatan maksimum ditentukan bernilai 15 m/s, maka.
 	
 	\begin{align*}
 		T_{c} &= \frac{\lambda}{4 \cdot V_{max}}\\
-		T_{c} &= \frac{0.1}{4 \cdot 15}\\
-		T_{c} &= 0.001667
+		T_{c} &= \frac{0.0967}{4 \cdot 15}\\
+		T_{c} &= 1613 \mu s
 	\end{align*}
 
 	\item 
-	Sehingga nilai $\mu$ dapat dihitung menjadi.
+	Sehingga nilai \textit{chirp rate} ($\mu$) dapat dihitung menjadi.
 
 		\begin{align*}
 		\mu &= \frac{\textit{Bandwidth}}{T_{c}}\\
-		\mu &= \frac{\textit{50 MHz}}{0.001667}\\
-		\mu &= 30000 MHz/s
+		\mu &= \frac{\textit{50}}{1613}\\
+		\mu &= 0.031 MHz/ \mu s
 		\end{align*}
 
 	\item 	
 	Dengan jarak maksimum yang didapat adalah.
 		\begin{align*}
 		R_{max} &= \frac{F_{s} \cdot c}{2 \cdot \mu}\\
-		R_{max} &= \frac{30 \cdot 10^{6} \cdot 3 \cdot 10^{8}}{2 \cdot 30000}\\
-		R_{max} &= 150 m
+		R_{max} &= \frac{30 \cdot 10^{6} \cdot 3 \cdot 10^{8}}{2 \cdot 0.031}\\
+		R_{max} &= 145.16 km
 		\end{align*}
 
 	\item 
-	Dengan $T_{f}$ sebagai durasi \textit{frame} bernilai 0.05 s maka resolusi kecepatannya.
+	Dengan $T_{f}$ sebagai durasi \textit{frame} bernilai 0.048 s maka resolusi kecepatannya.
 		\begin{align*}
 			V_{res} &= \frac{\lambda}{2 \cdot T_{f}}\\
-			V_{res} &= \frac{0.1}{2 \cdot 0.05}\\
+			V_{res} &= \frac{0.0967}{2 \cdot 0.048}\\
 			V_{res} &= 1 m/s
 		\end{align*}
 
@@ -152,7 +138,7 @@ Implementasi sistem akan dilaksanakan pada beberapa perangkat, mulai dari laptop
 	\end{figure}
 	\begin{itemize}
 		\item Tipe : USRP B210 
-		\item Jarak Frekuensi : 70 MHz - 6 GHz 
+		\item Jarak Frekuensi : 70 MHz - 6000 MHz 
 	\end{itemize}
 
 	\item Antena \textit{Log-periodic} :
@@ -164,7 +150,7 @@ Implementasi sistem akan dilaksanakan pada beberapa perangkat, mulai dari laptop
 		\end{center}
 	\end{figure}
 	\begin{itemize}
-		\item Frekuensi : 800 MHz - 6GHz 
+		\item Frekuensi : 800 MHz - 6000 MHz 
 		\item Pola Radiasi : \textit{Directional}
 		\item \textit{Gain} : 5.2 - 6.3 dB
 	\end{itemize}
@@ -172,25 +158,27 @@ Implementasi sistem akan dilaksanakan pada beberapa perangkat, mulai dari laptop
 
 	
 \section{Pengambilan Data}
-Pada tahap ini, pengambilan data dengan radar yang sudah didesain dan diimplementasikan pada USRP dilakukan. Pengambilan data akan dilaksanakan di lokasi lapangan Univertitas Telkom Surabaya yang beralamat Jl. Ketintang No.156, Ketintang, Kec. Gayungan, Surabaya, Jawa Timur 60231.
+Pada tahap ini, pengambilan data dengan radar yang sudah didesain dan diimplementasikan pada USRP dilakukan. Pengujian dilakukan dengan menggunakan kendaraan roda empat sebagai objek yang akan dideteksi. Sehingga pengambilan data kecepatan dan prediksi jarak dapat dilakukan. Hasil prediksi jarak dan kecepatan radar akan dibandingkan dengan nilai aktual jarak pada kenyataan dan kecepatan tercatat pada \textit{speedometer}.
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[scale=0.4]{pics/bab3/petaPengujian.png}
+		\includegraphics[scale=0.55]{pics/bab3/skema.png}
+		\caption{Skema Penelitian}
+		\label{img:skema}
+	\end{center}
+\end{figure}
+
+Data berupa nilai \textit{beat frequency} dan \textit{doppler frequency shift} yang sudah ditentukan sebagai parameter pengujian telah didapat dari hasil pengambilan data akan dibandingkan dengan nilai prediksi berdasarkan perhitungan. Dengan begitu, maka nilai RMSE dapat dihitung.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.35]{pics/bab3/petaPengujian.png}
 		\caption{Lokasi Pengujian}
 		\label{img:petaUji}
 	\end{center}
 \end{figure}
 
-Pengujian dilakukan dengan menggunakan kendaraan roda empat sebagai objek yang akan dideteksi. Dengan begitu, maka pengambilan data kecepatan dapat dilakukan dan dapat dibandingkan dengan hasil yang didapat dari radar yang telah didesain.
-
-\begin{figure}
-	\begin{center}
-		\includegraphics[scale=0.4]{pics/bab3/skema.png}
-		\caption{Skema Penelitian}
-		\label{img:skema}
-	\end{center}
-\end{figure}
+Pengambilan data akan dilaksanakan di lokasi lapangan Universitas Telkom Surabaya yang beralamat Jl. Ketintang No.156, Ketintang, Kec. Gayungan, Surabaya, Jawa Timur 60231.
 
 \section{Konfigurasi Pengujian}
 Konfigurasi pengujian dilakukan sesuai dengan gambar \ref{img:skema}. Terdapat satu buah perangkat laptop yang terhubung dengan dua buah USRP, masing-masing USRP terhubung dengan antena \textit{Log-periodic}. USRP 1 berperan sebagai \textit{transmitter} sedangkan USRP 2 berperan sebagai \textit{receiver}.
@@ -202,3 +190,67 @@ Konfigurasi pengujian dilakukan sesuai dengan gambar \ref{img:skema}. Terdapat s
 		\label{img:konfigurasi}
 	\end{center}
 \end{figure}
+
+
+\section{Prediksi Hasil Pengujian}
+
+Prediksi hasil pengujian diperlukan untuk menjadi pembanding dari hasil yang akan didapat setelah melakukan pengujian. Perhitungan prediksi ini berupa nilai \textit{beat frequency} dan \textit{doppler frequency}. Prediksi nilai \textit{beat frequency} didapat pada persamaan \ref{eq:RangeEst} dan memodifikasinya dengan menentukan nilai jarak ($d_{0}$) pada estimasi jarak. Sehingga akan didapat persamaan estimasi \textit{beat frequency}($f_{b}$) seperti berikut.
+
+\begin{equation}
+	f_{b} = \frac{d_{0} \cdot 2 \mu}{c} = \frac{d_{0} \cdot 2B}{c \cdot T_{c}}
+	\label{eq:predFb}
+\end{equation}
+
+Persamaan \ref{eq:predFb} menunjukkan bahwa dengan menentukan jarak ($d_{0}$) dalam meter, \textit{chirp rate} ($\mu$) dalam $Hz/\mu s$, kecepatan cahaya (c) dalam $m/s$, lebar pita frekuensi (B) dalam Hz, dan waktu \textit{chirp} ($T_{c}$) dalam $\mu s$. Maka \textit{beat frequency} ($f_{b}$) yang ditemukan akan memiliki satuan Hz.
+
+
+Prediksi nilai frekuensi doppler dapat dilakukan dengan mengubah persamaan \ref{eq:velocity} lalu memberikan asumsi nilai kecepatan (v) pada estimasi kecepatan dengan satuan m/s dan panjang gelombang frekuensi ($\lambda$) yang digunakan dengan satuan meter. Sehingga persamaan estimasi \textit{doppler frequency} ($f_{d}$) akan menjadi berikut.
+
+\begin{equation}
+	f_{d} = \frac{v \cdot 2}{\lambda}
+	\label{eq:predFd}
+\end{equation}
+
+Hasil prediksi dari nilai \textit{beat frequency} yang telah dihitung menggunakan persamaan \ref{eq:predFb} berada pada tabel \ref{tab:predFbeat}.
+
+\begin{center}
+	\begin{longtable}{|c|c|}
+		\caption{Prediksi Nilai \textit{Beat Frequency}}
+		\label{tab:predFbeat}\\
+		\hline
+		d0 & Prediksi $f_{b}$  \\
+		\hline
+		5 m & 1033 Hz\\
+		\hline
+		10 m & 2067 Hz\\
+		\hline
+		15 m & 3100 Hz\\
+		\hline
+		20 m & 4133 Hz\\
+		\hline
+		25 m & 5167 Hz\\
+		\hline
+	\end{longtable}
+\end{center}
+
+Hasil prediksi dari nilai \textit{doppler frequency} yang didapat dengan persamaan \ref{eq:predFd} terdata dalam tabel \ref{tab:predFdopp}.
+
+\begin{center}
+	\begin{longtable}{|c|c|}
+		\caption{Prediksi Nilai \textit{Doppler Frequency}}
+		\label{tab:predFdopp}\\
+		\hline
+		v & Prediksi $f_{d}$  \\
+		\hline
+		3 m & 62 Hz\\
+		\hline
+		6 m & 124 Hz\\
+		\hline
+		9 m & 186 Hz\\
+		\hline
+		12 m & 248 Hz\\
+		\hline
+		15 m & 310 Hz\\
+		\hline
+	\end{longtable}
+\end{center}
