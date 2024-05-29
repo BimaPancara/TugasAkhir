@@ -35,72 +35,74 @@ Pada tahap ini parameter pengujian ditentukan sehingga hasil yang dicapai dapat 
 \end{center}
 
 \section{Perancangan Spesifikasi Sistem}
-Pada tahap ini, dilakukan perancangan tentang penelitian yang diangkat, dalam konteks ini adalah radar. Sehingga perlu dilakukannya penentuan spesifikasi radar berdasarkan perangkat keras yang digunakan. Penelitian ini menggunakan alat USRP berseri B210.  Spesifikasi dari alat ini akan dijelaskan pada tabel berikut.
+Pada tahap ini, dilakukan perancangan sistem radar. Maka perlu ditentukannya spesifikasi radar berdasarkan perangkat keras USRP berseri B210 yang digunakan.  Spesifikasi dari sistem ini akan dijelaskan pada tabel berikut.
 
 \begin{center}
 	\begin{longtable}{| c | c | c |}
 		\caption{Spesifikasi Sistem Radar}
 		\label{tab:spekRadar}\\
 		\hline
-		No. & Spesifikasi 					& Keterangan\\\hline
-		1.  & USRP 							& B210\\
-		2.  & \textit{Center Frequency}  	& 3000 MHz \\
-		3.  & \textit{Bandwidth} 			& 50 MHz \\
-		4.	& Bentuk Modulasi				& \textit{Triangular}\\
-		5.  & Jarak Maksimum 				& 150 km \\
-		6.  & Resolusi Jarak 				& 3 m \\
-		7.  & Kecepatan Maksimum			& 15 $m/s$ \\
-		8.  & Resolusi Kecepatan 			& 1 $m/s$\\
-		9.	& Durasi \textit{Chirp}			& 0.001667 s\\
-		10.	& \textit{Chirp Rate}			& 30000 MHz\\
+		No. & Spesifikasi 								& Keterangan\\\hline
+		1.  & USRP 										& B210\\
+		2.  & \textit{Carrier Frequency} ($F_{c}$) 		& 3100 MHz \\
+		3.  & \textit{Bandwidth} 	(BW)				& 50 MHz \\
+		4.	& Frekuensi \textit{Sampling}	($F_{s}$)	& 30 MHz	\\
+		5.	& Bentuk Modulasi							& \textit{Triangular}\\
+		6.  & Jarak Maksimum 		($R_{max}$)			& 145.16 km \\
+		7.  & Resolusi Jarak 		($R_{res}$)			& 3 m \\
+		8.  & Kecepatan Maksimum	($V_{max}$)			& 15 $m/s$ \\
+		9.  & Resolusi Kecepatan 	($V_{res}$)			& 1 $m/s$\\
+		10.	& Durasi \textit{Chirp}	($T_{c}$)			& 1613 $\mu s$\\
+		11.	& \textit{Chirp Rate}	($\mu$)				& 0.031 $MHz/\mu s$\\
+		12. & Durasi \textit{frame}	($T_{f}$)			& 48 ms \\
 		\hline
 	\end{longtable}
 \end{center}
 
 \begin{itemize}
-	\item Hitung panjang gelombang ($\lambda$) dari frekuensi tengah yang sudah ditentukan yaitu 3 GHz.
+	\item Hitung panjang gelombang ($\lambda$) dari frekuensi karier yang sudah ditentukan yaitu 3.1 GHz.
 	\begin{align*}
 		\lambda &= \frac{c}{F_{c}}\\
-		\lambda &= \frac{3 \cdot 10^{8}}{3 \cdot 10^{9}}\\
-		\lambda &= 0.1 m
+		\lambda &= \frac{3 \cdot 10^{8}}{3.1 \cdot 10^{9}}\\
+		\lambda &= 0.0967 m
 	\end{align*}
 
 	\item Menghitung resolusi jarak berdasarkan persamaan \ref{eq:RangeRes} dan dengan menentukan \textit{bandwidth} bernilai 50 MHz, maka.
 		\begin{align*}
 			R_{res} &= \frac{c}{2 BW} \\
-			R_{res} &= \frac{3 \cdot 10^{8}}{2 \cdot 50 MHz}\\
+			R_{res} &= \frac{3 \cdot 10^{8}}{2 \cdot 50}\\
 			R_{res} &= 3 m
 		\end{align*}
 	\item Menghitung jarak maksimum yang dapat dideteksi oleh radar digunakanlah persamaan \ref{eq:MaxRange}, namun sebelumnya harus ditentukan terlebih dahulu nilai $\mu$, yang merupakan tingkat kenaikan frekuensi pada suatu periode sesuai dengan persamaan \ref{eq:chirpRate}, dengan nilai $T_{c}$ sesuai persamaan \ref{eq:chirpTime} dan nilai kecepatan maksimum ditentukan bernilai 15 m/s, maka.
 	
 	\begin{align*}
 		T_{c} &= \frac{\lambda}{4 \cdot V_{max}}\\
-		T_{c} &= \frac{0.1}{4 \cdot 15}\\
-		T_{c} &= 0.001667
+		T_{c} &= \frac{0.0967}{4 \cdot 15}\\
+		T_{c} &= 1613 \mu s
 	\end{align*}
 
 	\item 
-	Sehingga nilai $\mu$ dapat dihitung menjadi.
+	Sehingga nilai \textit{chirp rate} ($\mu$) dapat dihitung menjadi.
 
 		\begin{align*}
 		\mu &= \frac{\textit{Bandwidth}}{T_{c}}\\
-		\mu &= \frac{\textit{50 MHz}}{0.001667}\\
-		\mu &= 30000 MHz/s
+		\mu &= \frac{\textit{50}}{1613}\\
+		\mu &= 0.031 MHz/ \mu s
 		\end{align*}
 
 	\item 	
 	Dengan jarak maksimum yang didapat adalah.
 		\begin{align*}
 		R_{max} &= \frac{F_{s} \cdot c}{2 \cdot \mu}\\
-		R_{max} &= \frac{30 \cdot 10^{6} \cdot 3 \cdot 10^{8}}{2 \cdot 30000}\\
-		R_{max} &= 150 km
+		R_{max} &= \frac{30 \cdot 10^{6} \cdot 3 \cdot 10^{8}}{2 \cdot 0.031}\\
+		R_{max} &= 145.16 km
 		\end{align*}
 
 	\item 
-	Dengan $T_{f}$ sebagai durasi \textit{frame} bernilai 0.05 s maka resolusi kecepatannya.
+	Dengan $T_{f}$ sebagai durasi \textit{frame} bernilai 0.048 s maka resolusi kecepatannya.
 		\begin{align*}
 			V_{res} &= \frac{\lambda}{2 \cdot T_{f}}\\
-			V_{res} &= \frac{0.1}{2 \cdot 0.05}\\
+			V_{res} &= \frac{0.0967}{2 \cdot 0.048}\\
 			V_{res} &= 1 m/s
 		\end{align*}
 
@@ -176,7 +178,7 @@ Data berupa nilai \textit{beat frequency} dan \textit{doppler frequency shift} y
 	\end{center}
 \end{figure}
 
-Pengambilan data akan dilaksanakan di lokasi lapangan Univertitas Telkom Surabaya yang beralamat Jl. Ketintang No.156, Ketintang, Kec. Gayungan, Surabaya, Jawa Timur 60231.
+Pengambilan data akan dilaksanakan di lokasi lapangan Universitas Telkom Surabaya yang beralamat Jl. Ketintang No.156, Ketintang, Kec. Gayungan, Surabaya, Jawa Timur 60231.
 
 \section{Konfigurasi Pengujian}
 Konfigurasi pengujian dilakukan sesuai dengan gambar \ref{img:skema}. Terdapat satu buah perangkat laptop yang terhubung dengan dua buah USRP, masing-masing USRP terhubung dengan antena \textit{Log-periodic}. USRP 1 berperan sebagai \textit{transmitter} sedangkan USRP 2 berperan sebagai \textit{receiver}.
@@ -218,15 +220,15 @@ Hasil prediksi dari nilai \textit{beat frequency} yang telah dihitung menggunaka
 		\hline
 		d0 & Prediksi $f_{b}$  \\
 		\hline
-		5 m & 1000 Hz\\
+		5 m & 1033 Hz\\
 		\hline
-		10 m & 2000 Hz\\
+		10 m & 2067 Hz\\
 		\hline
-		15 m & 3000 Hz\\
+		15 m & 3100 Hz\\
 		\hline
-		20 m & 4000 Hz\\
+		20 m & 4133 Hz\\
 		\hline
-		25 m & 5000 Hz\\
+		25 m & 5167 Hz\\
 		\hline
 	\end{longtable}
 \end{center}
@@ -240,15 +242,15 @@ Hasil prediksi dari nilai \textit{doppler frequency} yang didapat dengan persama
 		\hline
 		v & Prediksi $f_{d}$  \\
 		\hline
-		3 m & 60 Hz\\
+		3 m & 62 Hz\\
 		\hline
-		6 m & 120 Hz\\
+		6 m & 124 Hz\\
 		\hline
-		9 m & 180 Hz\\
+		9 m & 186 Hz\\
 		\hline
-		12 m & 240 Hz\\
+		12 m & 248 Hz\\
 		\hline
-		15 m & 300 Hz\\
+		15 m & 310 Hz\\
 		\hline
 	\end{longtable}
 \end{center}

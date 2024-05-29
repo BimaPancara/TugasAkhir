@@ -22,7 +22,15 @@ Banyak sekali referensi yang menjadi bagian besar dalam tertulisnya proposal ini
 	& \textit{Proceedings of the 12th GNU Radio Conference}
 	& Penggunaan radar CW untuk observasi detak jantung dan pernapasan menggunakan GNURadio dan USRP X310. Proses pengolahan data secara langsung dengan hasil estimasi pada jarak 5 BPM dibanding alat monitor detak jantung. 
 	\\ \hline
-	
+	\end{longtable}
+	\rightline{bersambung pada halaman berikutnya}
+
+	\vspace{3cm}
+
+	\begin{longtable}{|p{0.5cm}|p{2cm}|p{3cm}|p{2.5cm}|p{4cm}|}
+	\hline
+	\textbf{No.} & \textbf{Nama} & \textbf{Judul} &\textbf{Jurnal} & \textbf{Deskripsi}\\
+	\hline
 	2. 	& Wankhede, Animesh;\newline De, Sampurna
 	& \textit{Development of L-Band FMCW Radar on SDR using GNU RADIO} (2024)
 	& \textit{2024 Second International Conference on Emerging Trends in Information Technology and Engineering (ICETITE)}
@@ -33,7 +41,15 @@ Banyak sekali referensi yang menjadi bagian besar dalam tertulisnya proposal ini
 	& \textit{IEEE Open Journal of Antennas and Propagation}
 	& Implementasi radar FMCW pada frekuensi kelas K dengan antena \textit{array} dan \textit{beammforming} untuk deteksi arah pada kendaraan otomotif. Radar mampu mendeteksi objek dengan jarak 2\textdegree.
 	\\ \hline
-	
+	\end{longtable}
+	\rightline{bersambung pada halaman berikutnya}
+
+	\vspace{5cm}
+
+	\begin{longtable}{|p{0.5cm}|p{2cm}|p{3cm}|p{2.5cm}|p{4cm}|}
+	\hline
+	\textbf{No.} & \textbf{Nama} & \textbf{Judul} &\textbf{Jurnal} & \textbf{Deskripsi}\\
+	\hline
 	4.& Dabrowski, Grzegorz;\newline Stasiak, Krzysztof;\newline Drozdowicz, Jedrzej;\newline Gromek, Damian;\newline Samczynski, Piotr
 	& \textit{An X–band FMCW Radar Demonstrator Based on an SDR Platform} (2020)
 	& \textit{2020 21st International Radar Symposium (IRS)}
@@ -44,7 +60,15 @@ Banyak sekali referensi yang menjadi bagian besar dalam tertulisnya proposal ini
 	& \textit{2020 27th IEEE International Conference on Electronics, Circuits and Systems (ICECS)}
 	& Pengolahan sinyal radar dilakukan dengan klasifikasi data menggunakan \textit{Support Vector Machine} (SVM), didapat hasil menunjukkan akurasi klasifikasi target mencapai 100\%. 
 	\\ \hline
-	
+	\end{longtable}
+	\rightline{bersambung pada halaman berikutnya}
+
+	\vspace{6cm}
+
+	\begin{longtable}{|p{0.5cm}|p{2cm}|p{3cm}|p{2.5cm}|p{4cm}|}
+	\hline
+	\textbf{No.} & \textbf{Nama} & \textbf{Judul} &\textbf{Jurnal} & \textbf{Deskripsi}\\
+	\hline
 	6. & Jeong, Hyunmin;\newline Kim, Sangkil
 	& \textit{Educational Low-Cost C-Band FMCW Radar System Comprising Commercial Off-the-Shelf Components for Indoor Through-Wall Object Detection} (2021)
 	& \textit{Electronics}
@@ -55,7 +79,15 @@ Banyak sekali referensi yang menjadi bagian besar dalam tertulisnya proposal ini
 	& \textit{Journal of Medical Engineering and Technology}
 	& Dengan melakukan modifikasi pada pengolahan data fasa setelah filter \textit{Low Pass}. Didapatkan hasil bahwa desain modifikasi mampu mendeteksi waktu dan amplitudo pernafasan, serta lokasi dari target. 
 	\\ \hline
-	
+	\end{longtable}
+	\rightline{bersambung pada halaman berikutnya}
+
+	\vspace{7cm}
+
+	\begin{longtable}{|p{0.5cm}|p{2cm}|p{3cm}|p{2.5cm}|p{4cm}|}
+	\hline
+	\textbf{No.} & \textbf{Nama} & \textbf{Judul} &\textbf{Jurnal} & \textbf{Deskripsi}\\
+	\hline
 	8. & Pramudita, Aloysius Adya;\newline Lin, Ding-Bing;\newline Dhiyani, Azizka Ayu;\newline Ryanu, Harfan Hian;\newline Adiprabowo, Tjahjo;\newline Yudha, Erfansyah Ali
 	& \textit{FMCW Radar for Noncontact Bridge Structure Displacement Estimation} (2023)
 	& \textit{IEEE Transactions on Instrumentation and Measurement}
@@ -91,7 +123,7 @@ Cara kerja dari radar adalah dengan memancarkan gelombang di dalam ruang bebas y
 	\label{eq:PersRadar}
 \end{equation}
 
-Persamaan \ref{eq:PersRadar} menjelaskan jarak antara target dengan antena yang disimbolkan sebagai $R$, dengan $T_{R}$ sebagai waktu sinyal radar bergerak secara bolak balik dari dan menuju objek. Karena radar memakai gelombang elektromagnetik, maka $c$ memiliki kecepatan yang sama dengan cahaya, yaitu $3 \times 10 ^{8}$.
+Persamaan \ref{eq:PersRadar} menjelaskan jarak antara target dengan antena yang disimbolkan sebagai $R$ (meter), dengan $T_{R}$ (sekon) sebagai waktu sinyal radar bergerak secara bolak balik dari dan menuju objek. Karena radar memakai gelombang elektromagnetik, maka $c$ memiliki kecepatan yang sama dengan cahaya, yaitu $3 \times 10 ^{8} $ m/s.
 
 \begin{figure}
 	\begin{center}
@@ -120,7 +152,7 @@ Persamaan radar berguna untuk menghubungkan seluruh komponen yang terdapat pada 
 	\label{eq:maxUnRan}
 \end{equation}
 
-Salah satu persamaan pada radar adalah \textit{maximum unambiguous range} menunjukkan jarak tempuh radar terjauh yang dapat dideteksi disimbolkan sebagai $R_{un}$ pada persamaan \ref{eq:maxUnRan}, dengan $c$ adalah kecepatan cahaya, $T_{p}$ sebagai periode pengulangan pulsa, dan $f_{p}$ sebagai frekuensi pengulangan pulsa. Sehingga $T_{p}$ berbanding terbalik dengan $f_{p}$.
+Salah satu persamaan pada radar adalah \textit{maximum unambiguous range} menunjukkan jarak tempuh radar terjauh yang dapat dideteksi disimbolkan sebagai $R_{un}$ (meter) pada persamaan \ref{eq:maxUnRan}, dengan $c$ adalah kecepatan cahaya, $T_{p}$ sebagai periode pengulangan pulsa yang biasa menggunakan satuan sekon bahkan mikrosekon, dan $f_{p}$ sebagai frekuensi pengulangan pulsa (Hz). Sehingga $T_{p}$ berbanding terbalik dengan $f_{p}$.
 
 \begin{equation}
 	T_{p} = \frac{1}{f_{p}}
@@ -134,7 +166,7 @@ Persamaan \ref{eq:pulseFreq} menunjukkan hubungan periode pengulangan pulsa rada
 	\label{eq:powIso}
 \end{equation}
 
-Bila antena yang digunakan dalam memancarkan gelombang elektromagnetika radar bersifat isotrop, maka kerapatan daya pada jarak $R$ dari radar akan sama dengan daya di transmisi ($P_{t}$) dibagi luas permukaan $4\pi R^{2}$ dari sebuah bola imajiner dengan radius $R$, atau dapat didefinisikan pula dengan persamaan \ref{eq:powIso}, namun kenyataannya tidak seperti itu.
+Bila antena yang digunakan dalam memancarkan gelombang elektromagnetika radar bersifat isotrop, maka kerapatan daya pada jarak $R$ dari radar akan sama dengan daya dalam satuan Watt di transmisi ($P_{t}$) dibagi luas permukaan $4\pi R^{2}$ dari sebuah bola imajiner dengan radius $R$ (meter), atau dapat didefinisikan pula dengan persamaan \ref{eq:powIso}, namun kenyataannya tidak seperti itu.
 
 \begin{equation}
 	\text{Kerapatan daya antena \textit{directional}} = \frac{P_{t} G}{4\pi R^{2}}
@@ -147,7 +179,7 @@ Radar seringkali menggunakan antena \textit{directive} untuk mengkonsentrasikan 
 	G  = \frac{\text{Kerapatan daya maksimum dari antena \textit{directional}}}{\text{Kerapatan daya antena Isotrop \textit{lossless} dengan daya yang sama}}
 \end{equation}
 
-\textit{Gain} bersatuan dB (decibel) yang menunjukkan perbandingan suatu nilai, dalam kasus ini kerapatan daya maksimum antena berarah dibanding antena isotropik.
+\textit{Gain} bersatuan dB (desibel) yang menunjukkan perbandingan suatu nilai, dalam kasus ini kerapatan daya maksimum antena berarah dibanding antena isotropik.
 
 \section{Pengolahan Sinyal Radar}
 Untuk mendapat suatu kesimpulan dari sinyal radar, maka dibutuhkan pengolahan sinyal radar yang tepat. Pengolahan sinyal tersebut dilakukan mulai dari pembentukan gelombang hingga pengambilan kesimpulan. 
@@ -181,7 +213,7 @@ Radar FMCW memancarkan sinyal yang bila terpantul objek, akan kembali terdeteksi
 	\end{center}
 \end{figure}
 
-Dari blok diagram tersebut, dapat dilihat bahwa sinyal yang diterima dicampurkan dengan sinyal yang dikirim, sehingga karena adanya \textit{delay} yang disebabkan oleh jarak gelombang bergerak, maka akan terdeteksi perbedaan frekuensi. Dengan begitu, perbedaan pada fasa dan frekuensi menjadi tolok ukur antara sinyal yang dikirim dengan sinyal yang di dapatkan kembali.
+Dari blok diagram tersebut, dapat dilihat bahwa sinyal yang diterima akan dicampurkan dengan sinyal yang dikirim, bila terdapat \textit{delay} yang disebabkan oleh jarak, maka akan terdeteksi perbedaan frekuensi. Dengan begitu, perbedaan pada fasa dan frekuensi menjadi tolok ukur antara sinyal yang dikirim dengan sinyal yang di dapatkan kembali.
 
 \begin{figure}
 	\begin{center}
@@ -198,28 +230,28 @@ Oleh karena itu, salah satu karakteristik dari radar FMCW adalah bahwa jarak pen
 	\label{eq:PersFMCW}
 \end{equation}
 
-Persamaan \ref{eq:PersFMCW} menunjukkan jarak (R) dengan objek yang terdeteksi. Yang mana $\Delta{t}$ adalah waktu tunda dalam detik, $\Delta{f}$ merupakan pergeseran frekuensi terukur dalam Hertz, dengan d(f)/d(t) sebagai pergeseran frekuensi dalam suatu periode. 
+Persamaan \ref{eq:PersFMCW} menunjukkan jarak (R) dalam meter dengan objek yang terdeteksi. Yang mana $\Delta{t}$ adalah waktu tunda dalam detik, $\Delta{f}$ merupakan pergeseran frekuensi terukur dalam Hertz, dengan d(f)/d(t) sebagai pergeseran frekuensi dalam suatu periode. 
 
 \begin{equation}
 	R_{max} = \frac{F_{s} c}{2 \mu}
 	\label{eq:MaxRange}
 \end{equation}
 
-Persamaan \ref{eq:MaxRange} menunjukkan jarak maksimum yang dapat di deteksi oleh radar FMCW. $F_{s}$ merupakan frekuensi \textit{sampling}, dan $\mu$ adalah tingkat kenaikan frekuensi pada suatu periode.
+Persamaan \ref{eq:MaxRange} menunjukkan jarak maksimum yang dapat di deteksi oleh radar FMCW. $F_{s}$ merupakan frekuensi \textit{sampling} yang biasanya menggunakan satuan Hertz atau \textit{Sample/second}, dan $\mu$ adalah tingkat kenaikan frekuensi pada suatu periode disimbolkan dengan Hertz/sekon.
 
 \begin{equation}
 	\mu = \frac{\textit{Bandwidth}}{T_{c}}
 	\label{eq:chirpRate}
 \end{equation}
 
-Persamaan \ref{eq:chirpRate} adalah langkah menghitung $\mu$ yaitu membagi nilai \textit{bandwidth} dengan waktu \textit{sweep} (\textit{chirp}) bersimbol $T_{c}$.
+Persamaan \ref{eq:chirpRate} adalah langkah menghitung $\mu$ yaitu membagi nilai \textit{bandwidth} dengan waktu \textit{sweep} (\textit{chirp}) bersimbol $T_{c}$. Biasanya, radar FMCW memiliki nilai $T_{c}$ yang kecil, dengan menggunakan satuan $\mu s$, sehingga nilai \textit{chirp rate} memiliki satuan $Hz/\mu s$
 
 \begin{equation}
 	T_{c} = \frac{\lambda}{4 \cdot V_{max}}
 	\label{eq:chirpTime}
 \end{equation}
 
-Dengan nilai $T_{c}$ yaitu periode \textit{chirp} didefinisikan sebagai persamaan \ref{eq:chirpTime}, dengan $\lambda$ sebagai panjang gelombang dan $V_{max}$ sebagai kecepatan maksimum yang dapat diraih oleh radar.
+Dengan nilai $T_{c}$ yaitu periode \textit{chirp} didefinisikan sebagai persamaan \ref{eq:chirpTime}, dengan $\lambda$ sebagai panjang gelombang (meter) dan $V_{max}$ sebagai kecepatan maksimum yang dapat dideteksi oleh radar (m/s).
 
 Selain itu, salah satu faktor penting yang perlu diperhitungkan dalam perancangan radar FMCW adalah resolusi jarak. Resolusi jarak sendiri merupakan kemampuan dari suatu radar dalam membedakan dua buah objek yang berdekatan.
 
@@ -228,21 +260,21 @@ Selain itu, salah satu faktor penting yang perlu diperhitungkan dalam perancanga
 	\label{eq:RangeRes}
 \end{equation}
 
-Persamaan \ref{eq:RangeRes} menjelaskan bahwa dengan membagi kecepatan cahaya dengan dua kali lebar pita frekuensi (\textit{Bandwidth}), maka resolusi jarak akan didapatkan. 
+Persamaan \ref{eq:RangeRes} menjelaskan bahwa dengan membagi kecepatan cahaya dengan dua kali lebar pita frekuensi (\textit{Bandwidth}) dalam Hertz, maka resolusi jarak dalam satuan meter akan didapatkan. 
 
 \begin{equation}
 	v_{max} = \frac{\lambda}{4 \cdot T_{c}}
 	\label{eq:maxVelo}
 \end{equation}
 
-Nilai kecepatan maksimum dapat dihitung dengan persamaan \ref{eq:maxVelo} yang melakukan pembagian panjang gelombang frekuensi dipilih dengan 4 dikali \textit{sweep time} ($T_{c}$).
+Nilai kecepatan maksimum dapat dihitung dengan persamaan \ref{eq:maxVelo}, yaitu panjang gelombang frekuensi yang digunakan (Hz) dibagi dengan \textit{sweep time} dalam sekon ($T_{c}$) dikalikan empat.
 
 \begin{equation}
 	V_{res} = \frac{\lambda}{2 \cdot T_{f}}
 	\label{eq:resVelo}
 \end{equation}
 
-Sehingga nilai resolusi kecepatan dapat dihitung dengan persamaan \ref{eq:resVelo}, yang membagi panjang gelombang dengan 2 kali durasi \textit{frame} ($T_{f}$).
+Sehingga nilai resolusi kecepatan dapat dihitung dengan persamaan \ref{eq:resVelo}, yang membagi panjang gelombang (Hz) dengan 2 kali durasi \textit{frame} ($T_{f}$) dalam sekon.
 
 \begin{equation}
 	T_{f} = N \cdot T_{c} = \frac{\lambda}{2 \cdot V_{res}}
@@ -254,9 +286,9 @@ $T_{f}$ adalah durasi dari \textit{frame} yang terdiri dari N jumlah dari \texti
 \subsection{\textit{Linear Frequency Modulated Continuous Wave Radar}}
 \textit{Linear Frequency Modulated}, yang juga sering disingkat sebagai LFM adalah teknik pengolahan sinyal yang dilakukan dengan menyapu frekuensi dari bawah ke atas (\textit{Up-Chirp}) atau dari atas ke bawah (\textit{Down-Chirp}). Dengan $f_{0}$ sebagai frekuensi tengah, dan dilakukan pada \textit{bandwidth} yang telah ditentukan. Teknik ini akan membantu pencapaian radar dengan resolusi yang lebih tinggi karena \textit{bandwidth} yang dicapai akan menjadi lebih tinggi.
 
-Salah satu jenis gelombang LFM adalah \textit{Linear Triangular Frequency Modulation} yang ditunjukkan pada gambar \ref{pic:LFMTriangular}. Penggunaan jenis gelombang tersebut akan mempermudah proses evaluasi target. Alasan mudahnya analisa adalah saat objek yang terdeteksi bergerak menjauh dari radar, maka frekuensi akan bergeser turun karena \textit{doppler} dan dua \textit{beat frequency} akan muncul, satu pada \textit{upchirp} dan satu pada \textit{downchirp}. 
+Salah satu jenis gelombang LFM adalah \textit{Linear Triangular Frequency Modulation} yang ditunjukkan pada gambar \ref{pic:LFMTriangular}. Penggunaan jenis gelombang tersebut akan mempermudah proses evaluasi target. Alasannya adalah saat objek yang terdeteksi bergerak menjauh dari radar, maka frekuensi akan bergeser turun karena \textit{doppler} dan dua \textit{beat frequency} akan muncul, satu pada \textit{upchirp} dan satu pada \textit{downchirp}. 
 
-Saat objek berada pada jarak yang jauh, namun tidak bergerak, maka akan terjadi \textit{beat frequency} akibat kemunduran waktu. Bila keduanya terjadi, maka dua nilai \textit{beat frequency} akan muncul, sehingga membedakan pergeseran akibat \textit{doppler} dan akibat kemunduran waktu dapat dilakukan.
+Saat objek berada pada jarak yang jauh, namun tidak bergerak, maka akan terjadi \textit{beat frequency} akibat kemunduran waktu. Bila keduanya terjadi dalam waktu yang bersamaan, maka dua nilai \textit{beat frequency} akan muncul, sehingga sumber pergeseran frekuensi dapat dibedakan diantara \textit{doppler} dengan \textit{delay} waktu.
 
 \begin{figure}
 	\begin{center}
@@ -307,7 +339,7 @@ Untuk melakukan pengambilan keputusan dari data yang diambil oleh radar, maka di
 	\label{eq:RangeEst}
 \end{equation}
 
-Pada persamaan \ref{eq:RangeEst} tersebut, $d_{0}$ merujuk ke hasil estimasi jarak dengan satuan meter,  c sebagai kecepatan cahaya, $f_{b}$ adalah \textit{beat frequency} yang merupakan perbedaan pada frekuensi,  $\mu$ yang merupakan laju perubahan frekuensi pada suatu waktu (\textit{chirp rate}), dengan $T_{c}$ sebagai waktu \textit{Sweep}. Sedangkan untuk melakukan estimasi kecepatan terdapat pergeseran frekuensi akibat efek doppler, yang menjelaskan perubahan frekuensi suatu gelombang karena suatu objek sumber yang bergerak. 
+Pada persamaan \ref{eq:RangeEst} tersebut, $d_{0}$ merujuk ke hasil estimasi jarak dengan satuan meter,  c sebagai kecepatan cahaya, $f_{b}$ adalah \textit{beat frequency} yang merupakan perbedaan pada frekuensi dalam Hertz, $\mu$ yang merupakan laju perubahan frekuensi pada suatu waktu (\textit{chirp rate}) disimbolkan sebagai Hz/s, dengan $T_{c}$ sebagai waktu \textit{Sweep}. Sedangkan untuk melakukan estimasi kecepatan terdapat pergeseran frekuensi akibat efek doppler, yang menjelaskan perubahan frekuensi suatu gelombang karena suatu objek sumber yang bergerak. 
 
 \begin{equation}
 	v = \frac{f_{d}}{2}\lambda
@@ -388,7 +420,7 @@ Dengan spesifikasi tersebut, maka USRP B210 memiliki kemampuan \textit{instantne
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[scale=0.35]{pics/bab2/GNU.png} 
+		\includegraphics[scale=0.3]{pics/bab2/GNU.png} 
 		\caption[Logo GNURadio]{Logo GNURadio}
 		\label{pic:logoGnuRadio}
 	\end{center}
@@ -397,7 +429,7 @@ GNURadio adalah aplikasi yang dapat melakukan pemrograman terhadap USRP lewat an
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[scale=0.25]{pics/bab2/blokDiagramGRC.png} 
+		\includegraphics[scale=0.22]{pics/bab2/blokDiagramGRC.png} 
 		\caption[Contoh \textit{Flowgraph} GNURadio]{Contoh \textit{Flowgraph} GNURadio}
 		\label{pic:contohFlowGraphGRC}
 	\end{center}
