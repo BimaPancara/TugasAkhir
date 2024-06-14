@@ -36,6 +36,33 @@ L.~Zeng, C.~Yang, Y.~Zhao, M.~Huang, and C.~Zhi, ``\textit{Research on Evaluatio
 \bibitem{Prabaswara2011}
 A.~Prabaswara, A.~Munir, and A.~B. Suksmono, ``\textit{GNU Radio based software-defined FMCW radar for weather surveillance application},'' in {\em 2011 6th International Conference on Telecommunication Systems, Services, and Applications (TSSA)}, IEEE, Oct. 2011.
 
+\bibitem{Lenz2022}
+I.~Lenz, J.~Holtom, A.~Herschfelt, Y.~Rong, and D.~Bliss, ``Respiratory and heart rate detection using continuous-wave radar testbed implemented in gnu radio,'' {\em Proceedings of the GNU Radio Conference}, vol.~7, no.~1, 2022.
+
+\bibitem{Wankhede2024}
+A.~Wankhede, S.~De, and G.~N. Surname, ``Development of l-band fmcw radar on sdr using gnu radio,'' in {\em 2024 Second International Conference on Emerging Trends in Information Technology and Engineering (ICETITE)}, IEEE, Feb. 2024.
+
+\bibitem{HilarioRe2021}
+P.~D. Hilario~Re, D.~Comite, S.~K. Podilchak, C.~A. Alistarh, G.~Goussetis, M.~Sellathurai, J.~Thompson, and J.~Lee, ``\textit{FMCW Radar With Enhanced Resolution and Processing Time by Beam Switching},'' {\em IEEE Open Journal of Antennas and Propagation}, vol.~2, pp.~882--896, 2021.
+
+\bibitem{Dabrowski2020}
+G.~Dabrowski, K.~Stasiak, J.~Drozdowicz, D.~Gromek, and P.~Samczynski, ``\textit{An X–band FMCW Radar Demonstrator Based on an SDR Platform},'' in {\em 2020 21st International Radar Symposium (IRS)}, IEEE, Oct. 2020.
+
+\bibitem{Rizik2020}
+A.~Rizik, E.~Tavanti, R.~Vio, A.~Delucchi, H.~Chible, A.~Randazzo, and D.~D. Caviglia, ``\textit{Single Target Recognition Using a Low-Cost FMCW Radar Based on Spectrum Analysis},'' in {\em 2020 27th IEEE International Conference on Electronics, Circuits and Systems (ICECS)}, IEEE, Nov. 2020.
+
+\bibitem{Jeong2021}
+H.~Jeong and S.~Kim, ``\textit{Educational Low-Cost C-Band FMCW Radar System Comprising Commercial Off-the-Shelf Components for Indoor Through-Wall Object Detection},'' {\em Electronics}, vol.~10, p.~2758, Nov. 2021.
+
+\bibitem{Pramudita2020}
+A.~A. Pramudita, F.~Y. Suratman, and D.~Arseno, ``Modified fmcw system for non-contact sensing of human respiration,'' {\em Journal of Medical Engineering and; Technology}, vol.~44, pp.~114--124, Apr. 2020.
+
+\bibitem{Pramudita2023}
+A.~A. Pramudita, D.-B. Lin, A.~A. Dhiyani, H.~H. Ryanu, T.~Adiprabowo, and E.~A. Yudha, ``\textit{FMCW Radar for Noncontact Bridge Structure Displacement Estimation},'' {\em IEEE Transactions on Instrumentation and Measurement}, vol.~72, pp.~1--14, 2023.
+
+\bibitem{Zhou2023}
+M.~Zhou, Y.~Liu, S.~Wu, C.~Wang, Z.~Chen, and H.~Li, ``\textit{A Novel Scheme of High-Precision Heart Rate Detection With a mm-Wave FMCW Radar},'' {\em IEEE Access}, vol.~11, pp.~85118--85136, 2023.
+
 \bibitem{Skolnik2001}
 M.~I. Skolnik, {\em \textit{Introduction to radar systems}}.
 \newblock McGraw-Hill electrical engineering series, Boston, Mass.: McGraw Hill, third edition~ed., 2001.
