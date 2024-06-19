@@ -197,21 +197,23 @@ Konfigurasi pengujian dilakukan sesuai dengan gambar \ref{img:skema}. Terdapat s
 Prediksi hasil pengujian diperlukan untuk menjadi pembanding dari hasil yang akan didapat setelah melakukan pengujian. Perhitungan prediksi ini berupa nilai \textit{beat frequency} dan \textit{doppler frequency}. Prediksi nilai \textit{beat frequency} didapat pada persamaan \ref{eq:RangeEst} dan memodifikasinya dengan menentukan nilai jarak ($d_{0}$) pada estimasi jarak. Sehingga akan didapat persamaan estimasi \textit{beat frequency}($f_{b}$) seperti berikut.
 
 \begin{equation}
+	\nonumber
 	f_{b} = \frac{d_{0} \cdot 2 \mu}{c} = \frac{d_{0} \cdot 2BW}{c \cdot T_{c}}
 	\label{eq:predFb}
 \end{equation}
 
-Persamaan \ref{eq:predFb} menunjukkan bahwa dengan menentukan jarak ($d_{0}$) dalam meter, \textit{chirp rate} ($\mu$) dalam $Hz/\mu s$, kecepatan cahaya (c) dalam $m/s$, lebar pita frekuensi (BW) dalam Hz, dan waktu \textit{chirp} ($T_{c}$) dalam $\mu s$. Maka \textit{beat frequency} ($f_{b}$) yang ditemukan akan memiliki satuan Hz.
+Persamaan diatas menunjukkan bahwa dengan menentukan jarak ($d_{0}$) dalam meter, \textit{chirp rate} ($\mu$) dalam $Hz/\mu s$, kecepatan cahaya (c) dalam $m/s$, lebar pita frekuensi (BW) dalam Hz, dan waktu \textit{chirp} ($T_{c}$) dalam $\mu s$. Maka \textit{beat frequency} ($f_{b}$) yang ditemukan akan memiliki satuan Hz.
 
 
 Prediksi nilai frekuensi doppler dapat dilakukan dengan mengubah persamaan \ref{eq:velocity} lalu memberikan asumsi nilai kecepatan (v) pada estimasi kecepatan dengan satuan m/s dan panjang gelombang frekuensi ($\lambda$) yang digunakan dengan satuan meter. Sehingga persamaan estimasi \textit{doppler frequency} ($f_{d}$) akan menjadi berikut.
 
 \begin{equation}
+	\nonumber
 	f_{d} = \frac{v \cdot 2}{\lambda}
 	\label{eq:predFd}
 \end{equation}
 
-Hasil prediksi dari nilai \textit{beat frequency} yang telah dihitung menggunakan persamaan \ref{eq:predFb} berada pada tabel \ref{tab:predFbeat}.
+Hasil prediksi dari nilai \textit{beat frequency} yang telah dihitung menggunakan turunan dari persamaan diatas berada pada tabel \ref{tab:predFbeat}.
 
 \begin{center}
 	\begin{longtable}{|c|c|}
