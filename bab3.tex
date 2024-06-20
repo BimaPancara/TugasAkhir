@@ -67,13 +67,13 @@ Pada tahap ini, dilakukan perancangan sistem radar. Maka perlu ditentukannya spe
 		\lambda &= 0.0967 m
 	\end{align*}
 
-	\item Menghitung resolusi jarak berdasarkan persamaan \ref{eq:RangeRes} dan dengan menentukan \textit{bandwidth} bernilai 50 MHz, maka.
+	\item Menghitung resolusi jarak berdasarkan persamaan~(\ref{eq:RangeRes}) dan dengan menentukan \textit{bandwidth} bernilai 50 MHz, maka.
 		\begin{align*}
 			R_{res} &= \frac{c}{2 BW} \\
 			R_{res} &= \frac{3 \cdot 10^{8}}{2 \cdot 50}\\
 			R_{res} &= 3 m
 		\end{align*}
-	\item Menghitung jarak maksimum yang dapat dideteksi oleh radar digunakanlah persamaan \ref{eq:MaxRange}, namun sebelumnya harus ditentukan terlebih dahulu nilai $\mu$, yang merupakan tingkat kenaikan frekuensi pada suatu periode sesuai dengan persamaan \ref{eq:chirpRate}, dengan nilai $T_{c}$ sesuai persamaan \ref{eq:chirpTime} dan nilai kecepatan maksimum ditentukan bernilai 15 m/s, maka.
+	\item Menghitung jarak maksimum yang dapat dideteksi oleh radar digunakanlah persamaan~(\ref{eq:MaxRange}), namun sebelumnya harus ditentukan terlebih dahulu nilai $\mu$, yang merupakan tingkat kenaikan frekuensi pada suatu periode sesuai dengan persamaan~(\ref{eq:chirpRate}), dengan nilai $T_{c}$ sesuai persamaan~(\ref{eq:chirpTime}) dan nilai kecepatan maksimum ditentukan bernilai 15 m/s, maka.
 	
 	\begin{align*}
 		T_{c} &= \frac{\lambda}{4 \cdot V_{max}}\\
@@ -194,7 +194,7 @@ Konfigurasi pengujian dilakukan sesuai dengan gambar \ref{img:skema}. Terdapat s
 
 \section{Prediksi Hasil Pengujian}
 
-Prediksi hasil pengujian diperlukan untuk menjadi pembanding dari hasil yang akan didapat setelah melakukan pengujian. Perhitungan prediksi ini berupa nilai \textit{beat frequency} dan \textit{doppler frequency}. Prediksi nilai \textit{beat frequency} didapat pada persamaan \ref{eq:RangeEst} dan memodifikasinya dengan menentukan nilai jarak ($d_{0}$) pada estimasi jarak. Sehingga akan didapat persamaan estimasi \textit{beat frequency}($f_{b}$) seperti berikut.
+Prediksi hasil pengujian diperlukan untuk menjadi pembanding dari hasil yang akan didapat setelah melakukan pengujian. Perhitungan prediksi ini berupa nilai \textit{beat frequency} dan \textit{doppler frequency}. Prediksi nilai \textit{beat frequency} didapat pada persamaan~(\ref{eq:RangeEst}) dan memodifikasinya dengan menentukan nilai jarak ($d_{0}$) pada estimasi jarak. Sehingga akan didapat persamaan estimasi \textit{beat frequency}($f_{b}$) seperti berikut.
 
 \begin{equation}
 	\nonumber
@@ -205,7 +205,7 @@ Prediksi hasil pengujian diperlukan untuk menjadi pembanding dari hasil yang aka
 Persamaan diatas menunjukkan bahwa dengan menentukan jarak ($d_{0}$) dalam meter, \textit{chirp rate} ($\mu$) dalam $Hz/\mu s$, kecepatan cahaya (c) dalam $m/s$, lebar pita frekuensi (BW) dalam Hz, dan waktu \textit{chirp} ($T_{c}$) dalam $\mu s$. Maka \textit{beat frequency} ($f_{b}$) yang ditemukan akan memiliki satuan Hz.
 
 
-Prediksi nilai frekuensi doppler dapat dilakukan dengan mengubah persamaan \ref{eq:velocity} lalu memberikan asumsi nilai kecepatan (v) pada estimasi kecepatan dengan satuan m/s dan panjang gelombang frekuensi ($\lambda$) yang digunakan dengan satuan meter. Sehingga persamaan estimasi \textit{doppler frequency} ($f_{d}$) akan menjadi berikut.
+Prediksi nilai frekuensi doppler dapat dilakukan dengan mengubah persamaan~(\ref{eq:velocity}) lalu memberikan asumsi nilai kecepatan (v) pada estimasi kecepatan dengan satuan m/s dan panjang gelombang frekuensi ($\lambda$) yang digunakan dengan satuan meter. Sehingga persamaan estimasi \textit{doppler frequency} ($f_{d}$) akan menjadi berikut.
 
 \begin{equation}
 	\nonumber
@@ -235,7 +235,7 @@ Hasil prediksi dari nilai \textit{beat frequency} yang telah dihitung menggunaka
 	\end{longtable}
 \end{center}
 
-Hasil prediksi dari nilai \textit{doppler frequency} yang didapat dengan persamaan \ref{eq:predFd} terdata dalam tabel \ref{tab:predFdopp}.
+Hasil prediksi dari nilai \textit{doppler frequency} yang didapat dengan persamaan turunan yang dilakukan terdata dalam tabel \ref{tab:predFdopp}.
 
 \begin{center}
 	\begin{longtable}{|c|c|}
