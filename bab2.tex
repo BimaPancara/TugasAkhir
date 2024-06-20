@@ -109,14 +109,14 @@ Penelitian \cite{Pramudita2020} menggunakan analisa pada fasa untuk memperoleh d
 
 Penggunaan gelombang elektromagnetik sebagai sarana untuk mendeteksi objek adalah konsep dasar dari radar. Radar sendiri merupakan singkatan dari \textit{Radio Detection and Ranging}, dari situ sangat nampak sekali tujuan dari penggunaan alat ini, yaitu untuk mendeteksi sesuatu dan mengukur jarak dengan menggunakan gelombang radio. 
 
-Cara kerja dari radar adalah dengan memancarkan gelombang di dalam ruang bebas yang kemudian radar akan mendeteksi gelombang pantulan dari objek tersebut. Adanya gelombang yang terpantul ini tidak hanya menunjukkan keberadaan dari suatu objek, namun dengan membandingkan gelombang pantulan yang diterima dengan gelombang yang dikirimkan maka informasi tentang objek yang terdeteksi dapat didapat \cite{Skolnik2001}.
+Cara kerja dari radar adalah dengan memancarkan gelombang di dalam ruang bebas yang kemudian radar akan mendeteksi gelombang pantulan dari objek tersebut. Adanya gelombang yang terpantul ini tidak hanya menunjukkan keberadaan dari suatu objek, namun dengan membandingkan gelombang pantulan yang diterima dengan gelombang yang dikirimkan maka informasi tentang objek yang terdeteksi dapat dihitung \cite{Skolnik2001}. 
 
 \begin{equation}
 	R = \frac{cT_{R}}{2}
 	\label{eq:PersRadar}
 \end{equation}
 
-Persamaan \ref{eq:PersRadar} menjelaskan jarak antara target dengan antena yang disimbolkan sebagai $R$ (meter), dengan $T_{R}$ (sekon) sebagai waktu sinyal radar bergerak secara bolak balik dari dan menuju objek. Karena radar memakai gelombang elektromagnetik, maka $c$ memiliki kecepatan yang sama dengan cahaya, yaitu $3 \times 10 ^{8} $ m/s.
+Persamaan~(\ref{eq:PersRadar}) menjelaskan jarak antara target dengan antena yang disimbolkan sebagai $R$ (meter), dengan $T_{R}$ (sekon) sebagai waktu sinyal radar bergerak secara bolak balik dari dan menuju objek. Karena radar memakai gelombang elektromagnetik, maka $c$ memiliki kecepatan yang sama dengan cahaya, yaitu $3 \cdot 10 ^{8} $ m/s.
 
 \begin{figure}
 	\begin{center}
@@ -145,28 +145,28 @@ Persamaan radar berguna untuk menghubungkan seluruh komponen yang terdapat pada 
 	\label{eq:maxUnRan}
 \end{equation}
 
-Salah satu persamaan pada radar adalah \textit{maximum unambiguous range} menunjukkan jarak tempuh radar terjauh yang dapat dideteksi disimbolkan sebagai $R_{un}$ (meter) pada persamaan \ref{eq:maxUnRan}, dengan $c$ adalah kecepatan cahaya, $T_{p}$ sebagai periode pengulangan pulsa yang biasa menggunakan satuan sekon bahkan mikrosekon, dan $f_{p}$ sebagai frekuensi pengulangan pulsa (Hz). Sehingga $T_{p}$ berbanding terbalik dengan $f_{p}$.
+Salah satu persamaan pada radar adalah \textit{maximum unambiguous range} menunjukkan jarak tempuh radar terjauh yang dapat dideteksi disimbolkan sebagai $R_{un}$ (meter) pada persamaan~(\ref{eq:maxUnRan}), dengan $c$ adalah kecepatan cahaya, $T_{p}$ sebagai periode pengulangan pulsa yang biasa menggunakan satuan sekon bahkan mikrosekon, dan $f_{p}$ sebagai frekuensi pengulangan pulsa (Hz). Sehingga $T_{p}$ berbanding terbalik dengan $f_{p}$.
 
 \begin{equation}
 	T_{p} = \frac{1}{f_{p}}
 	\label{eq:pulseFreq}
 \end{equation}
 
-Persamaan \ref{eq:pulseFreq} menunjukkan hubungan periode pengulangan pulsa radar ($T_{p}$) dengan frekuensi pengulanganya ($f_{p}$). Semakin besar frekuensi pengulangan pulsa radar, maka periode pengulanganya akan semakin kecil.
+Persamaan~(\ref{eq:pulseFreq}) menunjukkan hubungan periode pengulangan pulsa radar ($T_{p}$) dengan frekuensi pengulanganya ($f_{p}$). Semakin besar frekuensi pengulangan pulsa radar, maka periode pengulanganya akan semakin kecil.
 
 \begin{equation}
 	P = \frac{P_{t}}{4\pi R^{2}}
 	\label{eq:powIso}
 \end{equation}
 
-Bila antena yang digunakan dalam memancarkan gelombang elektromagnetika radar bersifat isotrop, maka kerapatan daya pada jarak $R$ dari radar akan sama dengan daya dalam satuan Watt di transmisi ($P_{t}$) dibagi luas permukaan $4\pi R^{2}$ dari sebuah bola imajiner dengan radius $R$ (meter), atau dapat didefinisikan pula dengan persamaan \ref{eq:powIso}, namun kenyataannya tidak seperti itu.
+Bila antena yang digunakan dalam memancarkan gelombang elektromagnetika radar bersifat isotrop, maka kerapatan daya pada jarak $R$ dari radar akan sama dengan daya dalam satuan Watt di transmisi ($P_{t}$) dibagi luas permukaan $4\pi R^{2}$ dari sebuah bola imajiner dengan radius $R$ (meter), atau dapat didefinisikan pula dengan persamaan~(\ref{eq:powIso}), namun kenyataannya tidak seperti itu.
 
 \begin{equation}
 	\text{Kerapatan daya antena \textit{directional}} = \frac{P_{t} G}{4\pi R^{2}}
 	\label{eq:powDir}
 \end{equation}
 
-Radar seringkali menggunakan antena \textit{directive} untuk mengkonsentrasikan daya yang terradiasi pada arah tertentu. Maka kerapatan dayanya seperti pada persamaan \ref{eq:powDir}, dengan G sebagai \textit{gain} maksimum suatu antena yang terdefinisi sebagai berikut.
+Radar seringkali menggunakan antena \textit{directive} untuk mengkonsentrasikan daya yang terradiasi pada arah tertentu. Maka kerapatan dayanya seperti pada persamaan~(\ref{eq:powDir}), dengan G sebagai \textit{gain} maksimum suatu antena yang terdefinisi sebagai berikut.
 
 \begin{equation}
 	G  = \frac{\text{Kerapatan daya maksimum dari antena \textit{directional}}}{\text{Kerapatan daya antena Isotrop \textit{lossless} dengan daya yang sama}}
@@ -223,28 +223,28 @@ Oleh karena itu, salah satu karakteristik dari radar FMCW adalah bahwa jarak pen
 	\label{eq:PersFMCW}
 \end{equation}
 
-Persamaan \ref{eq:PersFMCW} menunjukkan jarak (R) dalam meter dengan objek yang terdeteksi. Yang mana $\Delta{t}$ adalah waktu tunda dalam detik, $\Delta{f}$ merupakan pergeseran frekuensi terukur dalam Hertz, dengan d(f)/d(t) sebagai pergeseran frekuensi dalam suatu periode. 
+Persamaan~(\ref{eq:PersFMCW}) menunjukkan jarak (R) dalam meter dengan objek yang terdeteksi. Yang mana $\Delta{t}$ adalah waktu tunda dalam detik, $\Delta{f}$ merupakan pergeseran frekuensi terukur dalam Hertz, dengan d(f)/d(t) sebagai pergeseran frekuensi dalam suatu periode. 
 
 \begin{equation}
 	R_{max} = \frac{F_{s} c}{2 \mu}
 	\label{eq:MaxRange}
 \end{equation}
 
-Persamaan \ref{eq:MaxRange} menunjukkan jarak maksimum yang dapat di deteksi oleh radar FMCW. $F_{s}$ merupakan frekuensi \textit{sampling} yang biasanya menggunakan satuan Hertz atau \textit{Sample/second}, dan $\mu$ adalah tingkat kenaikan frekuensi pada suatu periode disimbolkan dengan Hertz/sekon.
+Persamaan~(\ref{eq:MaxRange}) menunjukkan jarak maksimum yang dapat di deteksi oleh radar FMCW. $F_{s}$ merupakan frekuensi \textit{sampling} yang biasanya menggunakan satuan Hertz atau \textit{Sample/second}, dan $\mu$ adalah tingkat kenaikan frekuensi pada suatu periode disimbolkan dengan Hertz/sekon.
 
 \begin{equation}
 	\mu = \frac{\textit{Bandwidth}}{T_{c}}
 	\label{eq:chirpRate}
 \end{equation}
 
-Persamaan \ref{eq:chirpRate} adalah langkah menghitung $\mu$ yaitu membagi nilai \textit{bandwidth} dengan waktu \textit{sweep} (\textit{chirp}) bersimbol $T_{c}$. Biasanya, radar FMCW memiliki nilai $T_{c}$ yang kecil, dengan menggunakan satuan $\mu s$, sehingga nilai \textit{chirp rate} memiliki satuan $Hz/\mu s$
+Persamaan~(\ref{eq:chirpRate}) adalah langkah menghitung $\mu$ yaitu membagi nilai \textit{bandwidth} dengan waktu \textit{sweep} (\textit{chirp}) bersimbol $T_{c}$. Biasanya, radar FMCW memiliki nilai $T_{c}$ yang kecil, dengan menggunakan satuan $\mu s$, sehingga nilai \textit{chirp rate} memiliki satuan $Hz/\mu s$
 
 \begin{equation}
 	T_{c} = \frac{\lambda}{4 \cdot V_{max}}
 	\label{eq:chirpTime}
 \end{equation}
 
-Dengan nilai $T_{c}$ yaitu periode \textit{chirp} didefinisikan sebagai persamaan \ref{eq:chirpTime}, dengan $\lambda$ sebagai panjang gelombang (meter) dan $V_{max}$ sebagai kecepatan maksimum yang dapat dideteksi oleh radar (m/s).
+Dengan nilai $T_{c}$ yaitu periode \textit{chirp} didefinisikan sebagai persamaan~(\ref{eq:chirpTime}), dengan $\lambda$ sebagai panjang gelombang (meter) dan $V_{max}$ sebagai kecepatan maksimum yang dapat dideteksi oleh radar (m/s).
 
 Selain itu, salah satu faktor penting yang perlu diperhitungkan dalam perancangan radar FMCW adalah resolusi jarak. Resolusi jarak sendiri merupakan kemampuan dari suatu radar dalam membedakan dua buah objek yang berdekatan.
 
@@ -253,28 +253,28 @@ Selain itu, salah satu faktor penting yang perlu diperhitungkan dalam perancanga
 	\label{eq:RangeRes}
 \end{equation}
 
-Persamaan \ref{eq:RangeRes} menjelaskan bahwa dengan membagi kecepatan cahaya dengan dua kali lebar pita frekuensi (\textit{Bandwidth}) dalam Hertz, maka resolusi jarak dalam satuan meter akan didapatkan. 
+Persamaan~(\ref{eq:RangeRes}) menjelaskan bahwa dengan membagi kecepatan cahaya dengan dua kali lebar pita frekuensi (\textit{Bandwidth}) dalam Hertz, maka resolusi jarak dalam satuan meter akan didapatkan. 
 
 \begin{equation}
 	v_{max} = \frac{\lambda}{4 \cdot T_{c}}
 	\label{eq:maxVelo}
 \end{equation}
 
-Nilai kecepatan maksimum dapat dihitung dengan persamaan \ref{eq:maxVelo}, yaitu panjang gelombang frekuensi yang digunakan (Hz) dibagi dengan \textit{sweep time} dalam sekon ($T_{c}$) dikalikan empat.
+Nilai kecepatan maksimum dapat dihitung dengan persamaan~(\ref{eq:maxVelo}), yaitu panjang gelombang frekuensi yang digunakan (Hz) dibagi dengan \textit{sweep time} dalam sekon ($T_{c}$) dikalikan empat.
 
 \begin{equation}
 	V_{res} = \frac{\lambda}{2 \cdot T_{f}}
 	\label{eq:resVelo}
 \end{equation}
 
-Sehingga nilai resolusi kecepatan dapat dihitung dengan persamaan \ref{eq:resVelo}, yang membagi panjang gelombang (Hz) dengan 2 kali durasi \textit{frame} ($T_{f}$) dalam sekon.
+Sehingga nilai resolusi kecepatan dapat dihitung dengan persamaan~(\ref{eq:resVelo}), yang membagi panjang gelombang (Hz) dengan 2 kali durasi \textit{frame} ($T_{f}$) dalam sekon.
 
 \begin{equation}
 	T_{f} = N \cdot T_{c} = \frac{\lambda}{2 \cdot V_{res}}
 	\label{eq:frameDuration}
 \end{equation}
 
-$T_{f}$ adalah durasi dari \textit{frame} yang terdiri dari N jumlah dari \textit{chirp} secara terus menerus, nilainya dapat dicari pada persamaan \ref{eq:frameDuration}.
+$T_{f}$ adalah durasi dari \textit{frame} yang terdiri dari N jumlah dari \textit{chirp} secara terus menerus, nilainya dapat dicari pada persamaan~(\ref{eq:frameDuration}).
 
 \subsection{\textit{Linear Frequency Modulated Continuous Wave Radar}}
 \textit{Linear Frequency Modulated}, yang juga sering disingkat sebagai LFM adalah teknik pengolahan sinyal yang dilakukan dengan menyapu frekuensi dari bawah ke atas (\textit{Up-Chirp}) atau dari atas ke bawah (\textit{Down-Chirp}). Dengan $f_{0}$ sebagai frekuensi tengah, dan dilakukan pada \textit{bandwidth} yang telah ditentukan. Teknik ini akan membantu pencapaian radar dengan resolusi yang lebih tinggi karena \textit{bandwidth} yang dicapai akan menjadi lebih tinggi.
@@ -325,24 +325,24 @@ Bila menggunakan LFM berbentuk segitiga, maka objek yang bergerak dapat dideteks
 Gambar \ref{pic:DetailMod} menunjukkan langkah analisa gelombang LFM tipe segitiga. $\Delta t$ adalah pergeseran frekuensi akibat kemunduran waktu, sedangkan $\Delta f$ adalah pergeseran frekuensi akibat \textit{doppler}. Dengan T sebagai periode \textit{chirp} yang terjadi pada radar.
 
 \subsection{Teknik Pengolahan Sinyal}
-Untuk melakukan pengambilan keputusan dari data yang diambil oleh radar, maka dibutuhkan langkah pengolahan yang benar dan mencakup berbagai hal. Beberapa parameter yang bisa diambil estimasinya adalah jarak dan kecepatan dari objek yang terdeteksi. Pada estimasi jarak, persamaan \ref{eq:RangeEst} dapat menjelaskan hubungan jarak dengan beberapa faktor yang mempengaruhinya.
+Untuk melakukan pengambilan keputusan dari data yang diambil oleh radar, maka dibutuhkan langkah pengolahan yang benar dan mencakup berbagai hal. Beberapa parameter yang bisa diambil estimasinya adalah jarak dan kecepatan dari objek yang terdeteksi. Pada estimasi jarak, persamaan~(\ref{eq:RangeEst}) dapat menjelaskan hubungan jarak dengan beberapa faktor yang mempengaruhinya.
 
 \begin{equation}
 	d_{0} = \frac{c f_{b}}{2 \mu} = \frac{c T_{c} f_{b}}{2 BW}
 	\label{eq:RangeEst}
 \end{equation}
 
-Pada persamaan \ref{eq:RangeEst} tersebut, $d_{0}$ merujuk ke hasil estimasi jarak dengan satuan meter,  c sebagai kecepatan cahaya, $f_{b}$ adalah \textit{beat frequency} yang merupakan perbedaan pada frekuensi dalam Hertz, $\mu$ yang merupakan laju perubahan frekuensi pada suatu waktu (\textit{chirp rate}) disimbolkan sebagai Hz/s, dengan $T_{c}$ sebagai waktu \textit{Sweep}. Sedangkan untuk melakukan estimasi kecepatan terdapat pergeseran frekuensi akibat efek doppler, yang menjelaskan perubahan frekuensi suatu gelombang karena suatu objek sumber yang bergerak. 
+Pada persamaan~(\ref{eq:RangeEst}) tersebut, $d_{0}$ merujuk ke hasil estimasi jarak dengan satuan meter,  c sebagai kecepatan cahaya, $f_{b}$ adalah \textit{beat frequency} yang merupakan perbedaan pada frekuensi dalam Hertz, $\mu$ yang merupakan laju perubahan frekuensi pada suatu waktu (\textit{chirp rate}) disimbolkan sebagai Hz/s, dengan $T_{c}$ sebagai waktu \textit{Sweep}. Sedangkan untuk melakukan estimasi kecepatan terdapat pergeseran frekuensi akibat efek doppler, yang menjelaskan perubahan frekuensi suatu gelombang karena suatu objek sumber yang bergerak. 
 
 \begin{equation}
 	v = \frac{f_{d}}{2}\lambda
 	\label{eq:velocity}
 \end{equation}
 
-Persamaan \ref{eq:velocity} akan didapat dengan menunjukkan hubungan antara pergeseran doppler ($f_{d}$), dengan v sebagai kecepatan yang memiliki satuan m/s, dan $\lambda$ adalah panjang gelombang dengan satuan meter. 
+Persamaan~(\ref{eq:velocity}) akan didapat dengan menunjukkan hubungan antara pergeseran doppler ($f_{d}$), dengan v sebagai kecepatan yang memiliki satuan m/s, dan $\lambda$ adalah panjang gelombang dengan satuan meter. 
 
 \subsection{Perhitungan \textit{Error}}
-Penghitungan galat dari radar yang telah di desain dapat dilakukan dengan menguji keakurasian dari hasil deteksi. Hasil akurasi deteksi radar dapat diuji dengan menggunakan \textit{Root Mean Square Error} (RMS E). Nilai dari RMS E bisa didapat dengan persamaan \ref{eq:rmsE} dengan nilai n adalah jumlah pengulangan dari uji coba.
+Penghitungan galat dari radar yang telah di desain dapat dilakukan dengan menguji keakurasian dari hasil deteksi. Hasil akurasi deteksi radar dapat diuji dengan menggunakan \textit{Root Mean Square Error} (RMS E). Nilai dari RMS E bisa didapat dengan persamaan~(\ref{eq:rmsE}) dengan nilai n adalah jumlah pengulangan dari uji coba.
 
 \begin{equation}
 	RMS E = \sqrt{\frac{\sum_{i = 1}^{n} (simulasi_{i}-aktual_{i})^2}{n}}
