@@ -7,7 +7,7 @@ S.~Zhang, C.~Wang, S.-C. Chan, X.~Wei, and C.-H. Ho, ``\textit{New Object Detect
 A.~Biswas, S.~Abedin, and M.~A. Kabir, ``\textit{Moving Object Detection Using Ultrasonic Radar with Proper Distance, Direction, and Object Shape Analysis},'' {\em Journal of Information Systems Engineering and Business Intelligence}, vol.~6, p.~99, Oct. 2020.
 
 \bibitem{Jia2020}
-M.~Jia, S.~Li, J.~L. Kernec, S.~Yang, F.~Fioranelli, and O.~Romain, ``\textit{Human activity classification with radar signal processing and machine learning},'' in {\em 2020 International Conference on UK-China Emerging Technologies (UCET)}, IEEE, Aug. 2020.
+M.~Jia, S.~Li, J.~L. Kernec, S.~Yang, F.~Fioranelli, and O.~Romain, ``{\textit{Human Activity Classification with Radar Signal Processing and Machine Learning}},'' in {\em 2020 International Conference on UK-China Emerging Technologies (UCET)}, IEEE, Aug. 2020.
 
 \bibitem{Xia2021}
 Y.~Xia, Z.~Ma, and Z.~Huang, ``\textit{Over-the-Air Radar Emitter Signal Classification Based on SDR},'' in {\em 2021 6th International Conference on Intelligent Computing and Signal Processing (ICSP)}, IEEE, Apr. 2021.
@@ -16,25 +16,52 @@ Y.~Xia, Z.~Ma, and Z.~Huang, ``\textit{Over-the-Air Radar Emitter Signal Classif
 D.~A. Mora-Huaman, F.~Palomino~Quispe, R.~J. Coaquira-Castillo, and M.~Clemente-Arenas, ``\textit{Distance to Object Estimation Based on Software Defined Radio USRP using Python},'' in {\em 2020 IEEE XXVII International Conference on Electronics, Electrical Engineering and Computing (INTERCON)}, IEEE, Sept. 2020.
 
 \bibitem{Sundaresan2015}
-S.~S, A.~C, T.~Zacharia, and G.~R, ``\textit{Real time implementation of FMCW radar for target detection using GNU radio and USRP},'' in {\em 2015 International Conference on Communications and Signal Processing (ICCSP)}, IEEE, Apr. 2015.
+S.~Sundaresan, C.~Anjana, T.~Zacharia, and R.~Gandhiraj, ``\textit{Real Time Implementation of FMCW Radar for Target Detection Using GNU radio and USRP},'' in {\em 2015 International Conference on Communications and Signal Processing (ICCSP)}, IEEE, Apr. 2015.
 
 \bibitem{Stasiak2017}
-K.~Stasiak and P.~Samczynski, ``\textit{FMCW radar implemented in SDR architecture using a USRP device},'' in {\em 2017 Signal Processing Symposium (SPSympo)}, IEEE, Sept. 2017.
+K.~Stasiak and P.~Samczynski, ``\textit{FMCW Radar Implemented in SDR Architecture Using a USRP Device},'' in {\em 2017 Signal Processing Symposium (SPSympo)}, IEEE, Sept. 2017.
 
 \bibitem{Macasero2018}
 J.~M.~S. Macasero, O.~J.~L. Gerasta, D.~P. Pongcol, V.~J.~V. Ylaya, and A.~B. Caberos, ``\textit{Underground Target Objects Detection Simulation Using FMCW Radar with SDR Platform},'' in {\em 2018 IEEE 10th International Conference on Humanoid, Nanotechnology, Information Technology,Communication and Control, Environment and Management (HNICEM)}, IEEE, Nov. 2018.
 
 \bibitem{Lestari2017}
-A.~Lestari, D.~D. Patriadi, I.~H. Putri, B.~Harnawan, O.~D. Winarko, W.~Sediono, and M.~A.~K. Titasari, ``\textit{FPGA-based SDR implementation for FMCW maritime surveillance radar},'' in {\em 2017 International Conference on Radar, Antenna, Microwave, Electronics, and Telecommunications (ICRAMET)}, IEEE, Oct. 2017.
+A.~Lestari, D.~D. Patriadi, I.~H. Putri, B.~Harnawan, O.~D. Winarko, W.~Sediono, and M.~A.~K. Titasari, ``\textit{FPGA-based SDR Implementation for FMCW Maritime Surveillance Radar},'' in {\em 2017 International Conference on Radar, Antenna, Microwave, Electronics, and Telecommunications (ICRAMET)}, IEEE, Oct. 2017.
 
 \bibitem{Deng2017}
-J.-H. Deng, P.-N. Chen, C.-F. Lee, Y.-F. Chan, and Y.-C. Lin, ``\textit{SDR measurement platform design for FMCW RADAR performance verification},'' in {\em 2017 IEEE Conference on Dependable and Secure Computing}, IEEE, Aug. 2017.
+J.-H. Deng, P.-N. Chen, C.-F. Lee, Y.-F. Chan, and Y.-C. Lin, ``\textit{SDR Measurement Platform Design for FMCW RADAR Performance Verification},'' in {\em 2017 IEEE Conference on Dependable and Secure Computing}, IEEE, Aug. 2017.
 
 \bibitem{Zeng2019}
 L.~Zeng, C.~Yang, Y.~Zhao, M.~Huang, and C.~Zhi, ``\textit{Research on Evaluation Index System for Software Defined Radar (SDR)},'' in {\em 2019 IEEE Radar Conference (RadarConf)}, IEEE, Apr. 2019.
 
 \bibitem{Prabaswara2011}
-A.~Prabaswara, A.~Munir, and A.~B. Suksmono, ``\textit{GNU Radio based software-defined FMCW radar for weather surveillance application},'' in {\em 2011 6th International Conference on Telecommunication Systems, Services, and Applications (TSSA)}, IEEE, Oct. 2011.
+A.~Prabaswara, A.~Munir, and A.~B. Suksmono, ``\textit{GNU Radio Based Software-Defined FMCW Radar for Weather Surveillance Application},'' in {\em 2011 6th International Conference on Telecommunication Systems, Services, and Applications (TSSA)}, IEEE, Oct. 2011.
+
+\bibitem{Lenz2022}
+I.~Lenz, J.~Holtom, A.~Herschfelt, Y.~Rong, and D.~Bliss, ``\textit{Respiratory and Heart Rate Detection Using Continuous-Wave Radar Testbed Implemented in GNU Radio},'' {\em Proceedings of the GNU Radio Conference}, vol.~7, no.~1, 2022.
+
+\bibitem{Wankhede2024}
+A.~Wankhede, S.~De, and G.~N. Surname, ``\textit{Development of L-Band FMCW Radar on SDR using GNU RADIO},'' in {\em 2024 Second International Conference on Emerging Trends in Information Technology and Engineering (ICETITE)}, IEEE, Feb. 2024.
+
+\bibitem{HilarioRe2021}
+P.~D. Hilario~Re, D.~Comite, S.~K. Podilchak, C.~A. Alistarh, G.~Goussetis, M.~Sellathurai, J.~Thompson, and J.~Lee, ``\textit{FMCW Radar With Enhanced Resolution and Processing Time by Beam Switching},'' {\em IEEE Open Journal of Antennas and Propagation}, vol.~2, pp.~882--896, 2021.
+
+\bibitem{Dabrowski2020}
+G.~Dabrowski, K.~Stasiak, J.~Drozdowicz, D.~Gromek, and P.~Samczynski, ``\textit{An X–band FMCW Radar Demonstrator Based on an SDR Platform},'' in {\em 2020 21st International Radar Symposium (IRS)}, IEEE, Oct. 2020.
+
+\bibitem{Rizik2020}
+A.~Rizik, E.~Tavanti, R.~Vio, A.~Delucchi, H.~Chible, A.~Randazzo, and D.~D. Caviglia, ``\textit{Single Target Recognition Using a Low-Cost FMCW Radar Based on Spectrum Analysis},'' in {\em 2020 27th IEEE International Conference on Electronics, Circuits and Systems (ICECS)}, IEEE, Nov. 2020.
+
+\bibitem{Jeong2021}
+H.~Jeong and S.~Kim, ``\textit{Educational Low-Cost C-Band FMCW Radar System Comprising Commercial Off-the-Shelf Components for Indoor Through-Wall Object Detection},'' {\em Electronics}, vol.~10, p.~2758, Nov. 2021.
+
+\bibitem{Pramudita2020}
+A.~A. Pramudita, F.~Y. Suratman, and D.~Arseno, ``\textit{Modified FMCW System for Non-Contact Sensing of Human Respiration},'' {\em Journal of Medical Engineering and; Technology}, vol.~44, pp.~114--124, Apr. 2020.
+
+\bibitem{Pramudita2023}
+A.~A. Pramudita, D.-B. Lin, A.~A. Dhiyani, H.~H. Ryanu, T.~Adiprabowo, and E.~A. Yudha, ``\textit{FMCW Radar for Noncontact Bridge Structure Displacement Estimation},'' {\em IEEE Transactions on Instrumentation and Measurement}, vol.~72, pp.~1--14, 2023.
+
+\bibitem{Zhou2023}
+M.~Zhou, Y.~Liu, S.~Wu, C.~Wang, Z.~Chen, and H.~Li, ``\textit{A Novel Scheme of High-Precision Heart Rate Detection With a mm-Wave FMCW Radar},'' {\em IEEE Access}, vol.~11, pp.~85118--85136, 2023.
 
 \bibitem{Skolnik2001}
 M.~I. Skolnik, {\em \textit{Introduction to radar systems}}.
@@ -61,7 +88,7 @@ M.~Jankiraman, {\em \textit{FMCW radar design}}.
 \newblock \textit{Includes bibliographical references and index}.
 
 \bibitem{Anisah2018}
-I.~Anisah, H.~Briantoro, A.~Zainudin, and D.~I. Permatasari, ``Implementasi sistem komunikasi nirkabel ofdm berbasis software defined radio (sdr),'' {\em Jurnal Nasional Teknik Elektro dan Teknologi Informasi (JNTETI)}, vol.~7, June 2018.
+I.~Anisah, H.~Briantoro, A.~Zainudin, and D.~I. Permatasari, ``{Implementasi Sistem Komunikasi Nirkabel OFDM Berbasis Software Defined Radio (SDR)},'' {\em Jurnal Nasional Teknik Elektro dan Teknologi Informasi (JNTETI)}, vol.~7, June 2018.
 
 \bibitem{Gulo2023}
 M.~M. Gulo, I.~G.~P. Astawa, Arifin, Y.~Moegiharto, and H.~Briantoro, ``\textit{The Joint Channel Coding and Pre-Distortion Technique on the USRP-Based MIMO-OFDM System},'' {\em Jurnal RESTI (Rekayasa Sistem dan Teknologi Informasi)}, vol.~7, pp.~930--939, Aug. 2023.
