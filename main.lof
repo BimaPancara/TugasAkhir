@@ -1,0 +1,42 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Penggunaan Radar Otomotif}}{1}{figure.caption.8}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Skema Dasar Radar}}{12}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Blok Diagram Radar}}{12}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Bentuk Gelombang Radar}}{14}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Blok Diagram Radar FMCW}}{15}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces FMCW Dalam Domain Waktu}}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces LFM Tipe Segitiga}}{18}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces LFM Tipe Gigi Gergaji}}{18}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Detail Analisis LFM \textit {Sawtooth}}}{19}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Detail Analisa LFM \textit {Triangular}}}{19}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces USRP B210}}{21}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Contoh \textit {Flowgraph} GNURadio}}{23}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Contoh Hasil Desain Sistem GNURadio}}{23}{figure.caption.20}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \textit {Flowchart} Penelitian}}{24}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Gambar Perangkat Laptop Yang Digunakan}}{28}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Alat USRP B210}}{28}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Antena \textit {Log Periodic} Pengujian}}{29}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Skema Penelitian}}{29}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Lokasi Pengujian}}{30}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Konfigurasi Pengujian}}{30}{figure.caption.27}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Desain Sistem Pada GNURadio}}{32}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Hasil pengukuran pola radiasi antena}}{33}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Pengambilan data jarak 3 meter}}{34}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Pengambilan data jarak 6 meter}}{34}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Pengambilan data jarak 9 meter}}{35}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Pengambilan data kecepatan menjauhi radar}}{36}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Pengambilan data kecepatan mendekati radar}}{36}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces \textit {Phase Noise} dari sinyal yang diterima}}{37}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Perubahan frekuensi dengan waktu}}{38}{figure.caption.36}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Hasil \textit {beat frequency} dari jarak 3 meter}}{39}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Hasil \textit {beat frequency} dari jarak 6 meter}}{41}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Hasil \textit {beat frequency} dari jarak 9 meter}}{42}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Hasil Prediksi Kecepatan Objek 5 km/h}}{43}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Hasil Prediksi Kecepatan Objek 10 km/h}}{44}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Hasil Prediksi Kecepatan Objek 15 km/h}}{44}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Hasil Prediksi Kecepatan Objek 20 km/h}}{45}{figure.caption.43}%
+\addvspace {10\p@ }

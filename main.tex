@@ -4,9 +4,9 @@
 
 % Load konfigurasi LaTeX untuk tipe laporan thesis
 \usepackage{ta}	
-\usepackage{amsmath}
-\usepackage{titlesec}
 
+\usepackage{enumitem}
+%\setlist[enumerate]{itemsep=1pt, topsep=1pt}
 
 \titleformat{\section}
   {\normalfont\fontsize{12}{15}\bfseries}{\thesection}{1em}{}
@@ -24,28 +24,29 @@
 \include{sampul}
 
 \pagenumbering{gobble}
-% Halaman pengesahan
-\addChapter{LEMBAR PENGESAHAN}
-\include{pengesahan}
-
-% Halaman pernyataan orisinalitas
-%\addChapter{LEMBAR PERNYATAAN ORISINALITAS}
-%\include{orisinalitas}
 
 % Gunakan penomoran halaman romawi
 \pagenumbering{roman}
 
 % setelah bagian ini, halaman dihitung sebagai halaman ke 3
-\setcounter{page}{3}
+\setcounter{page}{2}
+
+% Halaman pengesahan
+\addChapter{LEMBAR PENGESAHAN}
+\include{pengesahan}
+
+% Halaman pernyataan orisinalitas
+\addChapter{LEMBAR PERNYATAAN ORISINALITAS}
+\include{orisinalitas}
 
 % Abstrak Bahasa Indonesia dan Bahasa Iggris
 \addChapter{ABSTRAK}
 \include{abstrak}
-%\include{abstract}
+\include{abstract}
 
 % Kata Pengantar
-%\addChapter{\kataPengantar}
-%\include{pengantar}
+\addChapter{\kataPengantar}
+\include{pengantar}
 
 %\addChapter{UCAPAN TERIMA KASIH}
 %\include{ucapan}
@@ -57,34 +58,39 @@
 \clearpage
 \listoftables
 \clearpage
+% Daftar Rumus
+%\addChapter{DAFTAR RUMUS}
+%\include{daftarRumus}
 % Daftar Lampiran
-%\addChapter{DAFTAR LAMPIRAN}
-%\include{listofappendix}
+\addChapter{DAFTAR LAMPIRAN}
+\include{listofappendix}
+\addChapter{DAFTAR ISTILAH}
+\include{daftarIstilah}
 
 % Gunakan penomeran Arab (1, 2, 3, ...) setelah bagian ini.
 \pagenumbering{arabic}
 % Bab 1 : Pendahuluan
 \include{bab1}
-% Bab 2 : Dasar Teori
+% Bab 2 : Landasan Teori
 \include{bab2}
-% Bab 3 : Perancangan
+% Bab 3 : Metodologi Penelitian
 \include{bab3}
+% Bab 4 : Pengumpulan dan pengolahan data
+\include{bab4}
+% Bab 5 : Analisis dan Pembahasan
+\include{bab5}
+% Bab 6 : Kesimpulan dan Saran
+\include{bab6}
 
-% Bab 4 : Pengujian
-%\include{bab4}
-
-% Bab 5 : Kesimpulan dan Saran
-%\include{bab5}
-
-%
 % Daftar Pustaka
 \include{pustaka}
 
 % Lampiran 
-%\begin{appendix}
-%	\pagenumbering{gobble}
-%	\include{markLampiran}
-%	\setcounter{page}{2}
-%\end{appendix}
+\begin{appendix}
+	\pagenumbering{gobble}
+	\include{markLampiran}
+	\setcounter{page}{2}
+	\include{lampiran}
+\end{appendix}
 
 \end{document}

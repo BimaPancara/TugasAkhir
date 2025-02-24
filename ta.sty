@@ -1,8 +1,25 @@
 %-----------------------------------------------------------------------------%
-% Package
+% Set Font according to GPT Recommendation for Times New Roman 12pt and more
 %-----------------------------------------------------------------------------%
 
+\usepackage{newtxtext}  % Uses Times New Roman-like font
+
+
+
+
+%-----------------------------------------------------------------------------%
+% Package
+%-----------------------------------------------------------------------------%
+\usepackage{amsmath}
+\usepackage{titlesec}
+
+\usepackage{listings}
+\usepackage{siunitx}
+\usepackage{booktabs}
 \usepackage{multicol}
+\usepackage[T1]{fontenc}
+
+
 
 %
 % From The tocbibind package [author: Peter Wilson, Herries Press]:
@@ -36,6 +53,7 @@
   	pdfstartview=FitH,
   	pdfview=FitH
 	}
+
 
 %
 % The url package allows spacing and line breaks that result in intelligent 
@@ -79,7 +97,7 @@
 % 
 % Digunakan untuk mengatur caption dalam dokumen.
 % 
-\usepackage[font=footnotesize,format=plain,labelfont=bf,up,textfont=up]{caption}
+\usepackage[font=normalsize,format=plain,labelfont=bf,up,textfont=up]{caption}
 
 % 
 % Membantu penulisan notasi matematika terutama untuk dokumen dengan banyak 
@@ -204,7 +222,8 @@
 	\fancyhf{} 
 	\fancyhead[L]{} 
 	\fancyhead[C]{} 
-	\fancyhead[R]{\thepage} 
+	%\fancyhead[R]{\thepage} 
+	\fancyfoot[C]{\thepage}
 	\renewcommand{\headrulewidth}{0.0pt} 
 	%\fancyfoot[R]{\footnotesize \bo{Universitas Telkom}} 
 	\renewcommand{\footrulewidth}{0.0pt} 
@@ -325,19 +344,22 @@
 % S
 % 
 \renewcommand{\listtablename}{DAFTAR TABEL}
-% 
+%
+
 % 
 \renewcommand{\chaptername}{BAB}
 \renewcommand{\thechapter}{\Roman{chapter}} %supaya roman di chapter  
 \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
 % 
 % 
+\captionsetup[figure]{labelsep=space}
 \renewcommand{\figurename}{\bo{Gambar}}
 \renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
 
 % 
 % 
 \renewcommand{\tablename}{\bo{Tabel}}
+\captionsetup[table]{labelsep=space}
 \renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
 % 
 % 
@@ -372,3 +394,33 @@ tabsize=2,
 }
 
 \usepackage{array}
+
+
+
+% Edit input Matlab Lampiran
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}

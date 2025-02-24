@@ -4,9 +4,10 @@
 %-----------------------------------------------------------------------------%
 \section{Latar Belakang}
 %-----------------------------------------------------------------------------%
-Teknologi penginderaan sangat penting pada masa kini, salah satunya adalah untuk melakukan pendeteksian objek, estimasi kecepatan dan jarak. Kegunaan dari teknologi ini bisa dilihat pada alat seperti \textit{speed trap camera} yang sering diletakkan di pinggir jalan untuk mendeteksi kecepatan kendaraan agar tidak melewati batas kecepatan yang sudah ditentukan. Dalam implementasi pendeteksian objek, estimasi jarak, dan kecepatan, banyak cara yang dapat dilakukan agar hal itu bisa dicapai. Seperti contohnya adalah dengan menggunakan pengolahan visual dari hasil tangkapan kamera untuk melakukan analisis video, apalagi dengan menggunakan \textit{multi-camera network} \cite{Zhang2015}. Adapula penggunaan gelombang suara yang memanfaatkan frekuensi suara pada jarak ultrasonik untuk mendeteksi objek dan jarak dengan menggunakan mikrokontroler dan sensor ultrasonik \cite{Biswas2020}. Teknik lain yang menjadi alternatif adalah penggunaan gelombang elektromagnetik untuk mendeteksi objek dan jarak suatu benda dengan menggunakan radar. 
+Teknologi penginderaan sangat penting pada masa kini, salah satunya adalah untuk melakukan pendeteksian objek, estimasi kecepatan dan jarak. Kegunaan dari teknologi ini bisa dilihat pada alat seperti \textit{speed trap camera} yang sering diletakkan di pinggir jalan untuk mendeteksi kecepatan kendaraan agar tidak melewati batas kecepatan yang sudah ditentukan. Dalam implementasi pendeteksian objek, estimasi jarak, dan kecepatan, banyak cara yang dapat dilakukan agar hal itu bisa dicapai. Seperti contohnya adalah dengan menggunakan pengolahan visual dari hasil tangkapan kamera untuk melakukan analisis video, apalagi dengan menggunakan \textit{multi-camera network}~\cite{Zhang2015}. Adapula penggunaan gelombang suara yang memanfaatkan frekuensi suara pada jarak ultrasonik untuk mendeteksi objek dan jarak dengan menggunakan mikrokontroler dan sensor ultrasonik \cite{Biswas2020}. Teknik lain yang menjadi alternatif adalah penggunaan gelombang elektromagnetik untuk mendeteksi objek dan jarak suatu benda dengan menggunakan radar. 
 
-Radar adalah singkatan dari radio \textit{detection and ranging} yang berarti bahwa fokus kegunaan radar adalah pada pendeteksian dan estimasi jarak suatu benda dengan menggunakan gelombang elektromagnetik. Dibandingkan dengan teknik pengukuran lain, keunggulan dari penggunaan radar adalah mampu mendeteksi objek pada jarak yang jauh serta dapat menembus kabut. Keunggulan tersebut adalah alasan awal digunakannya radar pada zaman dahulu, yaitu  pada medan perang untuk mendeteksi pasukan sebelum nampak sehingga dapat melakukan persiapan terlebih dahulu. 
+Radar adalah singkatan dari radio \textit{detection and ranging} yang berarti bahwa fokus kegunaan radar adalah pada pendeteksian dan estimasi jarak suatu benda dengan menggunakan gelombang elektromagnetik. Dibandingkan dengan teknik pengukuran lain, keunggulan dari penggunaan radar adalah mampu mendeteksi 
+objek pada jarak yang jauh serta dapat menembus kabut. Keunggulan tersebut adalah alasan awal digunakannya radar pada zaman dahulu, yaitu  pada medan perang untuk mendeteksi pasukan sebelum nampak sehingga dapat melakukan persiapan terlebih dahulu. 
 
 \begin{figure}
 	\begin{center}
@@ -25,17 +26,17 @@ Kemampuan radar dalam melakukan deteksi dan estimasi jarak sangatlah penting, ma
 
 GNURadio merupakan aplikasi tak berbayar yang berada dibawah lisensi \textit{GNU General Public License} untuk mempelajari pembuatan dan pengimplementasian sistem \textit{software defined radio}. Dengan melakukan pemrograman pada GNURadio untuk melakukan antarmuka dengan USRP yang dimiliki, peneliti dapat menentukan berapa frekuensi hingga \textit{sampling rate} yang diinginkan \cite{Prabaswara2011}.
 
-Oleh karena itu, pada proposal ini dilakukan “\judul” sehingga dapat membuktikan bahwa sistem yang dirancang dapat melakukan pendeteksian objek dan estimasi jarak.
+Oleh karena itu, pada tugas akhir ini dilakukan “\judul” sehingga dapat membuktikan bahwa sistem yang dirancang dapat melakukan pendeteksian objek dan estimasi jarak.
 
 %-----------------------------------------------------------------------------%
 \section{Rumusan Masalah}
 %-----------------------------------------------------------------------------%
 Desain dan implementasi sistem radar FMCW memerlukan spesifikasi yang tepat sehingga kemampuan sistem dalam mendeteksi, estimasi jarak, dan kecepatan objek menjadi optimal, maka rumusan masalah dalam penelitian tugas akhir ini, yaitu:
 \begin{enumerate}
-	\item Melakukan perancangan sistem radar FMCW menggunakan GNURadio yang memaksimalkan kemampuan USRP B210 dengan mempertimbangkan keperluan sistem.
-	\item Melakukan Pengujian terhadap sistem radar FMCW yang telah didesain, khususnya pada kemampuan radar mendeteksi objek, estimasi jarak, dan kecepatan objek.
-	\item Melakukan evaluasi terhadap radar FMCW yang didesain, khususnya pada kapabilitas radar dalam mendeteksi, melakukan estimasi jarak, dan kecepatan suatu objek.
-	\item Memberikan langkah yang jelas dalam melakukan perancangan sistem radar FMCW dengan menggunakan GNURadio dan USRP B210.
+	\item Perancangan sistem radar FMCW menggunakan GNURadio yang memaksimalkan kemampuan USRP B210 dengan mempertimbangkan keperluan sistem.
+	\item Pengujian terhadap sistem radar FMCW yang telah didesain, khususnya pada kemampuan radar mendeteksi objek, estimasi jarak, dan kecepatan objek.
+	\item Evaluasi terhadap radar FMCW yang didesain, khususnya pada kapabilitas radar dalam mendeteksi, melakukan estimasi jarak, dan kecepatan suatu objek.
+	%\item Memberikan langkah yang jelas dalam melakukan perancangan sistem radar FMCW dengan menggunakan GNURadio dan USRP B210.
 \end{enumerate} 
 
 %-----------------------------------------------------------------------------%
@@ -55,38 +56,54 @@ Tujuan dan manfaat yang ingin dicapai dalam penelitian tugas akhir ini, yaitu:
 \section{Batasan Masalah}
 %-----------------------------------------------------------------------------%
 Hal yang akan dilakukan dalam penelitian ini adalah.
-\begin{enumerate}
-	\item Parameter yang diidentifikasi pada rancang bangun ini adalah resolusi jarak, tingkat keakurasian, dan kecepatan.
+\begin{enumerate}[itemsep=1pt, topsep=1pt]
+	\item Parameter yang diidentifikasi pada rancang bangun ini adalah jarak, kecepatan, dan tingkat keakurasian.
 	\item Pengujian sistem dengan menggunakan USRP B210 untuk melakukan pendeteksian, estimasi jarak, dan kecepatan objek.
 	\item Perangkat lunak yang digunakan adalah GNURadio.
-	\item Antena yang digunakan adalah antena \textit{Log Periodic}
-	\item Frekuensi kerja radar pada 3.1 GHz.
-	\item Objek deteksi adalah kendaraan empat roda.
+	\item Antena yang digunakan adalah antena \textit{Log Periodic} dengan pola radiasi \textit{directional}, polarisasi linier, dan \textit{gain} 6 dBi.
+	\item Frekuensi kerja radar pada 5.8 GHz di kelas frekuensi ISM untuk menghindari interferensi dengan perangkat lain.
+	\item Objek deteksi adalah kendaraan bermotor dua roda.
 \end{enumerate}
 
 %-----------------------------------------------------------------------------%
-\section{Metode Penelitian}
+\section{Sistematika Penelitian}
 %-----------------------------------------------------------------------------%
-Dalam melakukan pengerjaan Tugas Akhir yang diajukan, penyelesaian yang digunakan adalah dengan beberapa pendekatan yaitu: studi literatur, simulasi, analisis statistik, perancangan, dan implementasi.
+Pada bagian ini, sistematika penelitian dari tugas akhir dipaparkan dengan jelas dan sesuai dengan isi penulisan buku tugas akhir ini.
+\begin{enumerate}
+	\item BAB 1 PENDAHULUAN\\
+	Pada bagian ini, latar belakang munculnya penelitian ini dipaparkan dengan jelas. Dari latar belakang yang ada, maka suatu rumusan masalah dapat dibentuk sehingga tujuan dari penelitian dapat ditentukan dengan suatu batasan masalah yang telah ditetapkan. Pada bagian ini, sistematika penulisan penelitian ini juga dicantumkan.
+	\item BAB 2 LANDASAN TEORI\\
+	Pada bagian ini, dasar teori yang berhubungan dengan radar, prinsip kerja, bentuk gelombang, hingga persamaan yang digunakan dalam penelitian ini telah dicantumkan.
+	\item BAB 3 METODOLOGI PENELITIAN\\
+	Pada bagian ini, diagram alur penelitian telah dilampirkan, kemudian parameter pengujian berdasarkan tujuan penelitian telah dijabarkan, kemudian spesifikasi sistem telah dirancang beserta dengan implementasinya. Skenario pengambilan data telah diajukan lengkap beserta dengan konfigurasi pengujian dan prediksi hasil pengujian yang akan didapat.
+	\item BAB 4 PENGUMPULAN DAN PENGOLAHAN DATA\\
+	Pada bagian ini, desain sistem telah dipaparkan, kemudian berbagai data yang diperlukan sedang dikumpulkan, seperti data pola radiasi antena yang digunakan, hingga proses pengambilan data jarak dan kecepatan. Setelah terkumpul, data akan diolah untuk mendapatkan hasil dari penelitian ini.
+	\item BAB 5 ANALISIS DAN PEMBAHASAN\\
+	Pada bagian ini, hasil pengolahan data jarak dan kecepatan telah diolah sehingga hasil akhir penelitian bisa disimpulkan.
+	\item BAB 6 KESIMPULAN DAN SARAN\\
+	Pada bagian ini, kesimpulan dari penelitian ini telah dijelaskan dan saran penelitian selanjutnya telah diberikan.
+\end{enumerate}
 
-%-----------------------------------------------------------------------------%
-\section{Jadwal Penelitian}
-%-----------------------------------------------------------------------------%
-Untuk memastikan proposal ini berjalan dengan lancar, maka diperlukannya penentuan capaian yang ingin diraih pada suatu periode yang sudah ditentukan. Dengan teraihnya capaian tersebut maka tahapan selanjutnya dapat mulai dilakukan.
 
-\begin{center}
-	\begin{longtable}{|c|m{3.8cm}|c | m{3cm} |m{3cm}|}
-		\caption{Agenda Penelitian}
-		\label{tab:Agenda}\\
-		\hline
-		No. & Deskripsi Tahapan & Durasi & Tanggal & \textit{Milestone} \\
-		\hline
-		1. & Desain Sistem & 1 bulan & 1 September 2024 - 30 September 2024 & Diagram blok dan simulasi \\
-		\hline
-		2. & Implementasi dan pengujian& 1 bulan & 1 Oktober 2024 - 31 Oktober 2024 & Pengujian sistem selesai \\
-		\hline
-		3. & Penyusunan laporan Tugas Akhir & 2 minggu & 1 November 2024 - 15 November 2024 & Buku Tugas Akhir selesai \\
-		\hline
-	\end{longtable}
-\end{center}
+
+% %-----------------------------------------------------------------------------%
+% \section{Jadwal Penelitian}
+% %-----------------------------------------------------------------------------%
+% Untuk memastikan proposal ini berjalan dengan lancar, maka diperlukannya penentuan capaian yang ingin diraih pada suatu periode yang sudah ditentukan. Dengan teraihnya capaian tersebut maka tahapan selanjutnya dapat mulai dilakukan.
+
+% \begin{center}
+% 	\begin{longtable}{|c|m{3.8cm}|c | m{3cm} |m{3cm}|}
+% 		\caption{Agenda Penelitian}
+% 		\label{tab:Agenda}\\
+% 		\hline
+% 		No. & Deskripsi Tahapan & Durasi & Tanggal & \textit{Milestone} \\
+% 		\hline
+% 		1. & Desain Sistem & 1 bulan & 1 September 2024 - 30 September 2024 & Diagram blok dan simulasi \\
+% 		\hline
+% 		2. & Implementasi dan pengujian& 1 bulan & 1 Oktober 2024 - 31 Oktober 2024 & Pengujian sistem selesai \\
+% 		\hline
+% 		3. & Penyusunan laporan Tugas Akhir & 2 minggu & 1 November 2024 - 15 November 2024 & Buku Tugas Akhir selesai \\
+% 		\hline
+% 	\end{longtable}
+% \end{center}
 
