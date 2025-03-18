@@ -1,0 +1,28 @@
+%---------------------------------------------------------------
+\chapter{\babEnam}
+%---------------------------------------------------------------
+%---------------------------------------------------------------
+\section{Kesimpulan}
+%---------------------------------------------------------------
+
+Pada bagian ini, kesimpulan dari penelitian akan disajikan. Terutama dalam menjawab rumusan masalah yang diajukan pada penelitian ini, maka kesimpulan yang diperoleh adalah:
+
+\begin{enumerate}
+    \item Perancangan sistem radar FMCW dengan GNURadio telah dilakukan dengan menggunakan kemampuan maksimal dari USRP B210. Mulai dari frekuensi sampling 28 MHz bagi \textit{transmit} dan \textit{receive}, lalu lebar \textit{bandwidth} 14 MHz, hingga nilai \textit{internal gain} maksimum untuk mencapai jarak paling jauh yang dapat dicakup. Sistem telah dirancang dan implementasikan dengan baik.
+    \item Pengujian sistem radar FMCW telah dilakukan, khususnya untuk melakukan pendeteksi objek, estimasi jarak, dan kecepatan objek. Dengan menggunakan kendaraan roda dua yang memiliki \textit{Radar Cross Section} yang kecil, radar mampu menangkap sinyal pantulan dari objek.
+    \item Evaluasi terhadap sistem radar FMCW yang didesain telah dilakukan setelah melakukan pengujian, didapatkan hasil bahwa radar bekerja dengan baik sebagai pendeteksi jarak yaitu pada 6 meter dengan nilai akurasi prediksi 82.86\% dan pada 9 meter dengan nilai akurasi sekitar 93.56\%. Sedangkan sistem radar yang didesain tidak dapat mendeteksi objek pada jarak 3 meter dengan nilai akurasi -402.72\%. Dalam pengujian kecepatan, sistem radar yang didesain dapat melakukan estimasi kecepatan dengan perbandingan perubahan jarak. Dengan begitu maka radar dapat melakukan deteksi objek.
+    %\item Dalam penelitian ini, langkah yang jelas telah dipaparkan dalam melakukan perancangan sistem radar FMCW dengan USRP B210 dan GNURadio. Dimulai dengan identifikasi kemampuan USRP, penyesuaian parameter sistem radar yang dirancang, prediksi kemampuan radar, implementasi sistem, dan pengujian radar.
+\end{enumerate}
+
+%---------------------------------------------------------------
+\section{Saran}
+%---------------------------------------------------------------
+
+Dari penelitian yang sudah dilakukan, maka terdapat saran yang bisa di implementasikan pada penelitian selanjuntya.
+
+\begin{enumerate}
+    \item Menggunakan objek dengan \textit{Radar cross section} lebih besar untuk memastikan seluruh energi dapat terpantul secara maksimal oleh objek.
+    \item Menggunakan perangkat keras lebih mumpuni untuk mengatasi \textit{error overflow} dan \textit{underflow} sehingga pengolahan data secara \textit{real time} dapat dilakukan.
+    \item Menggunakan antena dengan \textit{beamwidth} lebih kecil dengan \textit{gain} tinggi untuk memastikan isolasi benar benar terjadi pada gelombang yang di transmisikan.
+    \item Menggunakan teknik yang dapat memperbesar lebar pita dari sistem radar FMCW yang terbatas, seperti \textit{frequency hopping} dan \textit{synthetic wide-bandwidth}.
+\end{enumerate}

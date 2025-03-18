@@ -1,0 +1,68 @@
+\contentsline {chapter}{LEMBAR PENGESAHAN}{ii}{section*.2}%
+\contentsline {chapter}{LEMBAR PERNYATAAN ORISINALITAS}{iii}{section*.3}%
+\contentsline {chapter}{ABSTRAK}{iv}{section*.4}%
+\contentsline {chapter}{\uppercase {Kata Pengantar}}{vi}{section*.5}%
+\contentsline {chapter}{DAFTAR ISI}{viii}{Item.9}%
+\contentsline {chapter}{DAFTAR GAMBAR}{xi}{Item.9}%
+\contentsline {chapter}{DAFTAR TABEL}{xiii}{Item.9}%
+\contentsline {chapter}{DAFTAR LAMPIRAN}{xiv}{section*.6}%
+\contentsline {chapter}{DAFTAR ISTILAH}{xv}{section*.7}%
+\contentsline {chapter}{\numberline {I}\uppercase {Pendahuluan}}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Rumusan Masalah}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Tujuan dan Manfaat}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Batasan Masalah}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Sistematika Penelitian}{4}{section.1.5}%
+\contentsline {chapter}{\numberline {II}\uppercase {Landasan Teori}}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Kajian Penelitian Terkait}{6}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Radar}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Pengolahan Sinyal Radar}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Bentuk Gelombang Radar}{14}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}\textit {Frequency Modulated Continuous Wave Radar}}{15}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}\textit {Linear Frequency Modulated Continuous Wave Radar}}{17}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Teknik Pengolahan Sinyal}{20}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Perhitungan \textit {Error}}{20}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}\textit {Software Defined Radio}}{21}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}\textit {Universal Software Radio Peripheral}}{21}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}\textit {GNURadio}}{22}{subsection.2.4.2}%
+\contentsline {chapter}{\numberline {III}\uppercase {Metodologi Penelitian}}{24}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Alur Penelitian}{24}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Penentuan Parameter}{25}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Perancangan Spesifikasi Sistem}{25}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Implementasi Sistem}{27}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Pengambilan Data}{29}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Konfigurasi Pengujian}{30}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Prediksi Hasil Pengujian}{31}{section.3.7}%
+\contentsline {chapter}{\numberline {IV}\uppercase {Pengumpulan dan Pengolahan Data}}{32}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Desain Sistem}{32}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Pengukuran Antena}{32}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Pengambilan Data Jarak}{33}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Jarak 3 Meter}{33}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Jarak 6 Meter}{34}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Jarak 9 Meter}{34}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Pengambilan Data Kecepatan}{35}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Menjauhi Radar}{35}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Mendekati Radar}{36}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Pengolahan Data Dengan Matlab}{37}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Pengolahan Data Jarak}{37}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Pengolahan Data Kecepatan}{37}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {V}\uppercase {Analisis dan Pembahasan}}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Hasil Pengolahan Data Jarak}{39}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Data Jarak 3 Meter}{39}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Data Jarak 6 Meter}{41}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Data Jarak 9 Meter}{42}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Hasil Pengolahan Data Kecepatan}{43}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Data Kecepatan 5 km/h}{43}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Data Kecepatan 10 km/h}{44}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Data Kecepatan 15 km/h}{44}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Data Kecepatan 20 km/h}{45}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Analisis Hasil}{45}{section.5.3}%
+\contentsline {chapter}{\numberline {VI}\uppercase {Kesimpulan dan Saran}}{48}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Kesimpulan}{48}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Saran}{48}{section.6.2}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{50}{Item.39}%
+\contentsline {chapter}{LAMPIRAN}{}{section*.46}%
+\contentsline {chapter}{Lampiran A 1}{}{section*.47}%
+\contentsline {chapter}{Lampiran A 2}{}{section*.49}%
+\contentsline {chapter}{Lampiran B}{}{section*.51}%
+\contentsline {chapter}{Lampiran C}{}{section*.52}%

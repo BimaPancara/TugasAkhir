@@ -5,8 +5,8 @@
 # SPDX-License-Identifier: GPL-3.0
 #
 # GNU Radio Python Flow Graph
-# Title: Not titled yet
-# Author: Bima
+# Title: FMCW Simulated
+# Author: Bima Pancara
 # GNU Radio version: 3.10.9.2
 
 from PyQt5 import Qt
@@ -14,6 +14,7 @@ from gnuradio import qtgui
 from PyQt5 import QtCore
 from gnuradio import analog
 from gnuradio import blocks
+from gnuradio import blocks, gr
 from gnuradio import gr
 from gnuradio.filter import firdes
 from gnuradio.fft import window
@@ -23,6 +24,7 @@ from PyQt5 import Qt
 from argparse import ArgumentParser
 from gnuradio.eng_arg import eng_float, intx
 from gnuradio import eng_notation
+from gnuradio import gr, pdu
 from gnuradio import radar
 import sip
 
@@ -31,9 +33,9 @@ import sip
 class generateFmcw2(gr.top_block, Qt.QWidget):
 
     def __init__(self):
-        gr.top_block.__init__(self, "Not titled yet", catch_exceptions=True)
+        gr.top_block.__init__(self, "FMCW Simulated", catch_exceptions=True)
         Qt.QWidget.__init__(self)
-        self.setWindowTitle("Not titled yet")
+        self.setWindowTitle("FMCW Simulated")
         qtgui.util.check_set_qss()
         try:
             self.setWindowIcon(Qt.QIcon.fromTheme('gnuradio-grc'))
@@ -73,7 +75,6 @@ class generateFmcw2(gr.top_block, Qt.QWidget):
         self.value_range = value_range = 200
         self.v_res = v_res = samp_rate/samp_cw*3e8/2/center_freq
         self.range_res = range_res = 3e8/2/sweep_freq
-        self.protect_samp = protect_samp = 1
         self.minOutputBuffer = minOutputBuffer = int((samp_up+samp_down+samp_cw)*2)
         self.meas_duration = meas_duration = (samp_cw+samp_up+samp_down)/float(samp_rate)
         self.maxOutputBuffer = maxOutputBuffer = 0
@@ -93,29 +94,53 @@ class generateFmcw2(gr.top_block, Qt.QWidget):
         self.radar_static_target_simulator_cc_0.set_min_output_buffer(minOutputBuffer)
         self.radar_signal_generator_fmcw_c_0 = radar.signal_generator_fmcw_c(samp_rate, samp_up, samp_down, samp_cw, -sweep_freq/2, sweep_freq, 1, 'packet_len')
         self.radar_signal_generator_fmcw_c_0.set_min_output_buffer(minOutputBuffer)
-        self.qtgui_sink_x_1 = qtgui.sink_c(
-            1024, #fftsize
-            window.WIN_HAMMING, #wintype
+        self.radar_estimator_fmcw_0 = radar.estimator_fmcw(samp_rate, center_freq, sweep_freq, samp_up, samp_down, False)
+        self.qtgui_freq_sink_x_0 = qtgui.freq_sink_c(
+            1024, #size
+            window.WIN_BLACKMAN_hARRIS, #wintype
             0, #fc
             samp_rate, #bw
             "", #name
-            True, #plotfreq
-            True, #plotwaterfall
-            True, #plottime
-            True, #plotconst
+            1,
             None # parent
         )
-        self.qtgui_sink_x_1.set_update_time(1.0/1)
-        self._qtgui_sink_x_1_win = sip.wrapinstance(self.qtgui_sink_x_1.qwidget(), Qt.QWidget)
+        self.qtgui_freq_sink_x_0.set_update_time(0.10)
+        self.qtgui_freq_sink_x_0.set_y_axis((-140), 10)
+        self.qtgui_freq_sink_x_0.set_y_label('Magnitude', 'dB')
+        self.qtgui_freq_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, 0.0, 0, "")
+        self.qtgui_freq_sink_x_0.enable_autoscale(False)
+        self.qtgui_freq_sink_x_0.enable_grid(True)
+        self.qtgui_freq_sink_x_0.set_fft_average(1.0)
+        self.qtgui_freq_sink_x_0.enable_axis_labels(True)
+        self.qtgui_freq_sink_x_0.enable_control_panel(True)
+        self.qtgui_freq_sink_x_0.set_fft_window_normalized(False)
 
-        self.qtgui_sink_x_1.enable_rf_freq(False)
 
-        self.top_layout.addWidget(self._qtgui_sink_x_1_win)
-        self._protect_samp_range = qtgui.Range(0, 100, 1, 1, 200)
-        self._protect_samp_win = qtgui.RangeWidget(self._protect_samp_range, self.set_protect_samp, "'protect_samp'", "counter_slider", float, QtCore.Qt.Horizontal)
-        self.top_layout.addWidget(self._protect_samp_win)
+
+        labels = ['', '', '', '', '',
+            '', '', '', '', '']
+        widths = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+        colors = ["blue", "red", "green", "black", "cyan",
+            "magenta", "yellow", "dark red", "dark green", "dark blue"]
+        alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0, 1.0]
+
+        for i in range(1):
+            if len(labels[i]) == 0:
+                self.qtgui_freq_sink_x_0.set_line_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_freq_sink_x_0.set_line_label(i, labels[i])
+            self.qtgui_freq_sink_x_0.set_line_width(i, widths[i])
+            self.qtgui_freq_sink_x_0.set_line_color(i, colors[i])
+            self.qtgui_freq_sink_x_0.set_line_alpha(i, alphas[i])
+
+        self._qtgui_freq_sink_x_0_win = sip.wrapinstance(self.qtgui_freq_sink_x_0.qwidget(), Qt.QWidget)
+        self.top_layout.addWidget(self._qtgui_freq_sink_x_0_win)
+        self.pdu_tagged_stream_to_pdu_0 = pdu.tagged_stream_to_pdu(gr.types.complex_t, 'packet_len')
         self.blocks_multiply_conjugate_cc_0 = blocks.multiply_conjugate_cc(1)
         self.blocks_multiply_conjugate_cc_0.set_min_output_buffer(minOutputBuffer)
+        self.blocks_message_debug_0 = blocks.message_debug(True, gr.log_levels.info)
         self.blocks_add_xx_0 = blocks.add_vcc(1)
         self.blocks_add_xx_0.set_min_output_buffer(minOutputBuffer)
         self.analog_noise_source_x_0 = analog.noise_source_c(analog.GR_GAUSSIAN, 0.1, 0)
@@ -125,9 +150,13 @@ class generateFmcw2(gr.top_block, Qt.QWidget):
         ##################################################
         # Connections
         ##################################################
+        self.msg_connect((self.pdu_tagged_stream_to_pdu_0, 'pdus'), (self.blocks_message_debug_0, 'log'))
+        self.msg_connect((self.pdu_tagged_stream_to_pdu_0, 'pdus'), (self.radar_estimator_fmcw_0, 'Msg in CW'))
+        self.msg_connect((self.radar_estimator_fmcw_0, 'Msg out'), (self.blocks_message_debug_0, 'print'))
         self.connect((self.analog_noise_source_x_0, 0), (self.blocks_add_xx_0, 0))
         self.connect((self.blocks_add_xx_0, 0), (self.blocks_multiply_conjugate_cc_0, 1))
-        self.connect((self.blocks_multiply_conjugate_cc_0, 0), (self.qtgui_sink_x_1, 0))
+        self.connect((self.blocks_add_xx_0, 0), (self.pdu_tagged_stream_to_pdu_0, 0))
+        self.connect((self.blocks_multiply_conjugate_cc_0, 0), (self.qtgui_freq_sink_x_0, 0))
         self.connect((self.radar_signal_generator_fmcw_c_0, 0), (self.blocks_multiply_conjugate_cc_0, 0))
         self.connect((self.radar_signal_generator_fmcw_c_0, 0), (self.radar_static_target_simulator_cc_0, 0))
         self.connect((self.radar_static_target_simulator_cc_0, 0), (self.blocks_add_xx_0, 1))
@@ -158,7 +187,7 @@ class generateFmcw2(gr.top_block, Qt.QWidget):
         self.set_meas_duration((self.samp_cw+self.samp_up+self.samp_down)/float(self.samp_rate))
         self.set_sweep_freq(self.samp_rate/2)
         self.set_v_res(self.samp_rate/self.samp_cw*3e8/2/self.center_freq)
-        self.qtgui_sink_x_1.set_frequency_range(0, self.samp_rate)
+        self.qtgui_freq_sink_x_0.set_frequency_range(0, self.samp_rate)
         self.radar_static_target_simulator_cc_0.setup_targets([self.value_range], [self.velocity], [1e16], [0], [0], self.samp_rate, self.center_freq, -10, True, True)
 
     def get_sweep_freq(self):
@@ -218,12 +247,6 @@ class generateFmcw2(gr.top_block, Qt.QWidget):
 
     def set_range_res(self, range_res):
         self.range_res = range_res
-
-    def get_protect_samp(self):
-        return self.protect_samp
-
-    def set_protect_samp(self, protect_samp):
-        self.protect_samp = protect_samp
 
     def get_minOutputBuffer(self):
         return self.minOutputBuffer

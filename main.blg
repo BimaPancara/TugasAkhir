@@ -1,0 +1,67 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: sampul.aux
+A level-1 auxiliary file: pengesahan.aux
+A level-1 auxiliary file: orisinalitas.aux
+A level-1 auxiliary file: abstrak.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: pengantar.aux
+A level-1 auxiliary file: listofappendix.aux
+A level-1 auxiliary file: daftarIstilah.aux
+A level-1 auxiliary file: bab1.aux
+A level-1 auxiliary file: bab2.aux
+A level-1 auxiliary file: bab3.aux
+A level-1 auxiliary file: bab4.aux
+A level-1 auxiliary file: bab5.aux
+A level-1 auxiliary file: bab6.aux
+A level-1 auxiliary file: pustaka.aux
+The style file: ieeetr.bst
+A level-1 auxiliary file: markLampiran.aux
+A level-1 auxiliary file: lampiran.aux
+Database file #1: dafpus.bib
+Warning--can't use both author and editor fields in Kingsley1999
+Warning--can't use both volume and number fields in Melvin2014
+Warning--can't use both volume and number fields in Scheer2015
+You've used 28 entries,
+            1876 wiz_defined-function locations,
+            683 strings with 10642 characters,
+and the built_in function-call counts, 6719 in all, are:
+= -- 550
+> -- 393
+< -- 0
++ -- 141
+- -- 113
+* -- 559
+:= -- 1025
+add.period$ -- 34
+call.type$ -- 28
+change.case$ -- 25
+chr.to.int$ -- 0
+cite$ -- 31
+duplicate$ -- 360
+empty$ -- 661
+format.name$ -- 113
+if$ -- 1568
+int.to.chr$ -- 0
+int.to.str$ -- 28
+missing$ -- 31
+newline$ -- 93
+num.names$ -- 30
+pop$ -- 124
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 151
+stack$ -- 0
+substring$ -- 215
+swap$ -- 93
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 48
+width$ -- 30
+write$ -- 271
+(There were 3 warnings)

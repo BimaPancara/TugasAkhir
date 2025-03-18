@@ -5,7 +5,7 @@
 %-----------------------------------------------------------------------------%
 \section{Kajian Penelitian Terkait}
 %-----------------------------------------------------------------------------%
-Banyak sekali referensi yang menjadi bagian besar dalam tertulisnya proposal ini, referensi tersebut terdiri atas berbagai macam jenis literatur dari sumber yang dapat diakses secara daring. Tak sedikit pula literatur tersebut menjadi alasan besar latar belakang dari proposal ini dilahirkan, berikut adalah beberapa penelitian terdahulu yang menjadi referensi dalam melakukan penyusunan proposal ini :
+Banyak sekali referensi yang menjadi bagian besar dalam tertulisnya tugas akhir ini, referensi tersebut terdiri atas berbagai macam jenis literatur dari sumber yang dapat diakses secara daring. Tak sedikit pula literatur tersebut menjadi alasan besar latar belakang dari tugas akhir ini dilahirkan, berikut adalah beberapa penelitian terdahulu yang menjadi referensi dalam melakukan penyusunan tugas akhir ini :
 
 %-----------------------------------------------------------------------------%
 % Penelitian Terdahulu
@@ -90,7 +90,7 @@ Banyak sekali referensi yang menjadi bagian besar dalam tertulisnya proposal ini
 	&
 	&
 	&
-	frekuensi \textit{Double-CZT}. Tingkat akurasi meningkat dengan rata rata eror absolut kurang dari 1 bpm, nilai SNR meningkat sehingga estimasi akurasi detak jantung juga meningkat.
+	frekuensi \textit{Double-CZT}. Tingkat akurasi meningkat dengan rata rata \textit{error} absolut kurang dari 1 bpm, nilai SNR meningkat sehingga estimasi akurasi detak jantung juga meningkat.
 	\\ \hline
 	\end{longtable}
 \end{center}
@@ -112,11 +112,11 @@ Penggunaan gelombang elektromagnetik sebagai sarana untuk mendeteksi objek adala
 Cara kerja dari radar adalah dengan memancarkan gelombang di dalam ruang bebas yang kemudian radar akan mendeteksi gelombang pantulan dari objek tersebut. Adanya gelombang yang terpantul ini tidak hanya menunjukkan keberadaan dari suatu objek, namun dengan membandingkan gelombang pantulan yang diterima dengan gelombang yang dikirimkan maka informasi tentang objek yang terdeteksi dapat dihitung \cite{Skolnik2001}. 
 
 \begin{equation}
-	R = \frac{cT_{R}}{2}
-	\label{eq:PersRadar}
+    R_{max} = \left[\frac{P_{t}G^{2}\lambda^{2}\sigma}{(4\pi)^{3}S_{min}}\right]^{\frac{1}{4}}
+    \label{eq:MaxRange_derivation}
 \end{equation}
 
-Persamaan~(\ref{eq:PersRadar}) menjelaskan jarak antara target dengan antena yang disimbolkan sebagai $R$ (meter), dengan $T_{R}$ (sekon) sebagai waktu sinyal radar bergerak secara bolak balik dari dan menuju objek. Karena radar memakai gelombang elektromagnetik, maka $c$ memiliki kecepatan yang sama dengan cahaya, yaitu $3 \cdot 10 ^{8} $ m/s.
+Persamaan~(\ref{eq:MaxRange_derivation}) menjelaskan jarak maksimum antara target dengan antena yang disimbolkan sebagai $R_{max}$ (meter), dimana $P_{t}$ adalah daya tertransmisi, $G$ adalah nilai gain antena, $\sigma$ merupakan nilai \textit{radar cross section} objek, dan $S_{min}$ adalah tingkat sinyal rendah yang terdeteksi.
 
 \begin{figure}
 	\begin{center}
@@ -130,7 +130,7 @@ Pada gambar \ref{pic:skemaRadar}, skema dan konsep dasar dari cara kerja radar d
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[scale=0.32]{pics/bab2/blokdiagram.png} 
+		\includegraphics[scale=0.3]{pics/bab2/blokdiagram.png} 
 		\caption[Blok Diagram Radar]{{Blok Diagram Radar Sederhana \cite{Kingsley1999}}}
 		\label{pic:blokdiagram}
 	\end{center}
@@ -210,7 +210,7 @@ Dari blok diagram tersebut, dapat dilihat bahwa sinyal yang diterima akan dicamp
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[scale=0.4]{pics/bab2/txRxWave.jpg}
+		\includegraphics[scale=0.4]{pics/bab2/ChirpTx.jpg}
 		\caption[FMCW Dalam Domain Waktu]{FMCW Dalam Domain Waktu}
 		\label{pic:FMCWTime}
 	\end{center}
@@ -226,7 +226,7 @@ Oleh karena itu, salah satu karakteristik dari radar FMCW adalah bahwa jarak pen
 Persamaan~(\ref{eq:PersFMCW}) menunjukkan jarak (R) dalam meter dengan objek yang terdeteksi. Yang mana $\Delta{t}$ adalah waktu tunda dalam detik, $\Delta{f}$ merupakan pergeseran frekuensi terukur dalam Hertz, dengan d(f)/d(t) sebagai pergeseran frekuensi dalam suatu periode. 
 
 \begin{equation}
-	R_{max} = \frac{F_{s} c}{2 \mu}
+	R_{max} = \frac{c \cdot T}{4 \cdot Bandwidth}
 	\label{eq:MaxRange}
 \end{equation}
 
@@ -256,11 +256,11 @@ Selain itu, salah satu faktor penting yang perlu diperhitungkan dalam perancanga
 Persamaan~(\ref{eq:RangeRes}) menjelaskan bahwa dengan membagi kecepatan cahaya dengan dua kali lebar pita frekuensi (\textit{Bandwidth}) dalam Hertz, maka resolusi jarak dalam satuan meter akan didapatkan. 
 
 \begin{equation}
-	v_{max} = \frac{\lambda}{4 \cdot T_{c}}
+	v_{max} = \frac{\lambda}{2 \cdot T_{c}}
 	\label{eq:maxVelo}
 \end{equation}
 
-Nilai kecepatan maksimum dapat dihitung dengan persamaan~(\ref{eq:maxVelo}), yaitu panjang gelombang frekuensi yang digunakan (Hz) dibagi dengan \textit{sweep time} dalam sekon ($T_{c}$) dikalikan empat.
+Nilai kecepatan maksimum dapat dihitung dengan persamaan~(\ref{eq:maxVelo}), yaitu panjang gelombang frekuensi yang digunakan (Hz) dibagi dengan \textit{sweep time} dalam sekon ($T_{c}$) dikalikan dua.
 
 \begin{equation}
 	V_{res} = \frac{\lambda}{2 \cdot T_{f}}
@@ -412,14 +412,9 @@ Dengan spesifikasi tersebut, maka USRP B210 memiliki kemampuan \textit{instantne
 
 \subsection{\textit{GNURadio}}
 
-\begin{figure}
-	\begin{center}
-		\includegraphics[scale=0.35]{pics/bab2/GNU.png} 
-		\caption[Logo GNURadio]{Logo GNURadio}
-		\label{pic:logoGnuRadio}
-	\end{center}
-\end{figure}
 GNURadio adalah aplikasi yang dapat melakukan pemrograman terhadap USRP lewat antarmuka. GNURadio merupakan \textit{software open source} sehingga semua orang dapat mengakses, mengubah, dan membagikan \textit{source code} dari program tersebut secara bebas. Dengan menggunakan aplikasi ini, perubahan parameter pada USRP dapat dilakukan dengan mudah.
+
+GNURadio juga dapat melakukan simulasi pengolahan sinyal, mulai dari komunikasi menggunakan modulasi tertentu, hingga simulasi pengukuran jarak dan kecepatan objek. Pemrograman GNURadio dilakukan dengan menghubungkan blok dengan tujuan tertentu yang diatur sedemikian rupa sehingga menjadi sistem yang baik.
 
 \begin{figure}
 	\begin{center}
@@ -429,7 +424,7 @@ GNURadio adalah aplikasi yang dapat melakukan pemrograman terhadap USRP lewat an
 	\end{center}
 \end{figure}
 
-Gambar \ref{pic:contohFlowGraphGRC} adalah contoh blok diagram sistem (\textit{flowgraph}) yang sukses dibuat pada aplikasi GNURadio. Pada gambar \ref{pic:contohRunGRC} menunjukkan hasil bila desain sistem tersebut dijalankan.
+Gambar \ref{pic:contohFlowGraphGRC} adalah contoh blok diagram sistem (\textit{flowgraph}) yang sukses dibuat pada aplikasi GNURadio. Tujuan dari sistem tersebut adalah mengirimkan deret vektor tertentu secara berulang dan mengalikannya dengan sinyal sinus. Pada gambar \ref{pic:contohRunGRC} menunjukkan hasil bila desain sistem tersebut dijalankan. Pada bagian \textit{Mod} menunjukkan hasil modulasi antara deret vektor dengan sinyal sinusoidal, pada bagian \textit{information} menunjukkan deret vektor yang dikirim, sedangkan pada bagian \textit{Demod} menunjukkan hasil demodulasi.
 
 \begin{figure}
 	\begin{center}
